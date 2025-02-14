@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Subcategory Page</title>
+</head>
+<body>
+
+<h1 align="center">Subcategory List</h1>
+
+<table align="center" border="1" cellpadding="10">
+    <tr>
+        <th>Category Name</th>
+        <th>Subcategory Name</th>
+        <th>Subcategory Description</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for category in sub_category_vo_lst %}
+        <tr>
+            <td>{{ category[0].category_name }}</td>
+            <td>{{ category[1].sub_category_name }}</td>
+            <td>{{ category[1].sub_category_description }}</td>
+            <td>
+                <form action="/delete_sub_category" method="POST"
+                      style="display: inline;">
+                    <input type="hidden" name="sub_category_id" value="{{ category[1].sub_category_id }}">
+
+                    <button type="submit">Delete</button>
+                </form>
+                <form action="/edit_sub_category/{{ category[1].sub_category_id }}" method="GET"
+                      style="display: inline;">
+                    <button type="submit">Update</button>
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<div align="center">
+    <a href="/load_sub_category">
+        <button type="button">Add New Subcategory</button>
+    </a><br>
+    <a href="/">
+        <button type="button">Home Page</button>
+    </a>
+
+</div>
+
+</body>
+</html>

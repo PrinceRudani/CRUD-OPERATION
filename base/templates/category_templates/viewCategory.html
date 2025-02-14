@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Category Page</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Category List</h1>
+
+    {% if errors %}
+        <div style="color: red; text-align: center;">
+            {{ errors }}
+        </div>
+    {% endif %}
+
+<table align="center" border="1">
+    <tr>
+        <th>Category Name</th>
+        <th>Category Description</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for category in category_dto_lst %}
+        <tr>
+            <td>{{ category.category_name }}</td>
+            <td>{{ category.category_description }}</td>
+            <td>
+                <form action="/delete_category" method="POST" style="display: inline;">
+                    <input type="hidden" name="category_id" value="{{ category.category_id }}">
+                    <button type="submit" name="category_id" value="{{ category.category_id }}" title="Delete Category">
+                        Delete
+                    </button>
+                </form>
+
+                <form action="/edit_category" method="GET" style="display: inline;">
+                    <input type="hidden" name="category_id" value="{{ category.category_id }}">
+
+                    <button type="submit" title="Edit Category">Update</button>
+                </form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<div align="center">
+    <a href="/load_category">
+        <button type="button">Add New Category</button>
+    </a>
+    <br>
+    <a href="/">
+        <button type="button">Home Page</button>
+    </a>
+</div>
+
+</body>
+</html>

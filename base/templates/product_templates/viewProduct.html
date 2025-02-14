@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Products</title>
+</head>
+<body>
+
+<h1 style="text-align: center;">Product List</h1>
+
+<table align="center" border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Category</th>
+        <th>Subcategory</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Image</th>
+        <th>Quantity</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for product in product_vo_lst %}
+        <tr>
+            <td>{{ product[0].product_id }}</td>
+            <td>{{ product[2].category_name }}</td>
+            <td>{{ product[1].sub_category_name }}</td>
+            <td>{{ product[0].product_name }}</td>
+            <td>${{ product[0].product_price }}</td>
+            <td>{{ product[0].product_description }}</td>
+            <td><a href="{{ url_for('static', filename='product_images/' + product[0].product_image_name) }}">
+                View Image</a></td>
+            <td>{{ product[0].product_quantity }}</td>
+
+            <td>
+                <form action="/delete_product" method="POST" style="display:inline;">
+                    <input type="hidden" name="product_id" value="{{ product[0].product_id }}">
+                    <button type="submit">Delete</button>
+                </form>
+                <form action="/edit_product/{{ product[0].product_id }}" method="GET" style="display:inline;">
+                    <button type="submit">Edit</button>
+                </form>
+
+            </td>
+        </tr>
+    {% endfor %}
+
+    </tbody>
+
+</table>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="/load_product">
+        <button type="button">Add Product</button>
+    </a><br>
+    <a href="/">
+        <button type="button">Home Page</button>
+    </a>
+</div>
+</body>
+</html>

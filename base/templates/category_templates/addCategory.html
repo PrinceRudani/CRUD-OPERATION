@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Category Form</title>
+</head>
+<body>
+
+<h1>Add a New Category</h1>
+{% if errors %}
+    <div style="color: red; text-align: center;">
+        {{ errors }}
+    </div>
+{% endif %}
+
+<table align="center" border="1">
+    <tr>
+        <td>
+            <form action="/insert_category" method="POST">
+                <table>
+                    <tr>
+                        <td><label for="categoryName">Category Name:</label></td>
+                        <td><input type="text" id="categoryName" name="categoryName" ></td>
+                        {% if error %}
+                            <p class="error">{{ error }}</p>
+                        {% endif %}
+                    </tr>
+                    <tr>
+                        <td><label for="categoryDescription">Category Description:</label></td>
+                        <td><textarea id="categoryDescription" name="categoryDescription" ></textarea></td>
+                        {% if error %}
+                            <p class="error">{{ error }}</p>
+                        {% endif %}
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

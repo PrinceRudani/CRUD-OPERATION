@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Product</title>
+    <script type="text/javascript">
+        function loadState() {
+            var product_category_id = document.getElementById("product_category_id");
+            var product_sub_category_id = document.getElementById("product_sub_category_id");
+            product_sub_category_id.innerHTML = "";
+
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function () {
+                if (ajax.readyState === 4 && ajax.status === 200) {
+                    var jsn = JSON.parse(ajax.responseText);
+                    console.log("ajax>>>>>>>>>>>>>>>>>>>", jsn);
+                    for (var i = 0; i < jsn.length; i++) {
+                        var opt = document.createElement("option");
+                        opt.value = jsn[i].sub_category_id;
+                        opt.text = jsn[i].sub_category_name;
+                        console.log("ajax>>>>>>>>>>>>>>>>>>>", opt.value);
+                        console.log("ajax>>>>>>>>>>>>>>>>>>>", opt.text);
+                        product_sub_category_id.options.add(opt);
+
+                        if (selectedSubcategoryId === parseInt(jsn[i].sub_category_id)) {
+                            opt.selected = true;
+                        }
+                    }
+                }
+            };
+
+            ajax.open("get", "/ajax_load_subcategory?product_category_id=" + product_category_id.value, true);
+            ajax.send();
+        }
+    </script>
+
+</head>
+<body onload="loadState()">
+
+<h1 style="text-align: center;">Edit Product</h1>
+
+<form action="{{ url_for('update_product', product_id=product_vo_lst.product_id) }}" method="POST"
+      enctype="multipart/form-data">
+    <input type="hidden" name="product_id" value="{{ product_vo_lst.product_id }}">
+
+    <table align="center">
+        <tr>
+            <td><label for="product_category_id">Category Name:</label></td>
+            <td>
+                <select id="product_category_id" name="productCategoryId" onchange="loadState()">
+                    {% for category in category_vo_lst %}
+                        <option value="{{ category.category_id }}"
+                                {% if category.category_id == product_vo_lst.product_category_id %}selected{% endif %}>
+                            {{ category.category_name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="product_sub_category_id">Sub Category:</label></td>
+            <td>
+                <select id="product_sub_category_id" name="productSubCategoryId">
+                    {% for subcategory in sub_category_vo_lst %}
+                        <option value="{{ subcategory.sub_category_id }}"
+                                {% if subcategory.sub_category_id == product_vo_lst.product_sub_category_id %}selected{% endif %}>
+                            {{ subcategory.sub_category_name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="product_name">Product Name:</label></td>
+            <td><input type="text" id="product_name" name="productName" value="{{ product_vo_lst.product_name }}"
+                       ></td>
+        </tr>
+        <tr>
+            <td><label for="product_price">Price:</label></td>
+            <td><input type="number" id="product_price" name="productPrice" step="0.01"
+                       value="{{ product_vo_lst.product_price }}" ></td>
+        </tr>
+        <tr>
+            <td><label for="product_description">Description:</label></td>
+            <td><textarea id="product_description" name="productDescription" rows="4" cols="50"
+                          >{{ product_vo_lst.product_description }}</textarea></td>
+        </tr>
+        <tr>
+            <td><label for="productImage">Current Image:</label></td>
+            <td>
+                <a href="{{ url_for('static', filename='product_images/' + product_vo_lst.product_image_name) }}">View
+                    Image</a>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td><label for="productImage">Upload New Image:</label></td>
+            <td><input type="file" id="productImage" name="productImage"></td>
+        </tr>
+        <tr>
+            <td><label for="productQuantity">Quantity:</label></td>
+            <td><input type="number" id="productQuantity" name="productQuantity"
+                       value="{{ product_vo_lst.product_quantity }}" ></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <button type="submit">Update</button>
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>

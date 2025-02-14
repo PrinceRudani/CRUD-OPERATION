@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Subcategory</title>
+</head>
+<body>
+
+<h2 align="center">Add Subcategory</h2>
+{% if error_message %}
+    <div style="color: red; text-align: center;">
+        {{ error_message }}
+    </div>
+{% endif %}
+<table align="center" border="1" cellpadding="10">
+    <tr>
+        <td>
+            <form action="/insert_sub_category" method="post">
+                <table>
+                    <tr>
+                        <td><label for="subCategoryCategoryId">Category Name:</label></td>
+                        <td>
+                            <select id="subCategoryCategoryId" name="subCategoryCategoryId" >
+                                <option value="" disabled selected>Select a Category</option>
+                                {% for category in sub_category_vo %}
+                                    <option value="{{ category.category_id }}">{{ category.category_name }}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="subCategoryName">Subcategory Name:</label></td>
+                        <td><input type="text" id="subCategoryName" name="subCategoryName" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="subCategoryDescription">Subcategory Description:</label></td>
+                        <td><textarea id="subCategoryDescription" name="subCategoryDescription" rows="3" ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
