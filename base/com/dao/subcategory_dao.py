@@ -13,8 +13,10 @@ class SubCategoryDAO:
 
     def view_sub_category(self):
         sub_category_vo_lst = (db.session.query(CategoryVO, SubcategoryVO)
-                               .join(SubcategoryVO, CategoryVO.category_id == SubcategoryVO.subcategory_category_id)
-                               .filter(SubcategoryVO.is_delete == False, CategoryVO.is_delete == False)
+                               .join(SubcategoryVO,
+                                     CategoryVO.category_id == SubcategoryVO.subcategory_category_id)
+                               .filter(SubcategoryVO.is_delete == False,
+                                       CategoryVO.is_delete == False)
                                .all())
         print(sub_category_vo_lst)
         return sub_category_vo_lst
@@ -26,7 +28,8 @@ class SubCategoryDAO:
         db.session.commit()
 
     def edit_sub_category(self, sub_category_id):
-        sub_category_vo = db.session.query(SubcategoryVO).filter_by(sub_category_id=sub_category_id).first()
+        sub_category_vo = db.session.query(SubcategoryVO).filter_by(
+            sub_category_id=sub_category_id).first()
         category_vo_lst = (db.session.query(CategoryVO)
                            .filter(CategoryVO.is_delete == False)
                            .all())

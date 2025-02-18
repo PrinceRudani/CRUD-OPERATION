@@ -2336,3 +2336,35 @@ WHERE category_table.is_delete = false]
 
 2025-02-18 11:54:24,597 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
 
+2025-02-18 15:20:51,371 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince, password -> prince123
+
+2025-02-18 15:21:52,610 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince
+
+2025-02-18 15:21:56,988 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince
+
+2025-02-18 15:22:12,674 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince, password -> prince123
+
+2025-02-18 15:22:49,093 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince, password -> prince123
+
+2025-02-18 15:30:00,528 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 15:30:34,298 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 15:30:34,298 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 15:30:34,299 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 15:31:03,779 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 15:32:50,839 - login_controller.py - FlaskMVCProject -  login - ERROR - An error occurred during login: 'username'
+
+2025-02-18 15:34:01,725 - login_controller.py - FlaskMVCProject -  login - ERROR - An error occurred during login: 'username'
+
+2025-02-18 15:44:00,983 - login_controller.py - FlaskMVCProject -  login - ERROR - An error occurred during login: 'username'
+
+2025-02-18 15:47:53,894 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince@123, password -> prince123
+
+2025-02-18 15:47:57,768 - login_controller.py - FlaskMVCProject -  login - INFO - Login successful. username -> prince@123, password -> prince123
+
+2025-02-18 16:40:47,194 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> princerudani
+

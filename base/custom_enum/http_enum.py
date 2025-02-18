@@ -22,7 +22,7 @@ class RespondMessageEnum(str, Enum):
     USER_DELETED = "User deleted successfully"
     USER_UPDATED = "User updated successfully"
     USER_LOGIN_SUCCESS = "User logged in successfully"
-    USER_LOGIN_FAILED = "User login failed"
+    USER_LOGIN_FAILED = "User login_and_register failed"
     USER_LOGGED_OUT = "User logged out successfully"
     USER_PASSWORD_CHANGED = "User password changed successfully"
 

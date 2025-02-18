@@ -4,7 +4,8 @@ from base.com.vo.category_vo import CategoryVO
 
 class ProductVO(db.Model):
     __tablename__ = 'product_table'
-    product_id = db.Column('product_id', db.Integer, autoincrement=True, primary_key=True)
+    product_id = db.Column('product_id', db.Integer, autoincrement=True,
+                           primary_key=True)
     product_category_id = db.Column('product_category_id', db.Integer, db.ForeignKey('category_table.category_id'), nullable=False)
     product_sub_category_id = db.Column('product_sub_category_id', db.Integer, db.ForeignKey('sub_category_table.sub_category_id', ondelete="CASCADE"), nullable=False)
     product_name = db.Column('product_name', db.String(100), nullable=False)

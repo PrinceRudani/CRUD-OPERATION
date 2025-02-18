@@ -8,11 +8,11 @@ from base.utils import MyLogger
 logger = MyLogger.get_logger()
 
 
-@app.route('/')
-def home():
-    """home page"""
-    logger.info('home')
-    return render_template('home.html')
+# @app.route('/home')
+# def home():
+#     """home page"""
+#     logger.info('home')
+#     return render_template('home.html')
 
 @app.route('/load_category')
 def load_category():
