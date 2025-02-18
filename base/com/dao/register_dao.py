@@ -1,5 +1,5 @@
 from base import db
-from base.com.vo.register_vo import RegisterVO
+from base.com.vo.login_vo import RegisterVO
 
 
 class RegisterDAO:

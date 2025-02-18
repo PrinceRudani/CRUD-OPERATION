@@ -2328,3 +2328,11 @@ WHERE category_table.is_delete = false]
 2025-02-14 10:36:00,466 - category_controller.py - FlaskMVCProject -  home - INFO - home
 2025-02-14 10:36:00,627 - category_controller.py - FlaskMVCProject -  home - INFO - home
 2025-02-14 10:36:40,569 - category_controller.py - FlaskMVCProject -  home - INFO - home
+2025-02-18 11:43:43,098 - category_controller.py - FlaskMVCProject -  home - INFO - home
+
+2025-02-18 11:54:23,259 - category_controller.py - FlaskMVCProject -  home - INFO - home
+
+2025-02-18 11:54:23,481 - category_controller.py - FlaskMVCProject -  home - INFO - home
+
+2025-02-18 11:54:24,597 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+

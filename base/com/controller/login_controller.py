@@ -1,31 +1,37 @@
 from flask_jwt_extended import create_refresh_token
 
 from flask_jwt_extended import create_refresh_token
-from flask import jsonify
+from flask import jsonify, render_template
 
+from base import app
+
+
+@app.route('/login', methods=['POST'])
+def login():
+    return render_template(
+        'login/login.html')
 
 def refresh_token(username):
     try:
-        refresh_token = create_refresh_token(identity=username)
+        ref_token = create_refresh_token(identity=username)
 
         return jsonify({
-            "refresh_token": refresh_token,
+            "refresh_token": ref_token,
             "status": "success"
         }), 200
 
     except Exception as e:
-        # Handle any potential errors during token creation
         return jsonify({
             "error": "Failed to generate refresh token",
             "details": str(e)
         }), 500
 
 
-def login_required(self):
-    pass
-
-def logout(self):
-    pass
+# def login_required(self):
+#     pass
+#
+# def logout(self):
+#     pass
 
 
 
