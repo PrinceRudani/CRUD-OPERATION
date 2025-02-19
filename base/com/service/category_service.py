@@ -1,8 +1,7 @@
 from base.com.dao.category_dao import CategoryDAO
-from base.com.dto.category_dto import CategoryDTO
 from base.com.vo.category_vo import CategoryVO
-from base.utils.time_stamp import get_current_timestamp
 from base.utils.MyLogger import get_logger
+from base.utils.time_stamp import get_current_timestamp
 
 logger = get_logger()
 
@@ -16,15 +15,15 @@ class CategoryService:
 
             category_vo = CategoryVO()
             category_vo.category_name = category_dto_lst['category_name']
-            category_vo.category_description = category_dto_lst['category_description']
+            category_vo.category_description = category_dto_lst[
+                'category_description']
 
             category_vo.create_at = create_at
             category_vo.modify_at = modify_at
 
             category_dao = CategoryDAO()
-            new_category = category_dao.insert_category(category_vo)
+            category_dao.insert_category(category_vo)
             logger.info('Insert category successfully')
-            return new_category
 
         except Exception as e:
             raise RuntimeError(f"Error in add_category_service: {str(e)}")
@@ -72,7 +71,8 @@ class CategoryService:
             category_vo = CategoryVO()
             category_vo.category_id = category_id
             category_vo.category_name = category_dto_lst['category_name']
-            category_vo.category_description = category_dto_lst['category_description']
+            category_vo.category_description = category_dto_lst[
+                'category_description']
 
             category_vo.create_at = create_at
             category_vo.modify_at = modify_at

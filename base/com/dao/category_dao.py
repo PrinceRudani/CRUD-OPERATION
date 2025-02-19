@@ -10,7 +10,8 @@ class CategoryDAO:
         return category_vo
 
     def view_category(self):
-        category_vo_lst = CategoryVO.query.filter(CategoryVO.is_delete == False).all()
+        category_vo_lst = CategoryVO.query.filter(
+            CategoryVO.is_delete == False).all()
         # print(category_vo_lst)
         return category_vo_lst
 
@@ -21,9 +22,11 @@ class CategoryDAO:
         db.session.commit()
 
     def edit_category(self, category_id):
-        return db.session.query(CategoryVO).filter_by(category_id=category_id).first()
+        return db.session.query(CategoryVO).filter_by(
+            category_id=category_id).first()
 
-    def update_category(self, category_id, category_name, category_description):
+    def update_category(self, category_id, category_name,
+                        category_description):
         """
         Updates a category in the database.
         """
