@@ -6,28 +6,41 @@
     <title>Register</title>
 </head>
 <body>
-    <h2>User Registration</h2>
-    <form action="/login" method="post">
-        <label for="firstname">First Name:</label>
-        <input type="text" id="firstname" name="register_firstname" required><br><br>
+<h2>User Registration</h2>
+<form action="/insert_register" method="post">
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <label for="registerFirstname">First Name:</label>
+    <input type="text" id="registerFirstname" name="registerFirstname"
+           required><br><br>
 
-        <label for="lastname">Last Name:</label>
-        <input type="text" id="lastname" name="register_lastname" required><br><br>
+    <label for="registerLastname">Last Name:</label>
+    <input type="text" id="registerLastname" name="registerLastname"
+           required><br><br>
 
-        <label for="gender">Gender:</label>
-        <select id="gender" name="register_gender" required>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select><br><br>
+    <label for="registerGender">Gender:</label>
+    <select id="registerGender" name="registerGender" required>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select><br><br>
 
-        <label for="register_username">Username:</label>
-        <input type="register_username" id="register_username" name="register_username" required><br><br>
+    <label for="registerEmail">Email:</label>
+    <input type="text" id="registerEmail" name="registerEmail"
+           required><br><br>
 
-        <label for="register_password">Password:</label>
-        <input type="register_password" id="register_password" name="register_password" required><br><br>
+    <label for="registerUsername">Username:</label>
+    <input type="text" id="registerUsername" name="registerUsername"
+           required><br><br>
 
-        <button type="submit">Register</button>
-    </form>
+    <label for="registerPassword">Password:</label>
+    <input type="password" id="registerPassword" name="registerPassword"
+           required><br><br>
+
+    <button type="submit">Register</button>
+    <br><br>
+    <a href="/">Login</a>
+</form>
 </body>
 </html>

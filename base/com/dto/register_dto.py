@@ -1,4 +1,4 @@
-import re
+# import re
 
 
 class RegisterDTO:
@@ -22,11 +22,11 @@ class RegisterDTO:
                     self.register_password]):
             raise Exception("All product fields must be filled and valid.")
 
-        password_pattern = re.compile(
-            r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$')
-        if not password_pattern.match(self.register_password):
-            raise Exception(
-                "Password must be at least 8 characters long, include an uppercase letter, "
-                "a lowercase letter, a number, and a special character.")
+        # password_pattern = re.compile(
+        #     r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$')
+        # if not password_pattern.match(self.register_password):
+        #     raise Exception(
+        #         "Password must be at least 8 characters long, include an uppercase letter, "
+        #         "a lowercase letter, a number, and a special character.")
 
         return self

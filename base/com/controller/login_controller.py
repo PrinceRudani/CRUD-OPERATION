@@ -1,9 +1,9 @@
-from flask import render_template, request, jsonify
-from base.utils import MyLogger
-from base import app
+from flask import render_template, request
 
-users = {"register_username": "prince@123",
-         "register_password": "prince123"}
+from base import app
+from base.com.dao.login_dao import LoginDao
+from base.utils import MyLogger
+
 logger = MyLogger.get_logger()
 
 
@@ -17,16 +17,16 @@ def login():
     try:
         username = request.form.get('register_username')
         password = request.form.get('register_password')
-        if username == users["register_username"] and password == users["register_password"]:
-            logger.info(
-                "Login successful. username -> {}, password -> {}".format(
-                    username,
-                    password))
+        login_dao = LoginDao()
+        validate_user = login_dao.validate_login(username, password)
+        if validate_user:
+            logger.info("username: {}".format(username))
             return render_template("home.html")
         else:
-            logger.warning(
-                "Invalid credentials attempt. username -> {}".format(username))
-            return jsonify({"error": "Invalid credentials"}), 401
+            error = "Invalid username or password"
+            return render_template("login_and_register/login.html",
+                                   error=error)
     except Exception as e:
-        logger.error(f"An error occurred during login: {str(e)}")
-        return jsonify({"error": "An internal server error occurred"}), 500
+        logger.error("Error occurred during login: {}".format(str(e)))
+        return render_template("login_and_register/login.html",
+                               error="Something went wrong")

@@ -24,19 +24,22 @@
 </head>
 <body>
 <h1>Login</h1>
-<form method="POST">
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required>
+<form method="POST" action="/login">
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <label for="register_username">Username:</label>
+    <input type="text" name="register_username" id="register_username" required>
     <br>
     <br>
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" required>
+    <label for="register_password">Password:</label>
+    <input type="password" name="register_password" id="register_password" required>
     <br>
     <br>
     <button type="submit">Login</button>
     <br>
     <br>
-    <a href="/register">Register</a>
+    <a href="/load_register">Register</a>
 </form>
 </body>
 </html>

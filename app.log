@@ -2368,3 +2368,83 @@ WHERE category_table.is_delete = false]
 
 2025-02-18 16:40:47,194 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> princerudani
 
+2025-02-18 16:53:58,960 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> prince@123
+
+2025-02-18 16:57:38,161 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> prince@123
+
+2025-02-18 16:57:48,239 - login_controller.py - FlaskMVCProject -  login - WARNING - Invalid credentials attempt. username -> None
+
+2025-02-18 17:14:40,452 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-18 17:15:58,347 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-18 17:16:04,741 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-18 17:16:28,907 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-18 17:16:32,805 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-18 17:21:13,451 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-18 17:44:40,257 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 09:37:48,651 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, prince123
+
+2025-02-19 09:37:48,657 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'prince123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 09:37:48,658 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'prince123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 09:38:00,836 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: prince, rudani, Male, prince, prince, prince123
+
+2025-02-19 09:38:00,838 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'prince123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 09:38:00,839 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'prince123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 09:38:14,981 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: pri ce, rudni, Male, price, rudani, prince
+
+2025-02-19 09:38:14,994 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 2, 'register_firstname': 'pri ce', 'register_lastname': 'rudni', 'register_gender': 'Male', 'register_email': 'price', 'register_login_id': 10, 'is_delete': False, 'create_at': 1739938094, 'modify_at': 1739938094}
+
+2025-02-19 09:38:14,994 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 09:39:03,426 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-19 09:43:10,513 - login_controller.py - FlaskMVCProject -  login - INFO - username:prince 
+
+2025-02-19 09:44:06,253 - login_controller.py - FlaskMVCProject -  login - INFO - username:prince 
+
+2025-02-19 10:01:47,850 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: princee3df, password: princ
+
+2025-02-19 10:01:47,850 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
+2025-02-19 10:02:54,946 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: prince123
+
+2025-02-19 10:02:54,947 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
+2025-02-19 10:03:00,365 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: prince123
+
+2025-02-19 10:03:00,365 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
+2025-02-19 10:03:03,349 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: prince123
+
+2025-02-19 10:03:03,349 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
+2025-02-19 10:03:14,041 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: prince123
+
+2025-02-19 10:03:14,041 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
+2025-02-19 10:03:30,309 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: admin, password: password
+
+2025-02-19 10:03:30,310 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
+
