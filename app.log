@@ -2448,3 +2448,175 @@ WHERE category_table.is_delete = false]
 
 2025-02-19 10:03:30,310 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: LoginDao.validate_login() missing 1 required positional argument: 'password'
 
+2025-02-19 10:06:19,858 - login_controller.py - FlaskMVCProject -  login - INFO - username: prince
+
+2025-02-19 10:06:32,656 - login_controller.py - FlaskMVCProject -  login - INFO - username: prince
+
+2025-02-19 10:07:59,626 - login_controller.py - FlaskMVCProject -  login - INFO - username: prince
+
+2025-02-19 10:08:16,952 - login_controller.py - FlaskMVCProject -  login - INFO - username: rudani
+
+2025-02-19 10:08:30,428 - login_controller.py - FlaskMVCProject -  login - INFO - username: rudani
+
+2025-02-19 10:15:58,798 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: prince, rudani, Male, prince, nihar, sabhadiya
+
+2025-02-19 10:15:58,798 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: name 're' is not defined
+
+2025-02-19 10:17:03,711 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: PRINCE, RUDANI, Male, nihar@123, nihar, sabhadiya
+
+2025-02-19 10:17:03,711 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: type object 'typing.re' has no attribute 'compile'
+
+2025-02-19 10:17:52,729 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: PRINCE, RUDANI, Male, nihar@123, nihar, sabhadiya
+
+2025-02-19 10:17:52,731 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-19 10:18:02,563 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: PRINCE, RUDANI, Male, nihar@123, nihar, Prince@pc2003
+
+2025-02-19 10:18:02,577 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 3, 'register_firstname': 'PRINCE', 'register_lastname': 'RUDANI', 'register_gender': 'Male', 'register_email': 'nihar@123', 'register_login_id': 11, 'is_delete': False, 'create_at': 1739940482, 'modify_at': 1739940482}
+
+2025-02-19 10:18:02,577 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 10:19:45,585 - login_controller.py - FlaskMVCProject -  login - INFO - username: nihar
+
+2025-02-19 10:20:02,743 - login_controller.py - FlaskMVCProject -  login - INFO - username: nihar
+
+2025-02-19 10:20:25,008 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-19 10:20:27,482 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-19 10:20:29,616 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-19 10:20:29,616 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-19 10:38:51,460 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: rudani
+
+2025-02-19 10:38:51,467 - login_controller.py - FlaskMVCProject -  login - INFO - Validated user: None
+
+2025-02-19 10:38:51,468 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: Invalid username or password.
+
+2025-02-19 10:39:00,265 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: nihar, password: Prince@pc2003
+
+2025-02-19 10:39:00,266 - login_controller.py - FlaskMVCProject -  login - INFO - Validated user: <LoginVO 11>
+
+2025-02-19 10:39:14,226 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: nihar, password: Prince@pc2003
+
+2025-02-19 10:39:14,227 - login_controller.py - FlaskMVCProject -  login - INFO - Validated user: <LoginVO 11>
+
+2025-02-19 10:39:53,351 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-19 10:39:53,351 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-19 11:11:17,566 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: rudani
+
+2025-02-19 11:11:17,573 - login_controller.py - FlaskMVCProject -  login - INFO - Validated user: None
+
+2025-02-19 11:11:17,573 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: Invalid username or password.
+
+2025-02-19 11:11:42,745 - login_controller.py - FlaskMVCProject -  login - INFO - Received username: prince, password: rudani
+
+2025-02-19 11:11:42,747 - login_controller.py - FlaskMVCProject -  login - INFO - Validated user: None
+
+2025-02-19 11:11:42,747 - login_controller.py - FlaskMVCProject -  login - ERROR - Error in login route: Invalid username or password.
+
+2025-02-19 11:11:58,096 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, rudani
+
+2025-02-19 11:11:58,096 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-19 11:12:07,131 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, Prince@pc2003
+
+2025-02-19 11:12:07,137 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'Prince@pc2003'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:12:07,138 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'Prince@pc2003'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:13:04,181 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, Prince@pc20033
+
+2025-02-19 11:13:04,185 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'Prince@pc20033'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:13:04,185 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'prince' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'prince', 'login_password': 'Prince@pc20033'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:13:17,633 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, nihar, Prince@pc20033
+
+2025-02-19 11:13:17,637 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'nihar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'nihar', 'login_password': 'Prince@pc20033'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:13:17,637 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'nihar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'nihar', 'login_password': 'Prince@pc20033'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:13:25,079 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, krisha, Prince@pc20033
+
+2025-02-19 11:13:25,089 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 4, 'register_firstname': 'Rudani', 'register_lastname': 'CHandubhai', 'register_gender': 'Male', 'register_email': 'princerudani2003@gmail.com', 'register_login_id': 15, 'is_delete': False, 'create_at': 1739943805, 'modify_at': 1739943805}
+
+2025-02-19 11:13:25,089 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 11:14:06,909 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, nihar, Sabhadiya@123
+
+2025-02-19 11:14:06,917 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'nihar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'nihar', 'login_password': 'Sabhadiya@123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:14:06,917 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'nihar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'nihar', 'login_password': 'Sabhadiya@123'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-19 11:16:13,011 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, nihar, Sabhadiya@123
+
+2025-02-19 11:16:13,029 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 5, 'register_firstname': 'Rudani', 'register_lastname': 'CHandubhai', 'register_gender': 'Male', 'register_email': 'princerudani2003@gmail.com', 'register_login_id': 17, 'is_delete': False, 'create_at': 1739943973, 'modify_at': 1739943973}
+
+2025-02-19 11:16:13,029 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 11:17:03,485 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Jay, Thakkar, Male, jaythakkar@gmail.com, jaythakkar, Jay@123
+
+2025-02-19 11:17:03,485 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-19 11:17:10,914 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Jay, Thakkar, Male, jaythakkar@gmail.com, jaythakkar, Jay@1234
+
+2025-02-19 11:17:10,924 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 6, 'register_firstname': 'Jay', 'register_lastname': 'Thakkar', 'register_gender': 'Male', 'register_email': 'jaythakkar@gmail.com', 'register_login_id': 18, 'is_delete': False, 'create_at': 1739944030, 'modify_at': 1739944030}
+
+2025-02-19 11:17:10,924 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 11:17:47,538 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: nihar, sabhadiya, Male, nihar@gmail.com, Lucifer, Nihar@1234
+
+2025-02-19 11:17:47,546 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 7, 'register_firstname': 'nihar', 'register_lastname': 'sabhadiya', 'register_gender': 'Male', 'register_email': 'nihar@gmail.com', 'register_login_id': 19, 'is_delete': False, 'create_at': 1739944067, 'modify_at': 1739944067}
+
+2025-02-19 11:17:47,546 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-19 11:18:23,946 - login_controller.py - FlaskMVCProject -  login - INFO - username:nihar 
+
+2025-02-19 11:19:16,265 - login_controller.py - FlaskMVCProject -  login - INFO - username:nihar 
+
+2025-02-19 11:25:45,351 - login_controller.py - FlaskMVCProject -  login - INFO - access_token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTczOTk0NDU0NSwianRpIjoiMjFkZDNkOGYtNTVlMi00NDQwLWFhZGYtYWNkYzZmNjAyOTljIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6eyJsb2dpbl9pZCI6MTcsImxvZ2luX3VzZXJuYW1lIjoibmloYXIiLCJsb2dpbl9wYXNzd29yZCI6IlNhYmhhZGl5YUAxMjMifSwibmJmIjoxNzM5OTQ0NTQ1LCJleHAiOjE3Mzk5NDU0NDV9.MCDlOvCPjbsGwieCcIx3fuZ8S3FukY8-o6z2M_oRzR4 
+
+2025-02-24 13:03:37,848 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: prince, rudani, Male, prince@gmail.com, prince, rudani
+
+2025-02-24 13:03:37,850 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-24 13:04:02,905 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, prince@123
+
+2025-02-24 13:04:02,906 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-24 13:04:23,552 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, prince, Prince@123
+
+2025-02-24 13:04:23,585 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 8, 'register_firstname': 'Rudani', 'register_lastname': 'CHandubhai', 'register_gender': 'Male', 'register_email': 'princerudani2003@gmail.com', 'register_login_id': 20, 'is_delete': False, 'create_at': 1740382463, 'modify_at': 1740382463}
+
+2025-02-24 13:04:23,585 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-24 13:04:40,671 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
