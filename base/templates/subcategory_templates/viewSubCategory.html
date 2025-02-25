@@ -4,50 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Subcategory Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 800px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #555;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .actions a button {
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 align="center">Subcategory List</h1>
+<h1>Subcategory List</h1>
 
-<table align="center" border="1" cellpadding="10">
-    <tr>
-        <th>Category Name</th>
-        <th>Subcategory Name</th>
-        <th>Subcategory Description</th>
-        <th>Actions</th>
-    </tr>
+{% if error_message %}
+    <div class="error">
+        {{ error_message }}
+    </div>
+{% endif %}
 
-    {% for category in sub_category_vo_lst %}
+<div class="table-container">
+    <table>
         <tr>
-            <td>{{ category[0].category_name }}</td>
-            <td>{{ category[1].sub_category_name }}</td>
-            <td>{{ category[1].sub_category_description }}</td>
-            <td>
-                <form action="/delete_sub_category" method="POST"
-                      style="display: inline;">
-                    <input type="hidden" name="sub_category_id" value="{{ category[1].sub_category_id }}">
-
-                    <button type="submit">Delete</button>
-                </form>
-                <form action="/edit_sub_category/{{ category[1].sub_category_id }}" method="GET"
-                      style="display: inline;">
-                    <button type="submit">Update</button>
-                </form>
-            </td>
+            <th>Category Name</th>
+            <th>Subcategory Name</th>
+            <th>Subcategory Description</th>
+            <th>Actions</th>
         </tr>
-    {% endfor %}
-</table>
 
-<br>
+        {% for category in sub_category_vo_lst %}
+            <tr>
+                <td>{{ category[0].category_name }}</td>
+                <td>{{ category[1].sub_category_name }}</td>
+                <td>{{ category[1].sub_category_description }}</td>
+                <td>
+                    <form action="/delete_sub_category" method="POST" style="display: inline;">
+                        <input type="hidden" name="sub_category_id" value="{{ category[1].sub_category_id }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="/edit_sub_category/{{ category[1].sub_category_id }}" method="GET" style="display: inline;">
+                        <button type="submit">Update</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
 
-<div align="center">
+<div class="actions">
     <a href="/load_sub_category">
         <button type="button">Add New Subcategory</button>
-    </a><br>
-    <a href="/">
+    </a>
+    <a href="/home">
         <button type="button">Home Page</button>
     </a>
-
 </div>
 
 </body>

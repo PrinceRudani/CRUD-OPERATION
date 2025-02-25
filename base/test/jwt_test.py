@@ -35,8 +35,8 @@
 #     }
 #     return jwt.encode(payload, SECRET_KEY, algorithm="HS256")
 #
-# @app.route('/login', methods=['POST'])
-# def login():
+# @app.route('/login_and_register', methods=['POST'])
+# def login_and_register():
 #     token = generate_jwt(1)
 #     return {"token": token}
 #

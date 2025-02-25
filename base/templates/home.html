@@ -4,47 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            color: white;
+            padding: 1rem 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            background-color: #222;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 800px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .container p {
+            color: #ddd;
+            font-size: 1.2rem;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            border: 1px solid #555;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            width: 150px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a button {
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-    <h1 align="center">Welcome !!</h1>
+    <h1>Welcome !!</h1>
 </header>
 
-<div align="center">
+<div class="container">
     <p>This is your portal</p>
 
-    <table border="1" cellpadding="10">
-        <tr>
-            <th>Add Actions</th>
-            <th>View Actions</th>
-        </tr>
-        <tr>
-            <td><a href="/load_category">
-                <button type="button">Add Category</button>
-            </a></td>
-            <td><a href="/view_category">
-                <button type="button">View Category</button>
-            </a></td>
-        </tr>
-        <tr>
-            <td><a href="/load_sub_category">
-                <button type="button">Add Sub Category</button>
-            </a></td>
-            <td><a href="/view_sub_category">
-                <button type="button">View Sub Category</button>
-            </a></td>
-        </tr>
-        <tr>
-            <td><a href="/load_product">
-                <button type="button">Add Product</button>
-            </a></td>
-            <td><a href="/view_product">
-                <button type="button">View Product</button>
-            </a></td>
-        </tr>
-    </table>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Add Actions</th>
+                <th>View Actions</th>
+            </tr>
+            <tr>
+                <td><a href="/load_category">
+                    <button type="button">Add Category</button>
+                </a></td>
+                <td><a href="/view_category">
+                    <button type="button">View Category</button>
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href="/load_sub_category">
+                    <button type="button">Add Sub Category</button>
+                </a></td>
+                <td><a href="/view_sub_category">
+                    <button type="button">View Sub Category</button>
+                </a></td>
+            </tr>
+            <tr>
+                <td><a href="/load_product">
+                    <button type="button">Add Product</button>
+                </a></td>
+                <td><a href="/view_product">
+                    <button type="button">View Product</button>
+                </a></td>
+            </tr>
 
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <a href="/">
+                        <button type="button">Logout</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
 </div>
 
 </body>

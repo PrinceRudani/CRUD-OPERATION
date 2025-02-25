@@ -21,13 +21,11 @@ def load_product():
         category_vo_lst = category_dao.view_category()
         sub_category_dao = SubCategoryDAO()
         sub_category_vo_lst = sub_category_dao.view_sub_category()
-        logger = MyLogger.get_logger()
         logger.info('load product successfully')
         return render_template('product_templates/addProduct.html',
                                category_vo_lst=category_vo_lst,
                                sub_category_vo_lst=sub_category_vo_lst)
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in load_product: {str(e)}")
         return render_template('product_templates/addProduct.html',
                                error_message="An unexpected error occurred.")
@@ -40,6 +38,7 @@ def ajax_load_subcategory():
         sub_cat = product_service.ajax_product_service(
             product_category_id)
         logger = MyLogger.get_logger()
+
         logger.info('ajax load subcategory successfully')
         return jsonify([i.as_dict() for i in sub_cat])
     except Exception as e:
@@ -96,11 +95,9 @@ def insert_product():
                                                product_sub_category_id,
                                                product_image, product_dto)
 
-        logger = MyLogger.get_logger()
         logger.info('Product inserted successfully.')
         return redirect("/view_product")
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in insert_product: {str(e)}")
         print("Error occurred:", str(e))  # Debugging print statement
         return render_template("product_templates/addProduct.html", error_message="An unexpected error occurred.")
@@ -110,12 +107,10 @@ def view_products():
     try:
         product_service = ProductService()
         product_vo_lst = product_service.view_product_service()
-        logger = MyLogger.get_logger()
         logger.info('view product successfully')
         return render_template('product_templates/viewProduct.html',
                                product_vo_lst=product_vo_lst)
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in view_products: {str(e)}")
         return render_template("product_templates/viewProduct.html",
                                error_message="An unexpected error occurred.")
@@ -126,11 +121,9 @@ def delete_product():
         product_id = request.form.get("product_id")
         product_service = ProductService()
         product_service.delete_product_service(product_id)
-        logger = MyLogger.get_logger()
         logger.info('delete product successfully')
         return redirect('/view_product')
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in delete_product: {str(e)}")
         return render_template("product_templates/viewProduct.html",
                                error_message="An unexpected error occurred.")
@@ -141,7 +134,6 @@ def edit_product(product_id):
         product_service = ProductService()
         product_vo_lst, category_vo_lst, sub_category_vo_lst = product_service.edit_product_service(
             product_id)
-        logger = MyLogger.get_logger()
         logger.info('edit product successfully')
         return render_template(
             'product_templates/updateProduct.html',
@@ -150,7 +142,6 @@ def edit_product(product_id):
             sub_category_vo_lst=sub_category_vo_lst
         )
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in edit_product: {str(e)}")
         return render_template('product_templates/updateProduct.html',
                                error_message="An unexpected error occurred.")
@@ -197,7 +188,6 @@ def update_product(product_id):
                                                product_sub_category_id,
                                                product_dto)
 
-        logger = MyLogger.get_logger()
         logger.info('Product updated successfully')
         return redirect('/view_product')
 
@@ -205,7 +195,6 @@ def update_product(product_id):
         return render_template("product_templates/addProduct.html",
                                error_message=str(ve))
     except Exception as e:
-        logger = MyLogger.get_logger()
         logger.error(f"Error in update_product: {str(e)}")
         return render_template("product_templates/addProduct.html",
                                error_message="An unexpected error occurred.")
