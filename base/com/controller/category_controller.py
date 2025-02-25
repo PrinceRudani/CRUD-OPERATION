@@ -1,4 +1,4 @@
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, session
 
 from base import app
 from base.com.dto.category_dto import CategoryDTO
@@ -12,11 +12,14 @@ logger = MyLogger.get_logger()
 def load_category():
     """load category"""
     try:
+        user_name = session.get('user_name', 'Guest')
         logger.info('load category successfully')
-        return render_template("category_templates/addCategory.html")
+        return render_template("category_templates/addCategory.html",
+                               user_name=user_name)
     except Exception as e:
         logger.error(f'Error loading category: {e}')
-        return render_template("category_templates/addCategory.html",)
+        return render_template("category_templates/addCategory.html",
+                               errors=str(e))
 
 @app.route('/insert_category', methods=['POST', 'GET'])
 def insert_category():

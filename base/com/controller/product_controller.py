@@ -37,6 +37,8 @@ def ajax_load_subcategory():
         product_service = ProductService()
         sub_cat = product_service.ajax_product_service(
             product_category_id)
+        logger = MyLogger.get_logger()
+
         logger.info('ajax load subcategory successfully')
         return jsonify([i.as_dict() for i in sub_cat])
     except Exception as e:

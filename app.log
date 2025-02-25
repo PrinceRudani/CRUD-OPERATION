@@ -2620,3 +2620,429 @@ WHERE category_table.is_delete = false]
 
 2025-02-24 13:04:40,671 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
 
+2025-02-24 14:20:11,430 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 14:20:57,602 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 14:21:57,321 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 14:22:02,822 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 14:22:23,551 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-02-24 14:22:23,551 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> princw, Description -> rudani
+
+2025-02-24 14:22:23,555 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:22:23,555 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:23:33,734 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:23:33,734 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:25:25,932 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:25:25,932 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:28:08,697 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:28:08,697 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:42:34,076 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:42:34,076 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:42:34,245 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:42:34,245 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:42:56,850 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:42:56,850 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:42:57,014 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:42:57,014 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:42:57,205 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:42:57,205 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:44:18,111 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:44:18,111 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:44:18,285 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:44:18,285 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:44:29,077 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:44:29,077 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:45:14,498 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 14:48:38,225 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:48:38,225 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:49:42,129 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:49:42,129 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:49:42,276 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:49:42,276 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:49:42,469 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:49:42,469 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:52:55,319 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:52:55,319 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:53:02,729 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:53:02,729 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 14:53:06,840 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 14:53:13,650 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 14:53:13,650 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 17:17:30,368 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>] 
+
+2025-02-24 17:17:30,368 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>]
+
+2025-02-24 17:21:17,445 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: 'NoneType' object has no attribute 'strip'
+
+2025-02-24 17:21:21,973 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-02-24 17:21:21,973 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> edvw, Description -> vfdjbv
+
+2025-02-24 17:21:21,979 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:21:21,979 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:23:34,847 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:23:34,847 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:26:35,650 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:26:35,650 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:29:28,609 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:29:28,609 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:29:28,766 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:29:28,766 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:29:28,951 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:29:28,951 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:29:29,108 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:29:29,108 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:31:19,728 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: 'NoneType' object has no attribute 'strip'
+
+2025-02-24 17:31:25,408 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:31:25,408 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:33:24,327 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:33:24,327 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:43:33,670 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:43:33,670 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:43:48,284 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:43:48,285 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:43:48,437 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:43:48,438 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:44:56,686 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:44:56,686 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:44:56,861 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:44:56,861 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:48:30,985 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:48:30,985 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:50:35,843 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 17:50:35,843 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 17:50:38,324 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:03:37,557 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 18:03:37,557 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 18:08:03,315 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-24 18:08:03,315 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-24 18:08:37,772 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-24 18:09:09,826 - subcategory_controller.py - FlaskMVCProject -  load_sub_category - INFO - load sub category successfully
+
+2025-02-24 18:10:29,460 - subcategory_controller.py - FlaskMVCProject -  load_sub_category - INFO - load sub category successfully
+
+2025-02-24 18:10:38,277 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:11:29,310 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:11:33,249 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:12:32,610 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:12:34,410 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:35,742 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:36,937 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:37,945 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:39,001 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:40,415 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:44,596 - subcategory_controller.py - FlaskMVCProject -  load_sub_category - INFO - load sub category successfully
+
+2025-02-24 18:12:46,859 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:12:50,993 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:12:52,527 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:54,975 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:56,536 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:12:58,671 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:01,126 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:07,006 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:13:08,567 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:10,255 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:13,247 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:18,673 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:13:23,562 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:13:25,461 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:27,590 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:28,589 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:13:53,539 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 18:13:56,255 - product_controller.py - FlaskMVCProject -  edit_product - INFO - edit product successfully
+
+2025-02-24 18:13:56,343 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:16:37,389 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:16:38,512 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:16:39,042 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:16:40,105 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:16:45,793 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:17:06,362 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:17:16,310 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:17:18,651 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:17:55,035 - product_controller.py - FlaskMVCProject -  insert_product - ERROR - Error in insert_product: Failed to insert product: (pymysql.err.IntegrityError) (1048, "Column 'product_sub_category_id' cannot be null")
+[SQL: INSERT INTO product_table (product_category_id, product_sub_category_id, product_name, product_price, product_description, product_image_name, product_image_path, product_quantity, is_delete, create_at, modify_at) VALUES (%(product_category_id)s, %(product_sub_category_id)s, %(product_name)s, %(product_price)s, %(product_description)s, %(product_image_name)s, %(product_image_path)s, %(product_quantity)s, %(is_delete)s, %(create_at)s, %(modify_at)s)]
+[parameters: {'product_category_id': '2', 'product_sub_category_id': None, 'product_name': 'ewvce', 'product_price': '214', 'product_description': 'qwdfcs', 'product_image_name': 'VPHX2942.JPG', 'product_image_path': 'static/product_images/VPHX2942.JPG', 'product_quantity': '34', 'is_delete': 0, 'create_at': 1740401275, 'modify_at': 1740401275}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-24 18:17:59,656 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:18:01,894 - product_controller.py - FlaskMVCProject -  insert_product - ERROR - Error in insert_product: Failed to insert product: (pymysql.err.IntegrityError) (1048, "Column 'product_sub_category_id' cannot be null")
+[SQL: INSERT INTO product_table (product_category_id, product_sub_category_id, product_name, product_price, product_description, product_image_name, product_image_path, product_quantity, is_delete, create_at, modify_at) VALUES (%(product_category_id)s, %(product_sub_category_id)s, %(product_name)s, %(product_price)s, %(product_description)s, %(product_image_name)s, %(product_image_path)s, %(product_quantity)s, %(is_delete)s, %(create_at)s, %(modify_at)s)]
+[parameters: {'product_category_id': '3', 'product_sub_category_id': None, 'product_name': 'ewvce', 'product_price': '214', 'product_description': 'qwdfcs', 'product_image_name': 'VPHX2942.JPG', 'product_image_path': 'static/product_images/VPHX2942.JPG', 'product_quantity': '34', 'is_delete': 0, 'create_at': 1740401281, 'modify_at': 1740401281}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-24 18:20:19,055 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:20:20,445 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:20:20,648 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:20:22,318 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:20:24,453 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:20:25,939 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:20:27,854 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:20:33,463 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 2>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:20:37,060 - subcategory_controller.py - FlaskMVCProject -  edit_sub_category - INFO - edit sub category successfully : subcategory id -> 2
+
+2025-02-24 18:20:42,089 - subcategory_controller.py - FlaskMVCProject -  update_sub_category - INFO - update sub category successfully : subcategory id -> 2
+
+2025-02-24 18:20:42,093 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 8>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-24 18:20:44,473 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 18:20:48,399 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:20:49,677 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:23:32,336 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - ERROR - Error in ajax_load_subcategory: cannot access local variable 'logger' where it is not associated with a value
+
+2025-02-24 18:24:38,019 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:24:38,250 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 18:24:39,806 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-24 18:24:41,082 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-24 18:24:43,699 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-24 18:25:58,747 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 21:28:14,695 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 21:29:17,800 - product_controller.py - FlaskMVCProject -  edit_product - INFO - edit product successfully
+
+2025-02-24 21:29:17,885 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-24 21:29:36,665 - product_controller.py - FlaskMVCProject -  update_product - INFO - Product updated successfully
+
+2025-02-24 21:29:36,671 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-24 21:41:11,916 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-24 21:41:14,199 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-25 09:35:19,863 - product_controller.py - FlaskMVCProject -  load_product - INFO - load product successfully
+
+2025-02-25 09:35:21,879 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-25 09:50:25,378 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 09:50:34,525 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-25 09:50:36,893 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-25 09:50:38,767 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-25 09:50:38,768 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-25 09:50:40,352 - category_service.py - FlaskMVCProject -  edit_category_service - INFO - edit category successfully : 5
+
+2025-02-25 10:07:11,327 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-25 10:07:13,164 - product_controller.py - FlaskMVCProject -  edit_product - INFO - edit product successfully
+
+2025-02-25 10:07:13,263 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-25 10:07:27,113 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-25 10:07:28,107 - subcategory_controller.py - FlaskMVCProject -  edit_sub_category - INFO - edit sub category successfully : subcategory id -> 4
+
+2025-02-25 10:08:41,342 - product_controller.py - FlaskMVCProject -  edit_product - INFO - edit product successfully
+
+2025-02-25 10:08:41,448 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-25 10:08:52,058 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-25 10:08:52,891 - subcategory_controller.py - FlaskMVCProject -  edit_sub_category - INFO - edit sub category successfully : subcategory id -> 5
+
+2025-02-25 10:09:12,905 - subcategory_controller.py - FlaskMVCProject -  edit_sub_category - INFO - edit sub category successfully : subcategory id -> 5
+
+2025-02-25 10:09:15,384 - subcategory_controller.py - FlaskMVCProject -  update_sub_category - INFO - update sub category successfully : subcategory id -> 5
+
+2025-02-25 10:09:15,390 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-25 10:09:26,201 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-25 10:09:26,201 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-25 10:09:47,739 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>] 
+
+2025-02-25 10:09:47,739 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>]
+
+2025-02-25 10:15:54,710 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 10:15:54,714 - category_controller.py - FlaskMVCProject -  load_category - ERROR - Error loading category: expected token 'end of statement block', got 'with'
+
+2025-02-25 10:17:54,404 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 10:18:16,887 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 10:19:34,989 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 10:19:38,417 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-02-25 10:19:38,417 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> prince, Description -> fwv
+
+2025-02-25 10:19:38,423 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>, <CategoryVO 26>] 
+
+2025-02-25 10:19:38,424 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 24>, <CategoryVO 25>, <CategoryVO 26>]
+
+2025-02-25 10:19:42,697 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 24
+
+2025-02-25 10:19:42,703 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 25>, <CategoryVO 26>] 
+
+2025-02-25 10:19:42,703 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 25>, <CategoryVO 26>]
+
+2025-02-25 10:19:44,350 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 25
+
+2025-02-25 10:19:44,355 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 26>] 
+
+2025-02-25 10:19:44,355 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 26>]
+
+2025-02-25 10:19:45,736 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 26
+
+2025-02-25 10:19:45,741 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-25 10:19:45,741 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 1>, <CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-25 10:19:49,873 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 1
+
+2025-02-25 10:19:49,879 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-25 10:19:49,879 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-25 10:19:54,588 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-25 10:20:05,496 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-25 10:20:13,736 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-25 10:20:13,736 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+

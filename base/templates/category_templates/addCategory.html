@@ -4,45 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Category Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 2px solid white;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .header {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header .portal-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .user-info {
+            font-size: 18px;
+        }
+
+        .header .user-info .user-symbol {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
+{#    <div class="header">#}
+{#        <div class="portal-name">My Portal</div>#}
+{#        <div class="user-info">#}
+{#            <span class="user-symbol">&#128100;</span>#}
+{#            <span class="user-name">{{ user_name }}</span>#}
+{#        </div>#}
+{#    </div>#}
 
-<h1>Add a New Category</h1>
-{% if errors %}
-    <div style="color: red; text-align: center;">
-        {{ errors }}
+    <h1>Add a New Category</h1>
+    {% if errors %}
+        <div class="error">
+            {{ errors }}
+        </div>
+    {% endif %}
+
+    <div class="form-container">
+        <form action="/insert_category" method="POST">
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="categoryName" required>
+
+            <label for="categoryDescription">Category Description:</label>
+            <textarea id="categoryDescription" name="categoryDescription" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
     </div>
-{% endif %}
-
-<table align="center" border="1">
-    <tr>
-        <td>
-            <form action="/insert_category" method="POST">
-                <table>
-                    <tr>
-                        <td><label for="categoryName">Category Name:</label></td>
-                        <td><input type="text" id="categoryName" name="categoryName" ></td>
-                        {% if error %}
-                            <p class="error">{{ error }}</p>
-                        {% endif %}
-                    </tr>
-                    <tr>
-                        <td><label for="categoryDescription">Category Description:</label></td>
-                        <td><textarea id="categoryDescription" name="categoryDescription" ></textarea></td>
-                        {% if error %}
-                            <p class="error">{{ error }}</p>
-                        {% endif %}
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <input type="submit" value="Submit">
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </td>
-    </tr>
-</table>
-
 </body>
 </html>

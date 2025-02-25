@@ -4,18 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Category Page</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+            background-color: #222;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #555;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        td form {
+            display: inline;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .actions a button {
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">Category List</h1>
+<h1>Category List</h1>
 
-    {% if errors %}
-        <div style="color: red; text-align: center;">
-            {{ errors }}
-        </div>
-    {% endif %}
+{% if errors %}
+    <div class="error">
+        {{ errors }}
+    </div>
+{% endif %}
 
-<table align="center" border="1">
+<table>
     <tr>
         <th>Category Name</th>
         <th>Category Description</th>
@@ -27,16 +111,15 @@
             <td>{{ category.category_name }}</td>
             <td>{{ category.category_description }}</td>
             <td>
-                <form action="/delete_category" method="POST" style="display: inline;">
+                <form action="/delete_category" method="POST">
                     <input type="hidden" name="category_id" value="{{ category.category_id }}">
                     <button type="submit" name="category_id" value="{{ category.category_id }}" title="Delete Category">
                         Delete
                     </button>
                 </form>
 
-                <form action="/edit_category" method="GET" style="display: inline;">
+                <form action="/edit_category" method="GET">
                     <input type="hidden" name="category_id" value="{{ category.category_id }}">
-
                     <button type="submit" title="Edit Category">Update</button>
                 </form>
             </td>
@@ -44,14 +127,11 @@
     {% endfor %}
 </table>
 
-<br>
-
-<div align="center">
+<div class="actions">
     <a href="/load_category">
         <button type="button">Add New Category</button>
     </a>
-    <br>
-    <a href="/">
+    <a href="/home">
         <button type="button">Home Page</button>
     </a>
 </div>

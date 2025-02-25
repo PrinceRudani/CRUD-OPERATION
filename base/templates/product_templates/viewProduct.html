@@ -4,61 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .table-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 1000px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #555;
+            text-align: center;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        button {
+            background-color: #444;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .actions a button {
+            width: 150px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 style="text-align: center;">Product List</h1>
+<h1>Product List</h1>
 
-<table align="center" border="1">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>Category</th>
-        <th>Subcategory</th>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Description</th>
-        <th>Image</th>
-        <th>Quantity</th>
-        <th>Actions</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for product in product_vo_lst %}
+{% if error_message %}
+    <div class="error">
+        {{ error_message }}
+    </div>
+{% endif %}
+
+<div class="table-container">
+    <table>
+        <thead>
         <tr>
-            <td>{{ product[0].product_id }}</td>
-            <td>{{ product[2].category_name }}</td>
-            <td>{{ product[1].sub_category_name }}</td>
-            <td>{{ product[0].product_name }}</td>
-            <td>${{ product[0].product_price }}</td>
-            <td>{{ product[0].product_description }}</td>
-            <td><a href="{{ url_for('static', filename='product_images/' + product[0].product_image_name) }}">
-                View Image</a></td>
-            <td>{{ product[0].product_quantity }}</td>
-
-            <td>
-                <form action="/delete_product" method="POST" style="display:inline;">
-                    <input type="hidden" name="product_id" value="{{ product[0].product_id }}">
-                    <button type="submit">Delete</button>
-                </form>
-                <form action="/edit_product/{{ product[0].product_id }}" method="GET" style="display:inline;">
-                    <button type="submit">Edit</button>
-                </form>
-
-            </td>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Subcategory</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Actions</th>
         </tr>
-    {% endfor %}
+        </thead>
+        <tbody>
+        {% for product in product_vo_lst %}
+            <tr>
+                <td>{{ product[0].product_id }}</td>
+                <td>{{ product[2].category_name }}</td>
+                <td>{{ product[1].sub_category_name }}</td>
+                <td>{{ product[0].product_name }}</td>
+                <td>${{ product[0].product_price }}</td>
+                <td>{{ product[0].product_description }}</td>
+                <td><a href="{{ url_for('static', filename='product_images/' + product[0].product_image_name) }}">
+                    View Image</a></td>
+                <td>{{ product[0].product_quantity }}</td>
 
-    </tbody>
+                <td>
+                    <form action="/delete_product" method="POST" style="display:inline;">
+                        <input type="hidden" name="product_id" value="{{ product[0].product_id }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                    <form action="/edit_product/{{ product[0].product_id }}" method="GET" style="display:inline;">
+                        <button type="submit">Edit</button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
 
-</table>
-<div style="text-align: center; margin-top: 20px;">
+        </tbody>
+    </table>
+</div>
+
+<div class="actions">
     <a href="/load_product">
         <button type="button">Add Product</button>
-    </a><br>
-    <a href="/">
+    </a>
+    <a href="/home">
         <button type="button">Home Page</button>
     </a>
 </div>
+
 </body>
 </html>

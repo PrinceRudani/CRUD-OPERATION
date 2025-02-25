@@ -2,8 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select,
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 2px solid white;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"],
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #444;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #555;
+        }
+    </style>
     <script type="text/javascript">
+        var selectedSubcategoryId = {{ product_vo_lst.product_sub_category_id }};
+
         function loadState() {
             var product_category_id = document.getElementById("product_category_id");
             var product_sub_category_id = document.getElementById("product_sub_category_id");
@@ -13,13 +94,11 @@
             ajax.onreadystatechange = function () {
                 if (ajax.readyState === 4 && ajax.status === 200) {
                     var jsn = JSON.parse(ajax.responseText);
-                    console.log("ajax>>>>>>>>>>>>>>>>>>>", jsn);
+                    console.log("ajax response:", jsn);
                     for (var i = 0; i < jsn.length; i++) {
                         var opt = document.createElement("option");
                         opt.value = jsn[i].sub_category_id;
                         opt.text = jsn[i].sub_category_name;
-                        console.log("ajax>>>>>>>>>>>>>>>>>>>", opt.value);
-                        console.log("ajax>>>>>>>>>>>>>>>>>>>", opt.text);
                         product_sub_category_id.options.add(opt);
 
                         if (selectedSubcategoryId === parseInt(jsn[i].sub_category_id)) {
@@ -29,88 +108,60 @@
                 }
             };
 
-            ajax.open("get", "/ajax_load_subcategory?product_category_id=" + product_category_id.value, true);
+            ajax.open("GET", "/ajax_load_subcategory?product_category_id=" + product_category_id.value, true);
             ajax.send();
         }
     </script>
-
 </head>
 <body onload="loadState()">
 
-<h1 style="text-align: center;">Edit Product</h1>
+<h1>Edit Product</h1>
 
-<form action="{{ url_for('update_product', product_id=product_vo_lst.product_id) }}" method="POST"
-      enctype="multipart/form-data">
-    <input type="hidden" name="product_id" value="{{ product_vo_lst.product_id }}">
+<div class="form-container">
+    <form action="{{ url_for('update_product', product_id=product_vo_lst.product_id) }}" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="product_id" value="{{ product_vo_lst.product_id }}">
 
-    <table align="center">
-        <tr>
-            <td><label for="product_category_id">Category Name:</label></td>
-            <td>
-                <select id="product_category_id" name="productCategoryId" onchange="loadState()">
-                    {% for category in category_vo_lst %}
-                        <option value="{{ category.category_id }}"
-                                {% if category.category_id == product_vo_lst.product_category_id %}selected{% endif %}>
-                            {{ category.category_name }}
-                        </option>
-                    {% endfor %}
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><label for="product_sub_category_id">Sub Category:</label></td>
-            <td>
-                <select id="product_sub_category_id" name="productSubCategoryId">
-                    {% for subcategory in sub_category_vo_lst %}
-                        <option value="{{ subcategory.sub_category_id }}"
-                                {% if subcategory.sub_category_id == product_vo_lst.product_sub_category_id %}selected{% endif %}>
-                            {{ subcategory.sub_category_name }}
-                        </option>
-                    {% endfor %}
-                </select>
-            </td>
-        </tr>
-        <tr>
-            <td><label for="product_name">Product Name:</label></td>
-            <td><input type="text" id="product_name" name="productName" value="{{ product_vo_lst.product_name }}"
-                       ></td>
-        </tr>
-        <tr>
-            <td><label for="product_price">Price:</label></td>
-            <td><input type="number" id="product_price" name="productPrice" step="0.01"
-                       value="{{ product_vo_lst.product_price }}" ></td>
-        </tr>
-        <tr>
-            <td><label for="product_description">Description:</label></td>
-            <td><textarea id="product_description" name="productDescription" rows="4" cols="50"
-                          >{{ product_vo_lst.product_description }}</textarea></td>
-        </tr>
-        <tr>
-            <td><label for="productImage">Current Image:</label></td>
-            <td>
-                <a href="{{ url_for('static', filename='product_images/' + product_vo_lst.product_image_name) }}">View
-                    Image</a>
+        <label for="product_category_id">Category Name:</label>
+        <select id="product_category_id" name="productCategoryId" onchange="loadState()">
+            {% for category in category_vo_lst %}
+                <option value="{{ category.category_id }}"
+                        {% if category.category_id == product_vo_lst.product_category_id %}selected{% endif %}>
+                    {{ category.category_name }}
+                </option>
+            {% endfor %}
+        </select>
 
-            </td>
-        </tr>
+        <label for="product_sub_category_id">Sub Category:</label>
+        <select id="product_sub_category_id" name="productSubCategoryId">
+            {% for subcategory in sub_category_vo_lst %}
+                <option value="{{ subcategory.sub_category_id }}"
+                        {% if subcategory.sub_category_id == product_vo_lst.product_sub_category_id %}selected{% endif %}>
+                    {{ subcategory.sub_category_name }}
+                </option>
+            {% endfor %}
+        </select>
 
-        <tr>
-            <td><label for="productImage">Upload New Image:</label></td>
-            <td><input type="file" id="productImage" name="productImage"></td>
-        </tr>
-        <tr>
-            <td><label for="productQuantity">Quantity:</label></td>
-            <td><input type="number" id="productQuantity" name="productQuantity"
-                       value="{{ product_vo_lst.product_quantity }}" ></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;">
-                <button type="submit">Update</button>
-            </td>
-        </tr>
-    </table>
-</form>
+        <label for="product_name">Product Name:</label>
+        <input type="text" id="product_name" name="productName" value="{{ product_vo_lst.product_name }}" required>
 
+        <label for="product_price">Price:</label>
+        <input type="number" id="product_price" name="productPrice" step="0.01" value="{{ product_vo_lst.product_price }}" required>
+
+        <label for="product_description">Description:</label>
+        <textarea id="product_description" name="productDescription" rows="4" required>{{ product_vo_lst.product_description }}</textarea>
+
+        <label for="productImage">Current Image:</label>
+        <a href="{{ url_for('static', filename='product_images/' + product_vo_lst.product_image_name) }}">View Image</a>
+
+        <label for="productImage">Upload New Image:</label>
+        <input type="file" id="productImage" name="productImage">
+
+        <label for="productQuantity">Quantity:</label>
+        <input type="number" id="productQuantity" name="productQuantity" value="{{ product_vo_lst.product_quantity }}" required>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
 
 </body>
 </html>
