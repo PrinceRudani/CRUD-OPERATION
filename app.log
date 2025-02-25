@@ -3046,3 +3046,5 @@ WHERE category_table.is_delete = false]
 
 2025-02-25 10:20:13,736 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
 
+2025-02-25 10:22:17,704 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+

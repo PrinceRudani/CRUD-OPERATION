@@ -10,14 +10,14 @@ logger = MyLogger.get_logger()
 
 
 @app.route('/')
-def loginpage():
+def load_login_page():
     return render_template('login_and_register/login.html')
 
 @app.route('/home')
-def home_page():
+def load_home_page():
     return render_template('home.html')
 @app.route('/login', methods=['POST'])
-def loginrequired():
+def login():
     try:
         username = request.form.get('register_username')
         password = request.form.get('register_password')

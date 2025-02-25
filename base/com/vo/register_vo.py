@@ -8,10 +8,8 @@ class RegisterVo(db.Model):
     register_id = db.Column("register_id", db.Integer, autoincrement=True,
                             primary_key=True)
     register_login_id = db.Column("register_login_id", db.Integer,
-                                  db.ForeignKey(
-                                      'login_table.login_id',
-                                      ondelete='CASCADE', use_alter=True,
-                                      name='fk_login_id'), nullable=False)
+                                  db.ForeignKey('login_table.login_id',
+                                      ondelete='CASCADE'), nullable=False)
     register_firstname = db.Column("register_firstname", db.String(255),
                                    nullable=False)
     register_lastname = db.Column("register_lastname", db.String(255),
