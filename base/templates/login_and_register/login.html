@@ -34,7 +34,7 @@
             color: #fff;
         }
 
-        input[type="text"], input[type="password"] {
+        input {
             width: 100%;
             padding: 10px;
             margin-bottom: 16px;
@@ -97,27 +97,20 @@
         function togglePasswordVisibility() {
             const passwordInput = document.getElementById('register_password');
             const eyeIcon = document.getElementById('eye_icon');
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                eyeIcon.classList.remove('fa-eye');
-                eyeIcon.classList.add('fa-eye-slash');
-            } else {
-                passwordInput.type = 'password';
-                eyeIcon.classList.remove('fa-eye-slash');
-                eyeIcon.classList.add('fa-eye');
-            }
+            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+            eyeIcon.classList.toggle('fa-eye-slash');
         }
     </script>
 </head>
 <body>
     <form method="POST" action="/login">
-        <h2 style="text-align: center; margin-bottom: 20px; color: #fff;">Login</h2>
+        <h2 style="text-align: center; color: #fff;">Login</h2>
         {% if error %}
             <p class="error">{{ error }}</p>
         {% endif %}
-        <label for="register_username">Username:</label>
-        <input type="text" name="register_username" id="register_username" required>
-        <label for="register_password">Password:</label>
+        <label>Username:</label>
+        <input type="text" name="register_username" required>
+        <label>Password:</label>
         <div class="password-field">
             <input type="password" name="register_password" id="register_password" required>
             <i class="fas fa-eye eye-icon" id="eye_icon" onclick="togglePasswordVisibility()"></i>

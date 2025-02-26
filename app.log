@@ -3048,3 +3048,43 @@ WHERE category_table.is_delete = false]
 
 2025-02-25 10:22:17,704 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
 
+2025-02-25 17:36:06,198 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: 'NoneType' object has no attribute 'strip'
+
+2025-02-25 17:36:20,145 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-25 17:36:20,145 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-26 10:02:23,441 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 8>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-26 10:31:00,160 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-26 10:31:09,291 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-26 10:31:14,380 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-26 10:31:34,225 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-26 10:32:17,111 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 10:32:41,606 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 10:33:07,051 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 10:48:47,792 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-26 10:48:58,423 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 11:34:21,863 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince 
+
+2025-02-26 11:34:25,693 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince 
+
+2025-02-26 11:36:11,569 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 11:36:36,209 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 14:19:42,262 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 16:06:45,682 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-26 16:06:55,109 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+

@@ -1,9 +1,9 @@
 from datetime import datetime, timedelta
 import jwt
 from base.utils.MyLogger import get_logger
-from base.config.ststic_variables import StsticVariables
+from base.config.static_variables import StasticVariables
 
-static_variables = StsticVariables()
+static_variables = StasticVariables()
 logger = get_logger()
 
 class LoginService:

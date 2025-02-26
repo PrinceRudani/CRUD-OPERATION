@@ -25,11 +25,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:330
 
 app.config['SQLALCHEMY_MAX_OVERFLOW'] = 0
 
-app.config['JWT_SECRET_KEY'] = 'data'
 
-app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(minutes=15)
-
-app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=7)
 
 jwt = JWTManager(app)
 

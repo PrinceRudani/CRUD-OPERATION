@@ -1,6 +1,0 @@
-class StsticVariables:
-    ACCESS_TOKEN_EXPIRY_MINUTES = 30
-    REFRESH_TOKEN_EXPIRY_MINUTES = 60 * 24 * 7
-    ALGORITHM = "HS256"
-
-SECRET_KEY = "data"
