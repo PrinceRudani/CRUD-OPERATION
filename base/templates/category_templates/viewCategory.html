@@ -125,30 +125,40 @@
 <h1>Category List</h1>
 
 <div class="table-wrapper">
-    <table>
+    <table align="center" border="1">
         <tr>
             <th>Category Name</th>
             <th>Category Description</th>
             <th>Actions</th>
         </tr>
 
-        <tr>
-            <td>Sample Category</td>
-            <td>This is a sample description that might be quite long.</td>
-            <td>
-                <form action="/delete_category" method="POST">
-                    <input type="hidden" name="category_id" value="1">
-                    <button type="submit" name="category_id" value="1" title="Delete Category">
-                        Delete
-                    </button>
-                </form>
+        {% for category in category_dto_lst %}
+            <tr>
+                <td>{{ category.category_name }}</td>
+                <td>{{ category.category_description }}</td>
+                <td>
+                    <form action="/delete_category" method="POST"
+                          style="display: inline;">
+                        <input type="hidden" name="category_id"
+                               value="{{ category.category_id }}">
+                        <button type="submit" name="category_id"
+                                value="{{ category.category_id }}"
+                                title="Delete Category">
+                            Delete
+                        </button>
+                    </form>
 
-                <form action="/edit_category" method="GET">
-                    <input type="hidden" name="category_id" value="1">
-                    <button type="submit" title="Edit Category">Update</button>
-                </form>
-            </td>
-        </tr>
+                    <form action="/edit_category" method="GET"
+                          style="display: inline;">
+                        <input type="hidden" name="category_id"
+                               value="{{ category.category_id }}">
+
+                        <button type="submit" title="Edit Category">Update
+                        </button>
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
     </table>
 </div>
 
@@ -163,3 +173,14 @@
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

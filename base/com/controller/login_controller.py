@@ -66,7 +66,7 @@ def load_home_page():
             return render_template("login_and_register/login.html",
                                    error="An error occurred. Please try again later.")
 
-    return render_template('login_and_register/login.html')
+    return render_template('home.html')
 
 @app.route('/admin/home', methods=['GET'])
 @LoginService.login_required(role="ADMIN")
