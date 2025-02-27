@@ -14,7 +14,7 @@ class RegisterService:
             login_vo = LoginVO()
             login_vo.login_username = register_dto_lst.register_username
             login_vo.login_password = register_dto_lst.register_password
-
+            login_vo.login_role = 'ADMIN'
             # Insert login data using LoginDao
             login_dao = LoginDao()
             login_id = login_dao.insert_login(login_vo)

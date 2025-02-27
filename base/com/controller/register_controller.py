@@ -22,6 +22,7 @@ def register():
         register_email = request.form.get('registerEmail').strip() or None
         register_username = request.form.get(
             'registerUsername').strip() or None
+
         register_password = request.form.get(
             'registerPassword').strip() or None
 
