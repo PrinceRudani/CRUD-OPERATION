@@ -107,6 +107,7 @@ class LoginService:
                     data = jwt.decode(access_token,
                                       static_variables.JWT_SECRET_KEY,
                                       algorithms=[static_variables.JWT_ALGORITHM])
+
                     logger.debug(f"Decoded access token data: {data}")
                     logger.info("Access token successfully validated")
 
