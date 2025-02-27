@@ -14,6 +14,13 @@ class RegisterService:
             login_vo = LoginVO()
             login_vo.login_username = register_dto_lst.register_username
             login_vo.login_password = register_dto_lst.register_password
+
+            # # Hash the password using SHA-256
+            #
+            # hashed_password = hashlib.sha256(
+            #     register_dto_lst.register_password.encode()).hexdigest()
+            # login_vo.login_password = hashed_password
+            #
             login_vo.login_role = 'ADMIN'
             # Insert login data using LoginDao
             login_dao = LoginDao()

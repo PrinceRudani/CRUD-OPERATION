@@ -3468,3 +3468,366 @@ WHERE category_table.is_delete = false]
 
 2025-02-27 17:10:08,567 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
 
+2025-02-27 17:27:43,797 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:27:43,797 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:27:56,850 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:27:56,850 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:28:00,214 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:28:00,214 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:28:09,616 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:28:09,616 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:28:24,715 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:28:24,715 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:29:40,648 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:29:40,648 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:30:17,405 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:30:17,405 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:30:32,046 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:30:32,046 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:31:41,308 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:31:41,308 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:36:11,447 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:36:11,448 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:39:35,743 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 17:39:43,437 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:39:43,437 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:43:19,417 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:43:19,417 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:43:19,417 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:45:13,454 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:45:13,455 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:45:13,455 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:45:56,859 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: None
+
+2025-02-27 17:45:56,859 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:45:56,859 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:46:07,088 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: None
+
+2025-02-27 17:46:07,088 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 17:46:07,089 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:48:37,144 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:48:37,144 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 17:48:37,144 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:49:52,661 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: None
+
+2025-02-27 17:49:52,662 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - User not found: prince
+
+2025-02-27 17:49:52,662 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:53:52,725 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:53:52,725 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 17:53:52,725 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:54:51,772 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:54:51,773 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 17:54:51,773 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:55:14,595 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:55:14,596 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 17:55:14,596 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:56:12,232 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:56:12,232 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 17:56:12,232 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 17:57:23,548 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:57:23,548 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 17:57:23,548 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 12, 57, 23, 548709), 'iat': datetime.datetime(2025, 2, 27, 12, 27, 23, 548717), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 17:57:23,549 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjEwNDMsImlhdCI6MTc0MDY1OTI0MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.p6W-eLZNbADK5JhuD-mgnVv_uJvag6_U4o1ww69rtJs', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQwNDMsImlhdCI6MTc0MDY1OTI0MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.COlZW8f98EsQCCZr5ihfYIGA1pNR-gdggYhBzAVKuyw')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY1OTI0MywianRpIjoiODZlM2EwNGItMzg3OC00ZWVkLWI2MWItNjQ4NDI4NTliZWI2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NTkyNDMsImV4cCI6MTc0MzI1MTI0M30.3ylPbzGWPb2mEt-n-FjJcJKeAdBrBQLHGz5mgGQ5UOw
+
+2025-02-27 17:57:23,552 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 17:58:56,578 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:58:56,578 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 17:58:56,578 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 12, 58, 56, 578359), 'iat': datetime.datetime(2025, 2, 27, 12, 28, 56, 578365), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 17:58:56,578 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjExMzYsImlhdCI6MTc0MDY1OTMzNiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.G050QvSa4QVGuGkO2eV5gikrw4GRw049JE_reLgEnp4', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQxMzYsImlhdCI6MTc0MDY1OTMzNiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.moIu1C0ecgtHeWCSq2X7jDuj5vB0JPpYPieaSIdZ_7E')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY1OTMzNiwianRpIjoiYmFiNDViNzMtYzJjNS00NDJiLTg2MWEtMzk5NTZhYmU4MTdhIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NTkzMzYsImV4cCI6MTc0MzI1MTMzNn0.tiwFw8W02B7oQ36tglNKFgku7h7Ve_FuZ8wQBAYUjwM
+
+2025-02-27 17:58:56,581 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 17:59:23,482 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 17:59:23,482 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 17:59:23,482 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 12, 59, 23, 482735), 'iat': datetime.datetime(2025, 2, 27, 12, 29, 23, 482742), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 17:59:23,483 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjExNjMsImlhdCI6MTc0MDY1OTM2MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.ezM0qV24ThhxjbPG38XEluGc7E8wlxmqvklM_HiolcI', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQxNjMsImlhdCI6MTc0MDY1OTM2MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.YcIOOkQz6nHEfpDNPQ46Y_MUJvXGDaD8x0oPE02Am04')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY1OTM2MywianRpIjoiMDQ5NjQ0OTktOTcyNi00OWE5LWJjNmUtNGE2N2JiOTg2MmVlIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NTkzNjMsImV4cCI6MTc0MzI1MTM2M30.2Tc738-MnrqlXbksYu8Oh1hSW55tqWwPhW2Yg4vQxy8
+
+2025-02-27 17:59:23,486 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 18:01:50,766 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:01:50,767 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:01:50,767 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 1, 50, 767086), 'iat': datetime.datetime(2025, 2, 27, 12, 31, 50, 767094), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:01:50,767 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjEzMTAsImlhdCI6MTc0MDY1OTUxMCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.JrYdXo6W8pQNZigVfqpjwcl24upEDHPhrw_Odfm0_ek, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQzMTAsImlhdCI6MTc0MDY1OTUxMCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.OylNhQ3un5OtLn07Vr1G_1LjLIdLQPlESECjs8woVn8
+
+2025-02-27 18:01:50,772 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 18:02:21,657 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:02:21,658 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:02:21,658 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 2, 21, 658120), 'iat': datetime.datetime(2025, 2, 27, 12, 32, 21, 658126), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:02:21,658 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjEzNDEsImlhdCI6MTc0MDY1OTU0MSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.hsdXO4tlA3zm7tBkusfihYB1i2NoEgnLp2E2m-6ErSE, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQzNDEsImlhdCI6MTc0MDY1OTU0MSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.RwsQhjFL7WvCvMtUpGVJAnPjjzrFAuOxtOUOGuhiiZM
+
+2025-02-27 18:02:21,664 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 18:03:56,856 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:03:56,856 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:03:56,856 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 3, 56, 856484), 'iat': datetime.datetime(2025, 2, 27, 12, 33, 56, 856491), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:03:56,856 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjE0MzYsImlhdCI6MTc0MDY1OTYzNiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.pkHpaVSCxxdZ7nQr5zSmmyJRbktdzkXby7eqVjS5HCQ, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQ0MzYsImlhdCI6MTc0MDY1OTYzNiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.kK7Ye0Z1Jy233yNr7gH5EKOSaIV8Os9G-IYnhF7zqrE
+
+2025-02-27 18:03:56,860 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during role-based access control: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 18:05:12,764 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:05:12,764 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:05:12,764 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 5, 12, 764886), 'iat': datetime.datetime(2025, 2, 27, 12, 35, 12, 764895), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:05:12,765 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: 'StaticVariables' object has no attribute 'TOKEN_ACCESS_KEY'
+
+2025-02-27 18:07:26,739 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:07:26,739 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:07:26,739 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 7, 26, 739204), 'iat': datetime.datetime(2025, 2, 27, 12, 37, 26, 739210), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:07:26,739 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjE2NDYsImlhdCI6MTc0MDY1OTg0NiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.X6SlFTQLdSHtcucHte_VOtKIMxaI3WpcxE-ZwLUfL08, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQ2NDYsImlhdCI6MTc0MDY1OTg0NiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.57CIYSRq0h22tmstWcIpKr43Hp65lUunBLBOkelju3M
+
+2025-02-27 18:07:37,657 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 18:07:37,657 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 18:07:37,657 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 13, 7, 37, 657453), 'iat': datetime.datetime(2025, 2, 27, 12, 37, 37, 657460), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 18:07:37,657 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NjE2NTcsImlhdCI6MTc0MDY1OTg1NywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.WfNHWZ6SuYksAKvnpH6g6qB8s3uLvLgvQY6zDwLPRQc, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNjQ2NTcsImlhdCI6MTc0MDY1OTg1NywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.QcTxgpMDk1UY7xyqGrbPP74joVvITdhc6U7qpMPBD0w
+
+2025-02-27 18:07:57,500 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username nihar: <LoginVO 17>
+
+2025-02-27 18:07:57,500 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User nihar validated successfully.
+
+2025-02-27 18:07:57,500 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Access denied. Admin privileges required.
+
+2025-02-27 22:54:10,201 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 22:54:10,201 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 22:54:10,201 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 17, 54, 10, 201900), 'iat': datetime.datetime(2025, 2, 27, 17, 24, 10, 201908), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 22:54:10,202 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2Nzg4NTAsImlhdCI6MTc0MDY3NzA1MCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.nFziJx0jrDg0Swkvr-48cfJvg-eiOC6Vvtg7vbJgPxE, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyODE4NTAsImlhdCI6MTc0MDY3NzA1MCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.z5IdmAdzJcyK34TY5-r1Mrtp8IE3SMrJKKPB8_EdXbA
+
+2025-02-27 22:55:07,174 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-27 22:55:07,174 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-27 22:55:07,175 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 17, 55, 7, 174995), 'iat': datetime.datetime(2025, 2, 27, 17, 25, 7, 175004), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-27 22:55:07,175 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2Nzg5MDcsImlhdCI6MTc0MDY3NzEwNywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.HH27eNIhIZtJCkBoPgIQgKPAMnqLNgTtRo_9rcC-I9o, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyODE5MDcsImlhdCI6MTc0MDY3NzEwNywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.6bG-9jWU96ZfWu-7963cK8QHm-Uu655yfzINzqInsrc
+
+2025-02-27 22:56:40,083 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-27 22:56:40,083 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-27 22:56:40,083 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 27, 17, 56, 40, 83319), 'iat': datetime.datetime(2025, 2, 27, 17, 26, 40, 83327), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-27 22:56:40,083 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-27 22:56:40,083 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NzkwMDAsImlhdCI6MTc0MDY3NzIwMCwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.FdjoUYba-9mHmudMtRYVLBpGT2qAqbu6i-waH38pToU, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyODIwMDAsImlhdCI6MTc0MDY3NzIwMCwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.tPYcsUNJoLUJXthhzH9hKugO1Sese3wZK2a4YKmzEvQ
+
+2025-02-27 22:56:40,088 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740679000, 'iat': 1740677200, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-27 22:56:40,088 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-27 22:56:40,088 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-27 23:02:30,597 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: tanisha, rajput, Female, tanisharajput2006@gmail.com, Tanisha, Tanisha@123
+
+2025-02-27 23:02:30,602 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:02:30,602 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:02:30,602 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:03:04,256 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: tanisha, rajput, Female, tanisharajput2006@gmail.com, Tanisha, Tanisha@123
+
+2025-02-27 23:03:04,263 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:03:04,263 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:03:04,263 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'Tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:07:47,946 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: tanisha, rajput, Female, tanisha@gmail.com, tanisha, Tanisha@123
+
+2025-02-27 23:07:47,951 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:07:47,951 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:07:47,951 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.DataError) (1406, "Data too long for column 'login_password' at row 1")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': '11ee02e6963a5cce352c0e5fbf4648ce10ba5240000b8c694b1a96caf227394e', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+
+2025-02-27 23:12:14,897 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: tanisha, rajput, Female, tanisha@gmail.com, tanisha, Tanisha@123
+
+2025-02-27 23:12:14,905 - login_dao.py - FlaskMVCProject -  insert_login - INFO - Inserted login with ID: 26
+
+2025-02-27 23:12:14,913 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 12, 'register_firstname': 'tanisha', 'register_lastname': 'rajput', 'register_gender': 'Female', 'register_email': 'tanisha@gmail.com', 'register_login_id': 26, 'is_delete': False, 'create_at': 1740678134, 'modify_at': 1740678134}
+
+2025-02-27 23:12:14,913 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Registration successful and data inserted into database.
+
+2025-02-27 23:17:09,721 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 23:17:09,721 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 23:17:09,721 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-02-27 23:17:17,015 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 23:17:17,015 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 23:17:17,016 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-02-27 23:17:27,373 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 23:17:27,373 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-02-27 23:17:27,373 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-02-27 23:19:17,459 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: tanisha, rajput, Female, tanisha@gmail.com, tanisha, Tanisha@123
+
+2025-02-27 23:19:17,466 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'tanisha' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': 'Tanisha@123', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 23:19:17,467 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'tanisha' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': 'Tanisha@123', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 23:19:17,467 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'tanisha' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password, login_role, login_status) VALUES (%(login_username)s, %(login_password)s, %(login_role)s, %(login_status)s)]
+[parameters: {'login_username': 'tanisha', 'login_password': 'Tanisha@123', 'login_role': 'ADMIN', 'login_status': 0}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 23:19:30,366 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-27 23:19:30,366 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 23:19:30,366 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 27, 18, 19, 30, 366329), 'iat': datetime.datetime(2025, 2, 27, 17, 49, 30, 366335), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 23:19:30,366 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-27 23:19:30,366 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2ODAzNzAsImlhdCI6MTc0MDY3ODU3MCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.0xCygrVV-1UDHSTMSWNL_nDhMfjKkjNlRh96gu8SYhg, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyODMzNzAsImlhdCI6MTc0MDY3ODU3MCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.elvK1W-DLbtrecdJ2h2_0EeWPKlb1r6t5GtelZYEQeo
+
+2025-02-27 23:19:30,370 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740680370, 'iat': 1740678570, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-27 23:19:30,370 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-27 23:19:30,370 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-02-27 23:19:44,800 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-27 23:19:44,800 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: jaythakkar
+
+2025-02-27 23:19:44,800 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-02-27 23:19:55,462 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-27 23:19:55,463 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-27 23:19:55,463 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 27, 18, 19, 55, 463144), 'iat': datetime.datetime(2025, 2, 27, 17, 49, 55, 463150), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-27 23:19:55,463 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-27 23:19:55,463 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2ODAzOTUsImlhdCI6MTc0MDY3ODU5NSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.MQMONJEnvoTV7nxkI_xgXY7WtL54BqHRvjEa-sraBoc, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyODMzOTUsImlhdCI6MTc0MDY3ODU5NSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.jaSPZ5ZAXkHcvMql5P0KEJHIirUQeACMsrk7EnC2Nd8
+
+2025-02-27 23:19:55,467 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740680395, 'iat': 1740678595, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-27 23:19:55,467 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-27 23:19:55,467 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+

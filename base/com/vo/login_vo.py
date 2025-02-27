@@ -2,10 +2,11 @@ from base import db
 
 class LoginVO(db.Model):
     __tablename__ = 'login_table'
+    # __table_args__ = {'extend_existing': True}  # Avoid redefinition errors
 
     login_id = db.Column('login_id', db.Integer, primary_key=True, autoincrement=True)
     login_username = db.Column('login_username', db.String(255), unique=True, nullable=False)
-    login_password = db.Column('login_password', db.String(16), nullable=False)
+    login_password = db.Column('login_password', db.String(1000), nullable=False)
     login_role = db.Column('login_role', db.String(255), nullable=False)
     login_status = db.Column('login_status', db.Boolean, nullable=False, default=False)
 

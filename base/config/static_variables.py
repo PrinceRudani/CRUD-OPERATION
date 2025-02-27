@@ -11,3 +11,5 @@ class StaticVariables:
     ACCESS_TOKEN_EXP = 5
     REFRESH_TOKEN_EXP = 24
     TIME_OUT_MAX_AGE = 0
+    TOKEN_ACCESS_KEY = 'access_token'
+    TOKEN_REFRESH_KEY = 'refresh_token'

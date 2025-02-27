@@ -1,12 +1,15 @@
 from datetime import datetime, timedelta
-import jwt
 from functools import wraps
-from flask import redirect, request, jsonify
-from base.utils.my_logger import get_logger
+
+import jwt
+from flask import redirect, request
+
 from base.config.static_variables import StaticVariables
+from base.utils.my_logger import get_logger
 
 static_variables = StaticVariables()
 logger = get_logger()
+
 
 class LoginService:
     @staticmethod
@@ -14,82 +17,108 @@ class LoginService:
         try:
             # Access token payload with expiration time
             access_token_payload = {
-                "exp": datetime.utcnow() + timedelta(minutes=int(static_variables.ACCESS_TOKEN_EXPIRE_MINUTES)),
+                "exp": datetime.utcnow() + timedelta(
+                    minutes=int(static_variables.ACCESS_TOKEN_EXPIRE_MINUTES)),
                 "iat": datetime.utcnow(),
                 "user_id": user_id,
                 "user_email": user_email,
                 "user_role": user_role
             }
 
-            logger.info(f"Login service access token payload: {access_token_payload}")
+            logger.debug(
+                f"Creating access token with payload: {access_token_payload}")
+            logger.info("Access token payload created successfully")
 
-            access_token = jwt.encode(access_token_payload, static_variables.JWT_SECRET_KEY, algorithm=static_variables.ALGORITHM)
+            access_token = jwt.encode(access_token_payload,
+                                      static_variables.JWT_SECRET_KEY,
+                                      algorithm=static_variables.ALGORITHM)
 
             # Refresh token payload with expiration time
             refresh_token_payload = {
-                "exp": datetime.utcnow() + timedelta(minutes=int(static_variables.REFRESH_TOKEN_EXPIRE_MINUTES)),
+                "exp": datetime.utcnow() + timedelta(minutes=int(
+                    static_variables.REFRESH_TOKEN_EXPIRE_MINUTES)),
                 "iat": datetime.utcnow(),
                 "user_id": user_id,
                 "user_email": user_email,
                 "user_role": user_role
             }
 
-            refresh_token = jwt.encode(refresh_token_payload, static_variables.JWT_SECRET_KEY, algorithm=static_variables.ALGORITHM)
+            refresh_token = jwt.encode(refresh_token_payload,
+                                       static_variables.JWT_SECRET_KEY,
+                                       algorithm=static_variables.ALGORITHM)
 
             return access_token, refresh_token
 
         except Exception as e:
             logger.error(f"Error generating tokens: {str(e)}")
-            raise e
+            return redirect('/login?error=token_generation_failed')
 
     @staticmethod
     def refresh_token(request, fn):
         try:
-            refresh_token = request.cookies.get(static_variables.TOKEN_REFRESH_KEY)
+            refresh_token = request.cookies.get(
+                static_variables.TOKEN_REFRESH_KEY)
 
             if refresh_token is None:
-                return redirect('/')
+                return redirect(
+                    '/login?error=no_refresh_token')
 
-            data = jwt.decode(refresh_token, static_variables.JWT_SECRET_KEY, algorithms=[static_variables.ALGORITHM])
+            try:
+                data = jwt.decode(refresh_token,
+                                  static_variables.JWT_SECRET_KEY,
+                                  algorithms=[static_variables.ALGORITHM])
+                logger.debug(f"Decoded refresh token data: {data}")
+                logger.info("Refresh token successfully validated")
+            except jwt.ExpiredSignatureError:
+                logger.warning("Refresh token expired.")
+                return redirect('/login?error=refresh_token_expired')
 
-            new_access_token, new_refresh_token = LoginService.generate_token(data['user_id'], data['user_email'], data['user_role'])
-
+            # Generate new tokens if the refresh token is valid
+            logger.info("Generating new tokens from refresh token")
+            new_access_token, new_refresh_token = LoginService.generate_token(
+                data['user_id'], data['user_email'], data['user_role'])
+            logger.info("New tokens generated successfully")
             response = fn()  # Call the view function
-            response.set_cookie(static_variables.TOKEN_ACCESS_KEY, new_access_token, max_age=int(static_variables.ACCESS_TOKEN_EXPIRE_MINUTES) * 60, httponly=True)
-            response.set_cookie(static_variables.TOKEN_REFRESH_KEY, new_refresh_token, max_age=int(static_variables.REFRESH_TOKEN_EXPIRE_MINUTES) * 60, httponly=True)
-
+            response.set_cookie(static_variables.TOKEN_ACCESS_KEY,
+                                new_access_token, max_age=int(
+                    static_variables.ACCESS_TOKEN_EXPIRE_MINUTES) * 60,
+                                httponly=True)
+            response.set_cookie(static_variables.TOKEN_REFRESH_KEY,
+                                new_refresh_token, max_age=int(
+                    static_variables.REFRESH_TOKEN_EXPIRE_MINUTES) * 60,
+                                httponly=True)
             return response
 
         except Exception as ex:
             logger.error(f"Error refreshing token: {str(ex)}")
-            return redirect('/')
+            return redirect('/login?error=refresh_failed')
 
     @staticmethod
     def login_required(role):
         def inner(fn):
             @wraps(fn)
-            def decorator(*args, **kwargs):  # No need to explicitly pass `request`
+            def decorator(*args, **kwargs):
+                access_token = request.cookies.get(
+                    static_variables.TOKEN_ACCESS_KEY)
+                if access_token is None:
+                    return redirect('/login?error=no_access_token')
+
                 try:
-                    access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
+                    data = jwt.decode(access_token,
+                                      static_variables.JWT_SECRET_KEY,
+                                      algorithms=[static_variables.ALGORITHM])
+                    logger.debug(f"Decoded access token data: {data}")
+                    logger.info("Access token successfully validated")
 
-                    if access_token is None:
-                        return LoginService.refresh_token(request, fn)
+                    if data['user_role'] != role:
+                        return redirect(
+                            '/unauthorized?error=invalid_role')
 
-                    try:
-                        data = jwt.decode(access_token, static_variables.JWT_SECRET_KEY, algorithms=[static_variables.ALGORITHM])
-
-                        if data['user_role'] == role:
-                            return fn(*args, **kwargs)  # Call the view function
-                        else:
-                            return redirect('/')
-
-                    except jwt.ExpiredSignatureError:
-                        logger.warning(f"Access token expired for {request.cookies.get(static_variables.TOKEN_ACCESS_KEY)}")
-                        return redirect('/')
-
+                    return fn(*args, **kwargs)
                 except Exception as ex:
-                    logger.error(f"Error during role-based access control: {str(ex)}")
-                    return redirect('/')
+                    logger.error(f"Error during access control: {str(ex)}")
+                    return redirect('/login?error=auth_failed')
 
             return decorator
+
         return inner
