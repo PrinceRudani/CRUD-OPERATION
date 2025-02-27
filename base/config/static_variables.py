@@ -1,11 +1,21 @@
-class StasticVariables:
+class StaticVariables:
     ACCESS_TOKEN_EXPIRE_MINUTES = 30
     REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7
     JWT_SECRET_KEY = 'data'
     JWT_ACCESS_TOKEN_EXPIRES = 30
     JWT_REFRESH_TOKEN_EXPIRES = 60 * 24 * 7
     ALGORITHM = 'HS256'
+    ENCODING = 'utf-8'
+
 
 config = {
-    'default': StasticVariables
+    'default': StaticVariables
+}
+
+TIME = {
+    'ACCESS_TOKEN_MAX_AGE': 300000,
+    'REFRESH_TOKEN_MAX_AGE': 86400000,
+    'ACCESS_TOKEN_EXP': 5,
+    'REFRESH_TOKEN_EXP': 24,
+    'TIME_OUT_MAX_AGE': 0
 }

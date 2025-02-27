@@ -1,6 +1,6 @@
 from base.com.dao.category_dao import CategoryDAO
 from base.com.vo.category_vo import CategoryVO
-from base.utils.MyLogger import get_logger
+from base.utils.my_logger import get_logger
 from base.utils.time_stamp import get_current_timestamp
 
 logger = get_logger()

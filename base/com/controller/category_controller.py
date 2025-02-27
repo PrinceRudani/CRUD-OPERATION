@@ -3,9 +3,9 @@ from flask import render_template, request, redirect, session
 from base import app
 from base.com.dto.category_dto import CategoryDTO
 from base.com.service.category_service import CategoryService
-from base.utils import MyLogger
+from base.utils import my_logger
 
-logger = MyLogger.get_logger()
+logger = my_logger.get_logger()
 
 
 @app.route('/load_category')

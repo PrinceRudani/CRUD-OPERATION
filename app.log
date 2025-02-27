@@ -3088,3 +3088,177 @@ WHERE category_table.is_delete = false]
 
 2025-02-26 16:06:55,109 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
 
+2025-02-26 17:42:35,783 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 17:42:38,568 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 17:44:01,588 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-26 17:44:04,098 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 09:47:37,843 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 09:47:42,453 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-27 09:47:45,727 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-27 09:47:45,727 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-27 09:47:49,360 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 8>, <SubcategoryVO 2>), (<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>)] 
+
+2025-02-27 10:15:15,158 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, jaythakkar, jay@12345
+
+2025-02-27 10:15:15,159 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-27 10:15:23,641 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, jaythakkar, Jay@12
+
+2025-02-27 10:15:23,641 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: Password must be at least 8 characters long, include an uppercase letter, a lowercase letter, a number, and a special character.
+
+2025-02-27 10:15:28,191 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: Rudani, CHandubhai, Male, princerudani2003@gmail.com, jaythakkar, Jay@12345
+
+2025-02-27 10:15:28,217 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:15:28,217 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:15:28,218 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:16:00,041 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: jay, thakkar, Male, jaythakkar@gmail.com, jaythakkar, Jay@12345
+
+2025-02-27 10:16:00,046 - login_dao.py - FlaskMVCProject -  insert_login - ERROR - Error inserting login: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:16:00,046 - register_service.py - FlaskMVCProject -  insert_register_service - ERROR - Error inserting register: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:16:00,046 - register_controller.py - FlaskMVCProject -  register - ERROR - Error in register route: (pymysql.err.IntegrityError) (1062, "Duplicate entry 'jaythakkar' for key 'login_table.login_username'")
+[SQL: INSERT INTO login_table (login_username, login_password) VALUES (%(login_username)s, %(login_password)s)]
+[parameters: {'login_username': 'jaythakkar', 'login_password': 'Jay@12345'}]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+
+2025-02-27 10:16:58,009 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: jay, thakkar, Male, jaythakkar@gmail.com, jayth, Jay@12345
+
+2025-02-27 10:16:58,018 - login_dao.py - FlaskMVCProject -  insert_login - INFO - Inserted login with ID: 23
+
+2025-02-27 10:16:58,025 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 9, 'register_firstname': 'jay', 'register_lastname': 'thakkar', 'register_gender': 'Male', 'register_email': 'jaythakkar@gmail.com', 'register_login_id': 23, 'is_delete': False, 'create_at': 1740631618, 'modify_at': 1740631618}
+
+2025-02-27 10:16:58,025 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Insert register successfully
+
+2025-02-27 10:17:18,764 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:19:26,651 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:23:19,509 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:23:19,509 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: User ID is missing in database response.
+
+2025-02-27 10:23:26,667 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 10:23:26,667 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 10:23:46,541 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 10:23:46,541 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 10:24:00,038 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:24:00,038 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: User ID is missing in database response.
+
+2025-02-27 10:24:17,035 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:25:06,038 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:25:06,038 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: User ID is missing in database response.
+
+2025-02-27 10:25:23,711 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 10:25:23,711 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 10:25:32,653 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:25:32,653 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: 'id'
+
+2025-02-27 10:26:06,287 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:27:24,863 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:30:55,819 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 10:30:55,819 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 10:31:04,148 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:31:04,149 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjQ2NCwianRpIjoiYzcyODQ2YTMtNjU0Yy00YzczLWFmNTctYzhkMjgxMzk2NTk2IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MjAsIm5iZiI6MTc0MDYzMjQ2NCwiZXhwIjoxNzQwNjMzMzY0LCJsb2dpbl9pZCI6MjAsImxvZ2luX3VzZXJuYW1lIjoicHJpbmNlIiwibG9naW5fcGFzc3dvcmQiOiJQcmluY2VAMTIzIn0.0f4kLVyrXddGUN8KzheHkOJXU891Ig2P--G30YnmVm8, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjQ2NCwianRpIjoiOGM4OGMyMDMtZmM4Zi00Zjk0LWE5MjUtNjk1NjgyZjdkYjhiIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzI0NjQsImV4cCI6MTc0MzIyNDQ2NH0.8fxHOCUPn0eqN2gE9X6v4F3zQEBTlgn17zabpnoVPgM
+
+2025-02-27 10:31:33,363 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:31:33,364 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjQ5MywianRpIjoiM2NhMjdiZjYtZWJkMy00M2FmLTk1ZWEtZTJjYzY2Y2Q5NzQzIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MjAsIm5iZiI6MTc0MDYzMjQ5MywiZXhwIjoxNzQwNjMzMzkzLCJsb2dpbl9pZCI6MjAsImxvZ2luX3VzZXJuYW1lIjoicHJpbmNlIiwibG9naW5fcGFzc3dvcmQiOiJQcmluY2VAMTIzIn0.Z8bf3fPRUKBfWuLp84lTHQUxZNpqBaVxrK0cl8fcrmI
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjQ5MywianRpIjoiNzk0YzVjYzQtMDZmOC00M2ZmLTg0YTctN2MxYjY0ZjNkZjViIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzI0OTMsImV4cCI6MTc0MzIyNDQ5M30.uMW8EBcqrkqMfQLS83QNQnKEKse0gSx-zyVKkv3xdYk
+
+2025-02-27 10:35:16,270 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:35:16,270 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 5, 35, 16, 270534), 'iat': datetime.datetime(2025, 2, 27, 5, 5, 16, 270542), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 10:35:16,271 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzQ1MTYsImlhdCI6MTc0MDYzMjcxNiwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.rJvkems7vYIjFMSNe4ux0uwyMl4jhYmLb-35QFQGy5s', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzc1MTYsImlhdCI6MTc0MDYzMjcxNiwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.wssUjQg8t2Lp7gQLFm-3zeBJsLfnW7aCDpSY3pvl8l4')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjcxNiwianRpIjoiNmEzMzM0M2MtNzVhNS00OTg0LWI3MmUtNDI0ODhjYWY5NTIwIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzI3MTYsImV4cCI6MTc0MzIyNDcxNn0.r7g2clUSq0ZXDOlsDGzQI6aG-AHCJNVJ3e2KrU6vkQE
+
+2025-02-27 10:35:28,694 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 10:35:28,694 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 5, 35, 28, 694249), 'iat': datetime.datetime(2025, 2, 27, 5, 5, 28, 694260), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 10:35:28,694 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzQ1MjgsImlhdCI6MTc0MDYzMjcyOCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.6AMJ579B5ycEHYer9jLDUgGNh-hSlPG5KLZqSjtU7MQ', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzc1MjgsImlhdCI6MTc0MDYzMjcyOCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.tYy__vVaSGbdh585O0q3FAvyay4M2SQ2z6DsyqQcTb0')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzMjcyOCwianRpIjoiODYxYjYzY2MtOWUwZi00MjZjLWI0NjQtNDYzMGUzOGI0MmY1IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzI3MjgsImV4cCI6MTc0MzIyNDcyOH0.lNOGMD3yzWc0-MRwCjO8ydhimOIFYW0NEgwQDHAc-Cg
+
+2025-02-27 11:00:34,930 - login_controller.py - FlaskMVCProject -  login - ERROR - Error during login: 'NoneType' object has no attribute 'strip'
+
+2025-02-27 11:00:48,174 - login_controller.py - FlaskMVCProject -  login - INFO - Received login data: None, None
+
+2025-02-27 11:00:48,174 - login_controller.py - FlaskMVCProject -  login - ERROR - Error during login: Username and password are required.
+
+2025-02-27 11:00:56,039 - login_controller.py - FlaskMVCProject -  login - INFO - Received login data: None, None
+
+2025-02-27 11:00:56,039 - login_controller.py - FlaskMVCProject -  login - ERROR - Error during login: Username and password are required.
+
+2025-02-27 11:01:09,872 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 11:02:04,168 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 11:02:04,168 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 6, 2, 4, 168748), 'iat': datetime.datetime(2025, 2, 27, 5, 32, 4, 168756), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 11:02:04,169 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzYxMjQsImlhdCI6MTc0MDYzNDMyNCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.PFIja7J9Hb7oOO6zCf2XSUW2ve5bq1Nnxw5Q6pyGLnM', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzkxMjQsImlhdCI6MTc0MDYzNDMyNCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.djUonB3P5YIZfbIzwbNOFEPCzjm5T_ferurYQZclLVw')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzNDMyNCwianRpIjoiNmI5NDQ2YjItM2ZjZi00NmMzLWEwNDMtMWQ0MDdhMTcxMzhhIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzQzMjQsImV4cCI6MTc0MzIyNjMyNH0.0XDQURGy2HmezoWz56Zy_jsOimbG6uRmkOf1Zs_z5YQ
+
+2025-02-27 11:07:19,825 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 11:07:19,826 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 6, 7, 19, 826174), 'iat': datetime.datetime(2025, 2, 27, 5, 37, 19, 826182), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 11:07:19,826 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzY0MzksImlhdCI6MTc0MDYzNDYzOSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.0OzpUIaY8IMG2afMaZyGjERjbsJtNtz-4q4CQ9d0WQM', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzk0MzksImlhdCI6MTc0MDYzNDYzOSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.keMPIQzlGQnrP5LJGkV2UlZ9U3qTnRjMvhD3p27i8wM')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzNDYzOSwianRpIjoiYmRhYTgzOGMtNjUzZi00MGIyLTk2MjEtNTlkMjYxZDFlMTM2IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzQ2MzksImV4cCI6MTc0MzIyNjYzOX0.1TGR8UAj6MCTWlBkunTPBoMc4PbhbgsT1hDRvuU49gM
+
+2025-02-27 11:07:31,063 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: prince
+
+2025-02-27 11:07:31,064 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 11:07:38,397 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid login attempt for user: ewfcwe
+
+2025-02-27 11:07:38,397 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error in load_home_page: Invalid username or password.
+
+2025-02-27 11:07:44,260 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 11:07:44,260 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 6, 7, 44, 260649), 'iat': datetime.datetime(2025, 2, 27, 5, 37, 44, 260657), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 11:07:44,260 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzY0NjQsImlhdCI6MTc0MDYzNDY2NCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.LV1uV74WLrgbZyzDJNFpMWMbpp4iyaTPP2sQFGF2EXE', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzk0NjQsImlhdCI6MTc0MDYzNDY2NCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.y1JcsETTYwrrO9CW0xkq2qfY_h8TTdPdXUvqCrtxTRk')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzNDY2NCwianRpIjoiMzZmZGRmYWYtMTc2NC00NTczLWI1YjUtMDQzZTYyMDc1MDM1IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzQ2NjQsImV4cCI6MTc0MzIyNjY2NH0.P0xgML1NznPAWE0dtCYMzuwhHzxclQAxRJGh6-t8Is0
+

@@ -4,7 +4,7 @@ from base import app
 from base.com.dao.category_dao import CategoryDAO
 from base.com.dto.subcategory_dto import SubcategoryDTO
 from base.com.service.subcategory_service import SubcategoryService
-from base.utils.MyLogger import get_logger
+from base.utils.my_logger import get_logger
 
 
 @app.route('/load_sub_category', methods=['GET', 'POST'])

@@ -7,9 +7,9 @@ from base.com.dao.category_dao import CategoryDAO
 from base.com.dao.subcategory_dao import SubCategoryDAO
 from base.com.dto.product_dto import ProductDTO
 from base.com.service.product_service import ProductService
-from base.utils import MyLogger
+from base.utils import my_logger
 
-logger = MyLogger.get_logger()
+logger = my_logger.get_logger()
 
 ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 
@@ -37,12 +37,12 @@ def ajax_load_subcategory():
         product_service = ProductService()
         sub_cat = product_service.ajax_product_service(
             product_category_id)
-        logger = MyLogger.get_logger()
+        logger = my_logger.get_logger()
 
         logger.info('ajax load subcategory successfully')
         return jsonify([i.as_dict() for i in sub_cat])
     except Exception as e:
-        logger = MyLogger.get_logger()
+        logger = my_logger.get_logger()
         logger.error(f"Error in ajax_load_subcategory: {str(e)}")
         return jsonify({"error": "An unexpected error occurred."}), 500
 

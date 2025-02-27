@@ -1,6 +1,6 @@
 from base import db
 from base.com.vo.login_vo import LoginVO
-from base.utils import MyLogger
+from base.utils import my_logger
 
 logger = MyLogger.get_logger()
 
@@ -18,9 +18,9 @@ class LoginDao:
 
     def validate_login(self, username, password):
         try:
-            user = LoginVO.query.filter_by(login_username=username).first()
-            if user and user.login_password == password:
-
+            user = LoginVO.query.filter_by(login_username=username,
+                                           login_password=password).first()
+            if user :
                 logger.info(f"User {username} validated successfully.")
                 return user
             logger.warning(f"Invalid login attempt for user: {username}")

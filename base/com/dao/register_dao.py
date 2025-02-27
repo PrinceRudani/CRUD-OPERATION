@@ -1,5 +1,5 @@
 from base import db
-from base.utils.MyLogger import get_logger
+from base.utils.my_logger import get_logger
 
 logger = get_logger()
 

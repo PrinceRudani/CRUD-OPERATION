@@ -1,6 +1,6 @@
 from base.com.dao.subcategory_dao import SubCategoryDAO
 from base.com.vo.subcategory_vo import SubcategoryVO
-from base.utils.MyLogger import get_logger
+from base.utils.my_logger import get_logger
 from base.utils.time_stamp import get_current_timestamp
 
 

@@ -1,11 +1,9 @@
 from flask import render_template, request
-
-from base import app
-from base.com.dto.register_dto import RegisterDTO
 from base.com.service.register_service import RegisterService
-from base.utils.MyLogger import get_logger
-
-logger = get_logger()
+from base.com.dto.register_dto import RegisterDTO
+from base.utils import my_logger
+from base import app
+logger = my_logger.get_logger()
 
 
 @app.route('/load_register', methods=['GET'])
@@ -30,16 +28,24 @@ def register():
         logger.info(
             f'Received form data: {register_firstname}, {register_lastname}, {register_gender}, {register_email}, {register_username}, {register_password}')
 
+        # Create RegisterDTO instance for validation
         register_dto = RegisterDTO(register_firstname=register_firstname,
                                    register_lastname=register_lastname,
                                    register_gender=register_gender,
                                    register_email=register_email,
                                    register_username=register_username,
                                    register_password=register_password)
+
+        # Validate the data using DTO's validate method
         register_dto_lst = register_dto.validate()
+
+        # Call RegisterService to insert the register data into the database
         register_service = RegisterService()
         register_service.insert_register_service(register_dto_lst)
-        return render_template("login_and_register/login.html")
+
+        return render_template("login_and_register/login.html",
+                               message="Registration Successful")
+
     except Exception as e:
         logger.error(f'Error in register route: {str(e)}')
         return render_template('login_and_register/register.html',

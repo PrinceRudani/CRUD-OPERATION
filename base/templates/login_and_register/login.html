@@ -34,11 +34,11 @@
             color: #fff;
         }
 
-        input {
+        input[type="text"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin-bottom: 16px;
-            border: 2px solid white;
+            border: 1px solid #555;
             border-radius: 4px;
             box-sizing: border-box;
             background-color: #222;
@@ -83,34 +83,41 @@
         a {
             display: block;
             text-align: center;
-            color: #777;
+            color: #007BFF;
             text-decoration: none;
             margin-top: 16px;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #fff;
+            color: #0056b3;
         }
     </style>
     <script>
         function togglePasswordVisibility() {
             const passwordInput = document.getElementById('register_password');
             const eyeIcon = document.getElementById('eye_icon');
-            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
-            eyeIcon.classList.toggle('fa-eye-slash');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.classList.remove('fa-eye');
+                eyeIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.classList.remove('fa-eye-slash');
+                eyeIcon.classList.add('fa-eye');
+            }
         }
     </script>
 </head>
 <body>
-    <form method="POST" action="/login">
-        <h2 style="text-align: center; color: #fff;">Login</h2>
+    <form method="POST" action="/home">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #fff;">Login</h2>
         {% if error %}
             <p class="error">{{ error }}</p>
         {% endif %}
-        <label>Username:</label>
-        <input type="text" name="register_username" required>
-        <label>Password:</label>
+        <label for="register_username">Username:</label>
+        <input type="text" name="register_username" id="register_username" required>
+        <label for="register_password">Password:</label>
         <div class="password-field">
             <input type="password" name="register_password" id="register_password" required>
             <i class="fas fa-eye eye-icon" id="eye_icon" onclick="togglePasswordVisibility()"></i>
