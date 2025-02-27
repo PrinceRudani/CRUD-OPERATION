@@ -31,7 +31,7 @@ class LoginService:
 
             access_token = jwt.encode(access_token_payload,
                                       static_variables.JWT_SECRET_KEY,
-                                      algorithm=static_variables.ALGORITHM)
+                                      algorithm=static_variables.JWT_ALGORITHM)
 
             # Refresh token payload with expiration time
             refresh_token_payload = {
@@ -45,7 +45,7 @@ class LoginService:
 
             refresh_token = jwt.encode(refresh_token_payload,
                                        static_variables.JWT_SECRET_KEY,
-                                       algorithm=static_variables.ALGORITHM)
+                                       algorithm=static_variables.JWT_ALGORITHM)
 
             return access_token, refresh_token
 
@@ -66,7 +66,7 @@ class LoginService:
             try:
                 data = jwt.decode(refresh_token,
                                   static_variables.JWT_SECRET_KEY,
-                                  algorithms=[static_variables.ALGORITHM])
+                                  algorithms=[static_variables.JWT_ALGORITHM])
                 logger.debug(f"Decoded refresh token data: {data}")
                 logger.info("Refresh token successfully validated")
             except jwt.ExpiredSignatureError:
@@ -106,7 +106,7 @@ class LoginService:
                 try:
                     data = jwt.decode(access_token,
                                       static_variables.JWT_SECRET_KEY,
-                                      algorithms=[static_variables.ALGORITHM])
+                                      algorithms=[static_variables.JWT_ALGORITHM])
                     logger.debug(f"Decoded access token data: {data}")
                     logger.info("Access token successfully validated")
 
