@@ -2,7 +2,7 @@ from base import db
 from base.com.vo.login_vo import LoginVO
 from base.utils import my_logger
 
-logger = MyLogger.get_logger()
+logger = my_logger.get_logger()
 
 class LoginDao:
     def insert_login(self, login_vo):

@@ -1,12 +1,12 @@
-from flask import render_template, request, jsonify, redirect, url_for
+from flask import render_template, request, jsonify, redirect, url_for, \
+    make_response
 from flask_jwt_extended import create_access_token, create_refresh_token
 from base.com.dao.login_dao import LoginDao
 from base.com.service.login_service import LoginService
 from base.utils import my_logger
 from base import app
-
+from base.config.static_variables import StaticVariables, config
 logger = my_logger.get_logger()
-
 
 @app.route('/')
 def load_login_page():
@@ -50,3 +50,18 @@ def load_home_page():
             return render_template("login_and_register/login.html", error=str(e))
 
     return render_template('home.html')
+
+# @app.route('/home', methods=['GET'])
+# @LoginService.login_required(role="admin")  # Example role-based restriction
+# def load_home_page(request):
+#     return render_template('home.html')
+#
+#
+# @app.route('/logout')
+# def logout():
+#     response = make_response(redirect(url_for('load_login_page')))
+#     response.set_cookie(config.get("TOKENS", "ACCESSTOKEN"), '', expires=0)
+#     response.set_cookie(config.get("TOKENS", "REFRESHTOKEN"), '', expires=0)
+#
+#     logger.info("User logged out successfully.")
+#     return response

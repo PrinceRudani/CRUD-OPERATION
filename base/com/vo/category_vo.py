@@ -19,4 +19,4 @@ class CategoryVO(db.Model):
             'modify_at': self.modify_at,
         }
 
-# db.create_all()
+db.create_all()

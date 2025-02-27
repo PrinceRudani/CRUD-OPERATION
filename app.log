@@ -3262,3 +3262,77 @@ WHERE category_table.is_delete = false]
 2025-02-27 11:07:44,260 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2MzY0NjQsImlhdCI6MTc0MDYzNDY2NCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.LV1uV74WLrgbZyzDJNFpMWMbpp4iyaTPP2sQFGF2EXE', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyMzk0NjQsImlhdCI6MTc0MDYzNDY2NCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.y1JcsETTYwrrO9CW0xkq2qfY_h8TTdPdXUvqCrtxTRk')
 , Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzNDY2NCwianRpIjoiMzZmZGRmYWYtMTc2NC00NTczLWI1YjUtMDQzZTYyMDc1MDM1IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzQ2NjQsImV4cCI6MTc0MzIyNjY2NH0.P0xgML1NznPAWE0dtCYMzuwhHzxclQAxRJGh6-t8Is0
 
+2025-02-27 12:23:56,631 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 12:23:56,631 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 7, 23, 56, 631859), 'iat': datetime.datetime(2025, 2, 27, 6, 53, 56, 631873), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 12:23:56,632 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDEwMzYsImlhdCI6MTc0MDYzOTIzNiwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.M-GGu86-v2Dc2GgwRL2bxZ0lrbLAI8DwcuMVMTQT1jw', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDQwMzYsImlhdCI6MTc0MDYzOTIzNiwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.okPtlcHE5Em4A0dYTvXsllXJzqb4h5OsTmMtSomLXQs')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDYzOTIzNiwianRpIjoiMTY5Mzk4M2YtYTUwNS00NTQyLWFjNDYtNTk0ZWQ1MmRmYjIyIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2MzkyMzYsImV4cCI6MTc0MzIzMTIzNn0.itUzYrutp8oBzWtYjai9k3L0kjjR8urEeteVqTr061Y
+
+2025-02-27 12:24:03,399 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-27 12:24:05,993 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-27 12:37:39,336 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 12:37:39,336 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 7, 37, 39, 336919), 'iat': datetime.datetime(2025, 2, 27, 7, 7, 39, 336932), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 12:37:39,337 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDE4NTksImlhdCI6MTc0MDY0MDA1OSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.yDr2rp3sLxDS0FSiHuDS64Zd6aaTKPw6xmonfuDs7BE', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDQ4NTksImlhdCI6MTc0MDY0MDA1OSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.y6lMlVGfncx3kG5-PHCQHnlI7hDeOx5CVRXrs9DATfQ')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY0MDA1OSwianRpIjoiNDkyZTViYTAtNjJjMi00YzQ3LThkZDctN2ZiYWVjZDI4ZDY0IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NDAwNTksImV4cCI6MTc0MzIzMjA1OX0.o0angAVXlrQPiH-avwxr18oCn_lF8a-eQBQpRTA2HWc
+
+2025-02-27 12:37:43,922 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-27 12:37:43,922 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-27 12:37:48,204 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 12:37:48,204 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 7, 37, 48, 204292), 'iat': datetime.datetime(2025, 2, 27, 7, 7, 48, 204303), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 12:37:48,204 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDE4NjgsImlhdCI6MTc0MDY0MDA2OCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.9sC-1-7YvJ0njWBllqF0RVfBKnul6f6BrazM1qb-5es', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDQ4NjgsImlhdCI6MTc0MDY0MDA2OCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.uEYOnebIsz8DLGhVI2EdjUlboFUIW0_0qB-0saFrMSI')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY0MDA2OCwianRpIjoiMTdmOGEyYWYtY2Y4MC00NWFkLTg1NmItMzQxYThiMzcyNDRjIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NDAwNjgsImV4cCI6MTc0MzIzMjA2OH0.RALV3N_mrQX8IhkMr38_hMlX18qOB3fwZar-L5jpmjk
+
+2025-02-27 12:45:11,831 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 12:45:11,831 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 7, 45, 11, 831389), 'iat': datetime.datetime(2025, 2, 27, 7, 15, 11, 831396), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 12:45:11,831 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDIzMTEsImlhdCI6MTc0MDY0MDUxMSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.IyV4piSJVlA5JDogheEYLY4UDBtl9OXzRvQXA6Sld54', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDUzMTEsImlhdCI6MTc0MDY0MDUxMSwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.DKv9f1Spfcby7-fWR7wOEf_rUS1501OuiUEEuLs89Zg')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY0MDUxMSwianRpIjoiOTM0OTkyMDgtZjc5My00ZGVhLTlhOTUtZDIwYWM0M2M1NWY0IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NDA1MTEsImV4cCI6MTc0MzIzMjUxMX0.7xGxhgPPy6_RYl_Fmg6wi6axhFilR2r4EOB7GaCJBzA
+
+2025-02-27 13:06:40,831 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 13:06:40,831 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 8, 6, 40, 831172), 'iat': datetime.datetime(2025, 2, 27, 7, 36, 40, 831180), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 13:06:40,831 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDM2MDAsImlhdCI6MTc0MDY0MTgwMCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.E-6ieGyXHQ36STa-zXmRXZ4ncHPpS16IwAi5ujObhN4', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDY2MDAsImlhdCI6MTc0MDY0MTgwMCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.SGtD1OJCZNFCcT_L0ThW-_SIMNidVHflCKpuisuGyEY')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY0MTgwMCwianRpIjoiMjY2ZTJmMmMtZDhmMC00MGFhLWJmNzAtZDE2M2VhNzJiYzg4IiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NDE4MDAsImV4cCI6MTc0MzIzMzgwMH0.kgYLUXFev76TMyEDx27Zvey_bFJCBLG16m8NLxabc1Q
+
+2025-02-27 13:06:45,411 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-27 13:06:50,328 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-27 13:06:56,059 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-27 13:06:57,183 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-27 13:08:41,246 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-02-27 13:08:41,246 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-02-27 13:08:53,873 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-27 13:09:04,776 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-27 13:11:54,315 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-27 13:11:54,316 - login_service.py - FlaskMVCProject -  generate_token - INFO - Login service access token payload: {'exp': datetime.datetime(2025, 2, 27, 8, 11, 54, 316273), 'iat': datetime.datetime(2025, 2, 27, 7, 41, 54, 316285), 'user_id': 20, 'user_email': 'prince', 'user_role': 'Prince@123'}
+
+2025-02-27 13:11:54,316 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: ('eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA2NDM5MTQsImlhdCI6MTc0MDY0MjExNCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.GM8vtzJtfk54NXJ-pJBJs5E1MXue0S-Q_s4sBYZTkjs', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEyNDY5MTQsImlhdCI6MTc0MDY0MjExNCwidXNlcl9pZCI6MjAsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJQcmluY2VAMTIzIn0.rCiSyBIPZ0oYU-ptB1CvXrFn7SFQqx25OV0gPe-PwmI')
+, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc0MDY0MjExNCwianRpIjoiNTllYzMzM2MtYTg0Ni00YTNkLWIzYzItZWEyYzRhN2ZmNWMzIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOiJwcmluY2UiLCJuYmYiOjE3NDA2NDIxMTQsImV4cCI6MTc0MzIzNDExNH0.09Sc2lQ1-5xcqBjPOm6DkyB1pUX3pti7iCAY9h_md6I
+
+2025-02-27 13:12:40,874 - register_controller.py - FlaskMVCProject -  register - INFO - Received form data: diksha, shani, Female, dikshashani@gmail.com, diksha, Diksha@1233
+
+2025-02-27 13:12:40,886 - login_dao.py - FlaskMVCProject -  insert_login - INFO - Inserted login with ID: 24
+
+2025-02-27 13:12:40,892 - register_dao.py - FlaskMVCProject -  insert_register - INFO - Successfully inserted register_vo: {'register_id': 10, 'register_firstname': 'diksha', 'register_lastname': 'shani', 'register_gender': 'Female', 'register_email': 'dikshashani@gmail.com', 'register_login_id': 24, 'is_delete': False, 'create_at': 1740642160, 'modify_at': 1740642160}
+
+2025-02-27 13:12:40,892 - register_service.py - FlaskMVCProject -  insert_register_service - INFO - Registration successful and data inserted into database.
+

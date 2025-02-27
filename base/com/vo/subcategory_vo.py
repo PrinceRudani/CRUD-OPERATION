@@ -21,4 +21,4 @@ class SubcategoryVO(db.Model):
             'create_at': self.create_at,
             'modify_at': self.modify_at,
         }
-# db.create_all()
+db.create_all()
