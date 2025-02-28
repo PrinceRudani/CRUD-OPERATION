@@ -10,7 +10,8 @@ image_directory = os.path.join("base", "static", "product_images")
 
 
 class ProductService:
-    def ajax_product_service(self, product_category_id):
+    @staticmethod
+    def ajax_product_service(product_category_id):
         try:
             subcategory_vo = SubcategoryVO()
             subcategory_vo.subcategory_category_id = product_category_id
@@ -20,7 +21,8 @@ class ProductService:
         except Exception as e:
             raise Exception(f"Failed to fetch subcategories: {str(e)}")
 
-    def insert_product_service(self, product_category_id,
+    @staticmethod
+    def insert_product_service(product_category_id,
                                product_sub_category_id, product_image,
                                product_dto):
         try:
@@ -59,7 +61,8 @@ class ProductService:
         except Exception as e:
             raise Exception(f"Failed to insert product: {str(e)}")
 
-    def view_product_service(self):
+    @staticmethod
+    def view_product_service():
         try:
             product_dao = ProductDAO()
             product_vo_lst = product_dao.view_product()
@@ -67,7 +70,8 @@ class ProductService:
         except Exception as e:
             raise Exception(f"Failed to fetch products: {str(e)}")
 
-    def delete_product_service(self, product_id):
+    @staticmethod
+    def delete_product_service(product_id):
         try:
             modify_at = get_current_timestamp()
             product_vo = ProductVO()
@@ -77,7 +81,8 @@ class ProductService:
         except Exception as e:
             raise Exception(f"Failed to delete product: {str(e)}")
 
-    def edit_product_service(self, product_id):
+    @staticmethod
+    def edit_product_service(product_id):
         try:
             product_dao = ProductDAO()
             product_vo_lst, category_vo_lst, sub_category_vo_lst = product_dao.edit_product(
@@ -86,7 +91,8 @@ class ProductService:
         except Exception as e:
             raise Exception(f"Failed to edit product: {str(e)}")
 
-    def update_product_service(self, product_id, product_category_id,
+    @staticmethod
+    def update_product_service(product_id, product_category_id,
                                product_sub_category_id, product_dto):
         try:
             product_vo = ProductVO()

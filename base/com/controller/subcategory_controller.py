@@ -3,11 +3,13 @@ from flask import render_template, request, redirect
 from base import app
 from base.com.dao.category_dao import CategoryDAO
 from base.com.dto.subcategory_dto import SubcategoryDTO
+from base.com.service.login_service import LoginService
 from base.com.service.subcategory_service import SubcategoryService
-from base.utils.MyLogger import get_logger
+from base.utils.my_logger import get_logger
 
 
 @app.route('/load_sub_category', methods=['GET', 'POST'])
+@LoginService.login_required(role="ADMIN")
 def load_sub_category():
     try:
         category_dao = CategoryDAO()
@@ -23,6 +25,7 @@ def load_sub_category():
 
 
 @app.route('/insert_sub_category', methods=['POST', 'GET'])
+@LoginService.login_required(role="ADMIN")
 def insert_sub_category():
     try:
         subcategory_dto = SubcategoryDTO()
@@ -48,9 +51,11 @@ def insert_sub_category():
         subcategory_service.insert_subcategory_service(subcategory_category_id,
                                                        subcategory_dto_lst)
         logger = get_logger()
-        logger.info('insert sub category :category id -> {}, subcategory name -> {}, '
+        logger.info(
+            'insert sub category :category id -> {}, subcategory name -> {}, '
             'sub category description -> {}'.format(subcategory_category_id,
-            subcategory_dto_lst.sub_category_name, subcategory_dto_lst.sub_category_description))
+                                                    subcategory_dto_lst.sub_category_name,
+                                                    subcategory_dto_lst.sub_category_description))
         return redirect('/view_sub_category')
 
     except Exception as e:
@@ -60,6 +65,7 @@ def insert_sub_category():
 
 
 @app.route('/view_sub_category', methods=['GET', 'POST'])
+@LoginService.login_required(role="ADMIN")
 def view_sub_category():
     subcategory_service = SubcategoryService()
     sub_category_vo_lst = subcategory_service.view_subcategory_service()
@@ -71,6 +77,7 @@ def view_sub_category():
 
 
 @app.route('/delete_sub_category', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def delete_sub_category():
     sub_category_id = request.form.get('sub_category_id')
     subcategory_service = SubcategoryService()
@@ -82,6 +89,7 @@ def delete_sub_category():
 
 
 @app.route('/edit_sub_category/<int:sub_category_id>', methods=['GET'])
+@LoginService.login_required(role="ADMIN")
 def edit_sub_category(sub_category_id):
     try:
         subcategory_service = SubcategoryService()
@@ -101,11 +109,14 @@ def edit_sub_category(sub_category_id):
 
 
 @app.route('/update_sub_category/<int:sub_category_id>', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def update_sub_category(sub_category_id):
     subcategory_category_id = request.form.get('subCategoryCategoryId')
     subcategory_dto = SubcategoryDTO()
-    subcategory_dto.sub_category_name = request.form.get('subCategoryName')
-    subcategory_dto.sub_category_description = request.form.get('subCategoryDescription')
+    subcategory_dto.sub_category_name = (request.form.get
+                                         ('subCategoryName'))
+    subcategory_dto.sub_category_description = (request.form.get
+                                                ('subCategoryDescription'))
     if not subcategory_category_id:
         return render_template(
             'subcategory_templates/addSubCategory.html',

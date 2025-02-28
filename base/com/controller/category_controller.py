@@ -1,31 +1,32 @@
-from flask import render_template, request, redirect
+from flask import render_template, request, redirect, session
 
 from base import app
 from base.com.dto.category_dto import CategoryDTO
 from base.com.service.category_service import CategoryService
-from base.utils import MyLogger
+from base.com.service.login_service import LoginService, static_variables
+from base.utils import my_logger
 
-logger = MyLogger.get_logger()
+logger = my_logger.get_logger()
 
-
-@app.route('/')
-def home():
-    """home page"""
-    logger.info('home')
-    return render_template('home.html')
 
 @app.route('/load_category')
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def load_category():
     """load category"""
     try:
+        user_name = session.get('user_name', 'Guest')
         logger.info('load category successfully')
-        return render_template("category_templates/addCategory.html")
+        return render_template("category_templates/addCategory.html",
+                               user_name=user_name)
     except Exception as e:
         logger.error(f'Error loading category: {e}')
-        return render_template("category_templates/addCategory.html",)
+        return render_template("category_templates/addCategory.html",
+                               errors=str(e))
 
 @app.route('/insert_category', methods=['POST', 'GET'])
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def insert_category():
+
     try:
         category_dto = CategoryDTO()
         data = {
@@ -45,8 +46,9 @@ def insert_category():
         return render_template('category_templates/addCategory.html',
                                errors="Any field can not be empty.")
 
-
 @app.route('/view_category', methods=['POST', 'GET'])
+@LoginService.login_required(
+    role=static_variables.ADMIN_ROLE)
 def view_category():
     """view category with error hand"""
     try:
@@ -59,8 +61,8 @@ def view_category():
         logger.error(f"Error viewing categories: {e}")
         return render_template('category_templates/viewCategory.html')
 
-
 @app.route('/delete_category', methods=['POST'])
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def delete_category():
     """delete category"""
     try:
@@ -74,6 +76,7 @@ def delete_category():
 
 
 @app.route('/edit_category', methods=['GET'])
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def edit_category():
     try:
         category_id = request.args.get('category_id')
@@ -87,7 +90,9 @@ def edit_category():
 
 
 @app.route('/update_category', methods=['POST'])
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def update_category():
+    category_id = None
     try:
         category_id = int(request.form.get('category_id'))
         category_dto = CategoryDTO()
@@ -102,4 +107,5 @@ def update_category():
 
     except Exception as e:
         logger.error(f'Error updating category: {str(e)}')
-        return redirect(f'/edit_category?category_id={category_id}&error={str(e)}')
+        return redirect(
+            f'/edit_category?category_id={category_id or "error"}&error={str(e)}')
