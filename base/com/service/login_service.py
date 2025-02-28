@@ -15,7 +15,6 @@ class LoginService:
     @staticmethod
     def generate_token(user_id, user_email, user_role):
         try:
-            # Access token payload with expiration time
             access_token_payload = {
                 "exp": datetime.utcnow() + timedelta(
                     minutes=int(static_variables.ACCESS_TOKEN_EXPIRE_MINUTES)),
@@ -33,7 +32,6 @@ class LoginService:
                                       static_variables.JWT_SECRET_KEY,
                                       algorithm=static_variables.JWT_ALGORITHM)
 
-            # Refresh token payload with expiration time
             refresh_token_payload = {
                 "exp": datetime.utcnow() + timedelta(minutes=int(
                     static_variables.REFRESH_TOKEN_EXPIRE_MINUTES)),
@@ -73,12 +71,11 @@ class LoginService:
                 logger.warning("Refresh token expired.")
                 return redirect('/login?error=refresh_token_expired')
 
-            # Generate new tokens if the refresh token is valid
             logger.info("Generating new tokens from refresh token")
             new_access_token, new_refresh_token = LoginService.generate_token(
                 data['user_id'], data['user_email'], data['user_role'])
             logger.info("New tokens generated successfully")
-            response = fn()  # Call the view function
+            response = fn()
             response.set_cookie(static_variables.TOKEN_ACCESS_KEY,
                                 new_access_token, max_age=int(
                     static_variables.ACCESS_TOKEN_EXPIRE_MINUTES) * 60,

@@ -22,11 +22,9 @@ class RegisterService:
             # login_vo.login_password = hashed_password
 
             login_vo.login_role = 'ADMIN'
-            # Insert login data using LoginDao
             login_dao = LoginDao()
             login_id = login_dao.insert_login(login_vo)
 
-            # Create RegisterVo object for inserting user details
             register_vo = RegisterVo()
             register_vo.register_firstname = register_dto_lst.register_firstname
             register_vo.register_lastname = register_dto_lst.register_lastname

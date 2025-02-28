@@ -15,6 +15,7 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 
 
 @app.route('/load_product')
+
 def load_product():
     try:
         category_dao = CategoryDAO()

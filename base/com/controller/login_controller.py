@@ -36,7 +36,6 @@ def load_home_page():
                     user_data['login_username'],
                     user_data['login_role'])
 
-                # Set the tokens in the cookies
                 target_page = 'admin_home_page' \
                     if user_data['login_role'] == 'ADMIN' \
                     else 'user_home_page'

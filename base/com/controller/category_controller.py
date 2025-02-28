@@ -23,8 +23,9 @@ def load_category():
                                errors=str(e))
 
 @app.route('/insert_category', methods=['POST', 'GET'])
-
+@LoginService.login_required(role="ADMIN")
 def insert_category():
+
     try:
         category_dto = CategoryDTO()
         data = {
@@ -61,6 +62,7 @@ def view_category():
 
 
 @app.route('/delete_category', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def delete_category():
     """delete category"""
     try:
@@ -74,6 +76,7 @@ def delete_category():
 
 
 @app.route('/edit_category', methods=['GET'])
+@LoginService.login_required(role="ADMIN")
 def edit_category():
     try:
         category_id = request.args.get('category_id')
@@ -87,6 +90,7 @@ def edit_category():
 
 
 @app.route('/update_category', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def update_category():
     try:
         category_id = int(request.form.get('category_id'))
