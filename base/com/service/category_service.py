@@ -6,8 +6,8 @@ from base.utils.time_stamp import get_current_timestamp
 logger = get_logger()
 
 class CategoryService:
-
-    def add_category_service(self, category_dto_lst):
+    @staticmethod
+    def add_category_service(category_dto_lst):
         try:
             create_at = get_current_timestamp()
             modify_at = get_current_timestamp()
@@ -26,7 +26,8 @@ class CategoryService:
         except Exception as e:
             raise RuntimeError(f"Error in add_category_service: {str(e)}")
 
-    def view_category_service(self):
+    @staticmethod
+    def view_category_service():
         try:
             category_dao = CategoryDAO()
             category_vo_lst = category_dao.view_category()
@@ -35,7 +36,8 @@ class CategoryService:
         except Exception as e:
             raise RuntimeError(f"Error in view_category_service: {str(e)}")
 
-    def delete_category_service(self, category_id):
+    @staticmethod
+    def delete_category_service(category_id):
         try:
             category_dao = CategoryDAO()
             category_vo = CategoryVO()
@@ -46,7 +48,8 @@ class CategoryService:
         except Exception as e:
             raise RuntimeError(f"Error in delete_category_service: {str(e)}")
 
-    def edit_category_service(self, category_id):
+    @staticmethod
+    def edit_category_service(category_id):
         try:
             category_dao = CategoryDAO()
             category_vo = category_dao.edit_category(category_id)
@@ -55,7 +58,8 @@ class CategoryService:
         except Exception as e:
             raise RuntimeError(f"Error in edit_category_service: {str(e)}")
 
-    def update_category_service(self, category_id, category_dto_lst):
+    @staticmethod
+    def update_category_service(category_id, category_dto_lst):
         try:
             create_at = get_current_timestamp()
             modify_at = get_current_timestamp()

@@ -6,6 +6,7 @@ from base import app
 from base.com.dao.category_dao import CategoryDAO
 from base.com.dao.subcategory_dao import SubCategoryDAO
 from base.com.dto.product_dto import ProductDTO
+from base.com.service.login_service import LoginService
 from base.com.service.product_service import ProductService
 from base.utils import my_logger
 
@@ -15,6 +16,7 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 
 
 @app.route('/load_product')
+@LoginService.login_required(role="ADMIN")
 def load_product():
     try:
         category_dao = CategoryDAO()
@@ -31,22 +33,22 @@ def load_product():
                                error_message="An unexpected error occurred.")
 
 @app.route('/ajax_load_subcategory')
+@LoginService.login_required(role="ADMIN")
 def ajax_load_subcategory():
     try:
         product_category_id = request.args.get('product_category_id')
         product_service = ProductService()
         sub_cat = product_service.ajax_product_service(
             product_category_id)
-        logger = my_logger.get_logger()
 
         logger.info('ajax load subcategory successfully')
         return jsonify([i.as_dict() for i in sub_cat])
     except Exception as e:
-        logger = my_logger.get_logger()
         logger.error(f"Error in ajax_load_subcategory: {str(e)}")
         return jsonify({"error": "An unexpected error occurred."}), 500
 
 @app.route("/insert_product", methods=["POST"])
+@LoginService.login_required(role="ADMIN")
 def insert_product():
     try:
         product_category_id = request.form.get("product_category_id")
@@ -103,6 +105,7 @@ def insert_product():
         return render_template("product_templates/addProduct.html", error_message="An unexpected error occurred.")
 
 @app.route('/view_product', methods=['GET', 'POST'])
+@LoginService.login_required(role="ADMIN")
 def view_products():
     try:
         product_service = ProductService()
@@ -116,6 +119,7 @@ def view_products():
                                error_message="An unexpected error occurred.")
 
 @app.route('/delete_product', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def delete_product():
     try:
         product_id = request.form.get("product_id")
@@ -129,6 +133,7 @@ def delete_product():
                                error_message="An unexpected error occurred.")
 
 @app.route('/edit_product/<int:product_id>', methods=['GET'])
+@LoginService.login_required(role="ADMIN")
 def edit_product(product_id):
     try:
         product_service = ProductService()
@@ -147,6 +152,7 @@ def edit_product(product_id):
                                error_message="An unexpected error occurred.")
 
 @app.route('/update_product/<int:product_id>', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def update_product(product_id):
     try:
         product_category_id = request.form.get("productCategoryId")

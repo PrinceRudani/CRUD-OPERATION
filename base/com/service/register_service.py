@@ -7,14 +7,17 @@ from base.utils.my_logger import get_logger
 
 logger = get_logger()
 
+
 class RegisterService:
-    def insert_register_service(self, register_dto_lst):
+    @staticmethod
+    def insert_register_service(register_dto_lst):
         try:
-            # Create LoginVO object to insert login information
+            # Create LoginVO object to insert login information 
             login_vo = LoginVO()
             login_vo.login_username = register_dto_lst.register_username
             login_vo.login_password = register_dto_lst.register_password
-
+            login_vo.create_at = get_current_timestamp()
+            login_vo.modify_at = get_current_timestamp()
             # # Hash the password using SHA-256
             #
             # hashed_password = hashlib.sha256(
@@ -22,11 +25,9 @@ class RegisterService:
             # login_vo.login_password = hashed_password
 
             login_vo.login_role = 'ADMIN'
-            # Insert login data using LoginDao
             login_dao = LoginDao()
             login_id = login_dao.insert_login(login_vo)
 
-            # Create RegisterVo object for inserting user details
             register_vo = RegisterVo()
             register_vo.register_firstname = register_dto_lst.register_firstname
             register_vo.register_lastname = register_dto_lst.register_lastname
@@ -40,7 +41,8 @@ class RegisterService:
             register_dao = RegisterDao()
             register_dao.insert_register(register_vo)
 
-            logger.info('Registration successful and data inserted into database.')
+            logger.info(
+                'Registration successful and data inserted into database.')
         except Exception as e:
             logger.error(f'Error inserting register: {str(e)}')
             raise

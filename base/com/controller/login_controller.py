@@ -19,8 +19,8 @@ def load_login_page():
 def load_home_page():
     if request.method == 'POST':
         try:
-            username = request.form.get('register_username')
-            password = request.form.get('register_password')
+            username = request.form.get('register_username').strip() or None
+            password = request.form.get('register_password').strip() or None
 
             login_dao = LoginDao()
             validate_user = login_dao.validate_login(username, password)
@@ -36,7 +36,6 @@ def load_home_page():
                     user_data['login_username'],
                     user_data['login_role'])
 
-                # Set the tokens in the cookies
                 target_page = 'admin_home_page' \
                     if user_data['login_role'] == 'ADMIN' \
                     else 'user_home_page'
@@ -74,7 +73,11 @@ def load_home_page():
 @app.route('/admin/home', methods=['GET'])
 @LoginService.login_required(role="ADMIN")
 def admin_home_page():
-    logger.info("Admin accessing home page")
+    access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
+    refresh_token = request.cookies.get(static_variables.TOKEN_REFRESH_KEY)
+    print(">>>>accesstoken", access_token)
+    print(">>>>refreshtoken", refresh_token)
+    logger.info(f"Admin accessing home page with token: {access_token}")
     return render_template('home.html')
 
 

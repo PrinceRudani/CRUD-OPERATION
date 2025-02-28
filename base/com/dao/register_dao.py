@@ -4,7 +4,8 @@ from base.utils.my_logger import get_logger
 logger = get_logger()
 
 class RegisterDao:
-    def insert_register(self, register_vo):
+    @staticmethod
+    def insert_register(register_vo):
         try:
             db.session.add(register_vo)
             db.session.commit()

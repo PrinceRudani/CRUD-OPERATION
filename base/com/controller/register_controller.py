@@ -29,7 +29,6 @@ def register():
         logger.info(
             f'Received form data: {register_firstname}, {register_lastname}, {register_gender}, {register_email}, {register_username}, {register_password}')
 
-        # Create RegisterDTO instance for validation
         register_dto = RegisterDTO(register_firstname=register_firstname,
                                    register_lastname=register_lastname,
                                    register_gender=register_gender,
@@ -37,10 +36,8 @@ def register():
                                    register_username=register_username,
                                    register_password=register_password)
 
-        # Validate the data using DTO's validate method
         register_dto_lst = register_dto.validate()
 
-        # Call RegisterService to insert the register data into the database
         register_service = RegisterService()
         register_service.insert_register_service(register_dto_lst)
 
