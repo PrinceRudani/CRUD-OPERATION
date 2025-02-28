@@ -16,6 +16,19 @@ def load_login_page():
     return render_template('login_and_register/login.html')
 
 
+@app.route('/dashboard', methods=['POST', 'GET'])
+def load_dashboard_page():
+    access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
+
+    if not access_token:
+        logger.info(
+            "Unauthorized access attempt to dashboard. Redirecting to login.")
+        return redirect(url_for(
+            'load_login_page'))  # Redirect to login page if user is logged out
+
+    return render_template('home.html')
+
+
 @app.route('/home', methods=['POST', 'GET'])
 def load_home_page():
     if request.method == 'POST':
@@ -76,6 +89,10 @@ def load_home_page():
 @LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def admin_home_page():
     access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
+
+    if not access_token:
+        return redirect(url_for('load_login_page'))
+
     logger.info(f"Admin accessing home page with token: {access_token}")
 
     response = make_response(render_template('home.html'))
@@ -90,6 +107,11 @@ def admin_home_page():
 @app.route('/user/home', methods=['GET'])
 @LoginService.login_required(role=static_variables.USER_ROLE)
 def user_home_page():
+    access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
+
+    if not access_token:
+        return redirect(url_for('load_login_page'))
+
     logger.info("User accessing home page")
 
     response = make_response(render_template('user_home_page.html'))
@@ -104,10 +126,14 @@ def user_home_page():
 @app.route('/logout')
 def logout():
     response = redirect(url_for('load_login_page'))
-    response.delete_cookie(static_variables.TOKEN_ACCESS_KEY)
-    response.delete_cookie(static_variables.TOKEN_REFRESH_KEY)
 
-    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.set_cookie(static_variables.TOKEN_ACCESS_KEY, '', expires=0,
+                        path='/', httponly=True)
+    response.set_cookie(static_variables.TOKEN_REFRESH_KEY, '', expires=0,
+                        path='/', httponly=True)
+
+    response.headers[
+        'Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
     response.headers['Pragma'] = 'no-cache'
     response.headers['Expires'] = '0'
 

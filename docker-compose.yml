@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  flaskapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flaskapp
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    depends_on:
+      - mysql
+    networks:
+      - flask_n
+
+  mysql:
+    image: mysql:8.0.41
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: FlaskMVCProjectdb
+    ports:
+      - "3306:3306"
+    networks:
+      - flask_n
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+networks:
+  flask_n:
+    driver: bridge
+
+volumes:
+  mysql_data:
