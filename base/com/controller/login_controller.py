@@ -9,6 +9,7 @@ from base.utils import my_logger
 logger = my_logger.get_logger()
 static_variables = StaticVariables()
 
+
 @app.route('/')
 def load_login_page():
     return render_template('login_and_register/login.html')
@@ -36,8 +37,9 @@ def load_home_page():
                     user_data['login_role'])
 
                 # Set the tokens in the cookies
-                target_page = 'admin_home_page' if user_data[
-                                                       'login_role'] == 'ADMIN' else 'user_home_page'
+                target_page = 'admin_home_page' \
+                    if user_data['login_role'] == 'ADMIN' \
+                    else 'user_home_page'
                 response = redirect(url_for(target_page))
                 response.set_cookie(static_variables.TOKEN_ACCESS_KEY,
                                     access_token, max_age=int(
@@ -68,11 +70,13 @@ def load_home_page():
 
     return render_template('home.html')
 
+
 @app.route('/admin/home', methods=['GET'])
 @LoginService.login_required(role="ADMIN")
 def admin_home_page():
     logger.info("Admin accessing home page")
     return render_template('home.html')
+
 
 @app.route('/user/home', methods=['GET'])
 @LoginService.login_required(role="USER")

@@ -20,7 +20,7 @@ class RegisterService:
             # hashed_password = hashlib.sha256(
             #     register_dto_lst.register_password.encode()).hexdigest()
             # login_vo.login_password = hashed_password
-            #
+
             login_vo.login_role = 'ADMIN'
             # Insert login data using LoginDao
             login_dao = LoginDao()

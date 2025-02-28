@@ -3,6 +3,7 @@ from flask import render_template, request, redirect, session
 from base import app
 from base.com.dto.category_dto import CategoryDTO
 from base.com.service.category_service import CategoryService
+from base.com.service.login_service import LoginService
 from base.utils import my_logger
 
 logger = my_logger.get_logger()
@@ -22,6 +23,7 @@ def load_category():
                                errors=str(e))
 
 @app.route('/insert_category', methods=['POST', 'GET'])
+
 def insert_category():
     try:
         category_dto = CategoryDTO()
@@ -44,6 +46,7 @@ def insert_category():
 
 
 @app.route('/view_category', methods=['POST', 'GET'])
+@LoginService.login_required(role="ADMIN")
 def view_category():
     """view category with error hand"""
     try:
