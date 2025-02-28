@@ -13,3 +13,5 @@ class StaticVariables:
     TIME_OUT_MAX_AGE = 0
     TOKEN_ACCESS_KEY = 'access_token'
     TOKEN_REFRESH_KEY = 'refresh_token'
+    ADMIN_ROLE = 'ADMIN'
+    USER_ROLE = 'USER'

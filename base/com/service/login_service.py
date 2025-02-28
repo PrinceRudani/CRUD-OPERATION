@@ -4,7 +4,7 @@ from functools import wraps
 import jwt
 from flask import redirect, request
 
-from base.config.static_variables import StaticVariables
+from base.custom_enum.static_variables import StaticVariables
 from base.utils.my_logger import get_logger
 
 static_variables = StaticVariables()

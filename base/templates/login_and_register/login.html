@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             display: flex;
@@ -107,23 +108,33 @@
                 eyeIcon.classList.add('fa-eye');
             }
         }
+
+        window.history.pushState(null, "", window.location.href);
+        window.onpopstate = function () {
+            window.history.pushState(null, "", window.location.href);
+        };
+
     </script>
 </head>
 <body>
-    <form method="POST" action="/home">
-        <h2 style="text-align: center; margin-bottom: 20px; color: #fff;">Login</h2>
-        {% if error %}
-            <p class="error">{{ error }}</p>
-        {% endif %}
-        <label for="register_username">Username:</label>
-        <input type="text" name="register_username" id="register_username" required>
-        <label for="register_password">Password:</label>
-        <div class="password-field">
-            <input type="password" name="register_password" id="register_password" required>
-            <i class="fas fa-eye eye-icon" id="eye_icon" onclick="togglePasswordVisibility()"></i>
-        </div>
-        <button type="submit">Login</button>
-        <a href="/load_register">Register</a>
-    </form>
+<form method="POST" action="/home">
+    <h2 style="text-align: center; margin-bottom: 20px; color: #fff;">
+        Login</h2>
+    {% if error %}
+        <p class="error">{{ error }}</p>
+    {% endif %}
+    <label for="register_username">Username:</label>
+    <input type="text" name="register_username" id="register_username"
+           required>
+    <label for="register_password">Password:</label>
+    <div class="password-field">
+        <input type="password" name="register_password" id="register_password"
+               required>
+        <i class="fas fa-eye eye-icon" id="eye_icon"
+           onclick="togglePasswordVisibility()"></i>
+    </div>
+    <button type="submit">Login</button>
+    <a href="/load_register">Register</a>
+</form>
 </body>
 </html>

@@ -4,56 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Category</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Container */
+        .container {
+            background-color: #222;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Error Message */
+        .error-message {
+            color: #e74c3c;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Form Styling */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-size: 1.1rem;
+            text-align: left;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #444;
+            border-radius: 5px;
+            background-color: #333;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        /* Button Styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+    </style>
 </head>
 <body>
 
-<h1 align="center">Edit Category</h1>
+<div class="container">
+    <h1>Edit Category</h1>
 
-{% if request.args.get('error') %}
-    <div style="color: red; text-align: center;">
-        {{ request.args.get('error') }}
-    </div>
-{% endif %}
-{#{% if request.args.get('error') %}#}
-{#    <div style="color: red; text-align: center;">#}
-{#        {{ request.args.get('error') }}#}
-{#    </div>#}
-{#{% endif %}#}
+    {% if request.args.get('error') %}
+        <div class="error-message">
+            {{ request.args.get('error') }}
+        </div>
+    {% endif %}
 
-<table align="center" border="1" cellpadding="10">
-    <tr>
-        <td>
-            <form action="/update_category" method="POST">
-                {% if category %}
-                    <input type="hidden" name="category_id"
-                           value="{{ category.category_id }}">
-                {% endif %}
+    <form action="/update_category" method="POST">
+        {% if category %}
+            <input type="hidden" name="category_id" value="{{ category.category_id }}">
+        {% endif %}
 
-                        <table>
-                    <tr>
-                        <td><label for="categoryName">Category Name:</label>
-                        </td>
-                        <td><input type="text" name="categoryName"
-                                   value="{{ category.category_name if category }}">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><label for="categoryDescription">Category
-                            Description:</label></td>
-                        <td><textarea
-                                name="categoryDescription">{{ category.category_description if category }}</textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" align="center">
-                            <button type="submit">Update</button>
-                        </td>
-                    </tr>
-                </table>
-            </form>
-        </td>
-    </tr>
-</table>
+        <div>
+            <label for="categoryName">Category Name:</label>
+            <input type="text" name="categoryName"
+                   value="{{ category.category_name if category }}" required>
+        </div>
+
+        <div>
+            <label for="categoryDescription">Category Description:</label>
+            <textarea name="categoryDescription" required>{{ category.category_description if category }}</textarea>
+        </div>
+
+        <button type="submit">Update</button>
+    </form>
+</div>
 
 </body>
 </html>

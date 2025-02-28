@@ -67,12 +67,12 @@
         }
 
         .register-btn {
-            background-color: rgba(91, 83, 83, 0.41);
+            background-color: #a7a2a2;
             color: white;
         }
 
         .register-btn:hover {
-            background-color: #a7a2a2;
+            background-color: rgba(91, 83, 83, 0.41);
         }
 
         .logout-btn {
@@ -82,7 +82,6 @@
 
         .logout-btn:hover {
             background-color: #a7a2a2;
-
         }
 
         /* Main Container */
@@ -175,13 +174,9 @@
 <body>
 
 <header>
-    <h1><span style="color: #FFFFFF">Welcome Admin !</span><span
+    <h1><span style="color: #FFFFFF">Welcome, User !</span><span
             style="color: #808080"> Manage things effortlessly</span></h1>
-    <p></p>
     <div class="nav-links">
-        <a href="/load_register">
-            <button class="register-btn">Register</button>
-        </a>
         <a href="/logout">
             <button class="logout-btn">Logout</button>
         </a>
@@ -190,32 +185,20 @@
 
 <div class="container">
 
+
     <div class="action-buttons">
-        <div class="action-card">
-            <a href="/load_category">
-                <button type="button">Add Category</button>
-            </a>
-        </div>
         <div class="action-card">
             <a href="/view_category">
                 <button type="button">View Categories</button>
             </a>
         </div>
-        <div class="action-card">
-            <a href="/load_sub_category">
-                <button type="button">Add Subcategory</button>
-            </a>
-        </div>
+
         <div class="action-card">
             <a href="/view_sub_category">
                 <button type="button">View Subcategories</button>
             </a>
         </div>
-        <div class="action-card">
-            <a href="/load_product">
-                <button type="button">Add Product</button>
-            </a>
-        </div>
+
         <div class="action-card">
             <a href="/view_product">
                 <button type="button">View Products</button>

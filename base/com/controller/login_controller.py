@@ -1,9 +1,10 @@
+from flask import make_response
 from flask import render_template, request, redirect, url_for
 
 from base import app
 from base.com.dao.login_dao import LoginDao
 from base.com.service.login_service import LoginService
-from base.config.static_variables import StaticVariables
+from base.custom_enum.static_variables import StaticVariables
 from base.utils import my_logger
 
 logger = my_logger.get_logger()
@@ -67,22 +68,48 @@ def load_home_page():
             return render_template("login_and_register/login.html",
                                    error="An error occurred. Please try again later.")
 
-    return render_template('login_and_register/login.html',error="login is required. Please login to continue.")
+    return render_template('login_and_register/login.html',
+                           error="login is required. Please login to continue.")
 
 
 @app.route('/admin/home', methods=['GET'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def admin_home_page():
     access_token = request.cookies.get(static_variables.TOKEN_ACCESS_KEY)
-    refresh_token = request.cookies.get(static_variables.TOKEN_REFRESH_KEY)
-    print(">>>>accesstoken", access_token)
-    print(">>>>refreshtoken", refresh_token)
     logger.info(f"Admin accessing home page with token: {access_token}")
-    return render_template('home.html')
+
+    response = make_response(render_template('home.html'))
+    response.headers[
+        'Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+
+    return response
 
 
 @app.route('/user/home', methods=['GET'])
-@LoginService.login_required(role="USER")
+@LoginService.login_required(role=static_variables.USER_ROLE)
 def user_home_page():
     logger.info("User accessing home page")
-    return render_template('home.html')
+
+    response = make_response(render_template('user_home_page.html'))
+    response.headers[
+        'Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+
+    return response
+
+
+@app.route('/logout')
+def logout():
+    response = redirect(url_for('load_login_page'))
+    response.delete_cookie(static_variables.TOKEN_ACCESS_KEY)
+    response.delete_cookie(static_variables.TOKEN_REFRESH_KEY)
+
+    response.headers['Cache-Control'] = 'no-store, no-cache, must-revalidate, max-age=0'
+    response.headers['Pragma'] = 'no-cache'
+    response.headers['Expires'] = '0'
+
+    logger.info("User logged out successfully")
+    return response

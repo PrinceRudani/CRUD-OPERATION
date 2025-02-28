@@ -3,14 +3,14 @@ from flask import render_template, request, redirect, session
 from base import app
 from base.com.dto.category_dto import CategoryDTO
 from base.com.service.category_service import CategoryService
-from  base.com.service.login_service import LoginService
+from base.com.service.login_service import LoginService, static_variables
 from base.utils import my_logger
 
 logger = my_logger.get_logger()
 
 
 @app.route('/load_category')
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def load_category():
     """load category"""
     try:
@@ -24,7 +24,7 @@ def load_category():
                                errors=str(e))
 
 @app.route('/insert_category', methods=['POST', 'GET'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def insert_category():
 
     try:
@@ -48,7 +48,7 @@ def insert_category():
 
 
 @app.route('/view_category', methods=['POST', 'GET'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def view_category():
     """view category with error hand"""
     try:
@@ -63,7 +63,7 @@ def view_category():
 
 
 @app.route('/delete_category', methods=['POST'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def delete_category():
     """delete category"""
     try:
@@ -77,7 +77,7 @@ def delete_category():
 
 
 @app.route('/edit_category', methods=['GET'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def edit_category():
     try:
         category_id = request.args.get('category_id')
@@ -91,7 +91,7 @@ def edit_category():
 
 
 @app.route('/update_category', methods=['POST'])
-@LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role=static_variables.ADMIN_ROLE)
 def update_category():
     category_id = None
     try:
