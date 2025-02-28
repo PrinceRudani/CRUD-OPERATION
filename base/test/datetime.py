@@ -8,3 +8,5 @@
 # REFRESH_TOKEN_EXPIRE_MINUTES = int(os.getenv("REFRESH_TOKEN_EXPIRE_MINUTES"))
 #
 #
+import datetime
+abc = datetime.now(UTC)

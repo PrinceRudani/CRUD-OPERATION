@@ -1,4 +1,6 @@
 from flask import render_template, request
+
+from base.com.service.login_service import LoginService
 from base.com.service.register_service import RegisterService
 from base.com.dto.register_dto import RegisterDTO
 from base.utils import my_logger
@@ -7,11 +9,13 @@ logger = my_logger.get_logger()
 
 
 @app.route('/load_register', methods=['GET'])
+@LoginService.login_required(role="ADMIN")
 def load_register():
     return render_template('login_and_register/register.html')
 
 
 @app.route('/insert_register', methods=['POST'])
+@LoginService.login_required(role="ADMIN")
 def register():
     try:
         register_firstname = request.form.get(
