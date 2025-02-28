@@ -3,13 +3,14 @@ from flask import render_template, request, redirect, session
 from base import app
 from base.com.dto.category_dto import CategoryDTO
 from base.com.service.category_service import CategoryService
-from base.com.service.login_service import LoginService
+from  base.com.service.login_service import LoginService
 from base.utils import my_logger
 
 logger = my_logger.get_logger()
 
 
 @app.route('/load_category')
+@LoginService.login_required(role="ADMIN")
 def load_category():
     """load category"""
     try:

@@ -26,7 +26,7 @@ class SubcategoryService:
             f"Subcategory inserted: category_id={subcategory_category_id}, name={subcategory_dto_lst.sub_category_name}")
 
     @staticmethod
-    def view_subcategory_service(self):
+    def view_subcategory_service():
         sub_category_dao = SubCategoryDAO()
         sub_category_vo_lst = sub_category_dao.view_sub_category()
         logger.info("Retrieved subcategory list")

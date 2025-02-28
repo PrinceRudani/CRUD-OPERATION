@@ -62,7 +62,7 @@ class ProductService:
             raise Exception(f"Failed to insert product: {str(e)}")
 
     @staticmethod
-    def view_product_service(self):
+    def view_product_service():
         try:
             product_dao = ProductDAO()
             product_vo_lst = product_dao.view_product()
