@@ -46,9 +46,9 @@ def insert_category():
         return render_template('category_templates/addCategory.html',
                                errors="Any field can not be empty.")
 
-
 @app.route('/view_category', methods=['POST', 'GET'])
-@LoginService.login_required(role=static_variables.ADMIN_ROLE)
+@LoginService.login_required(
+    role=static_variables.ADMIN_ROLE)
 def view_category():
     """view category with error hand"""
     try:
@@ -60,7 +60,6 @@ def view_category():
     except Exception as e:
         logger.error(f"Error viewing categories: {e}")
         return render_template('category_templates/viewCategory.html')
-
 
 @app.route('/delete_category', methods=['POST'])
 @LoginService.login_required(role=static_variables.ADMIN_ROLE)

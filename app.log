@@ -5871,3 +5871,329 @@ WHERE category_table.is_delete = false]
 
 2025-02-28 17:13:10,354 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDQ3OTAsImlhdCI6MTc0MDc0Mjk5MCwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.x8U9cJnWylo-xb3vS34sl_Bf9bLxZAH9qsV6Dt-EyBg
 
+2025-02-28 17:27:42,107 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740744790, 'iat': 1740742990, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:27:42,108 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:27:42,113 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-28 17:27:43,819 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740744790, 'iat': 1740742990, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:27:43,819 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:27:43,824 - product_controller.py - FlaskMVCProject -  edit_product - INFO - edit product successfully
+
+2025-02-28 17:27:43,903 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740744790, 'iat': 1740742990, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:27:43,903 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:27:43,906 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-28 17:27:46,424 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740744790, 'iat': 1740742990, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:27:46,425 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:27:46,426 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-28 17:27:47,884 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740744790, 'iat': 1740742990, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:27:47,885 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:27:47,886 - product_controller.py - FlaskMVCProject -  ajax_load_subcategory - INFO - ajax load subcategory successfully
+
+2025-02-28 17:28:17,884 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:28:17,884 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:28:17,884 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 28, 17, 884421, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 11, 58, 17, 884443, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:28:17,884 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:28:17,884 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDU2OTcsImlhdCI6MTc0MDc0Mzg5NywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.l-1XAq3iQn6qRjwYfWzM9YtD2kxlH-X3uQL-oKe7jW8, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDg2OTcsImlhdCI6MTc0MDc0Mzg5NywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.Oplcn0pmVhs_7QNY1hnGPDuOLAbDPt-h5TSDKHepxzQ
+
+2025-02-28 17:28:17,888 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:28:17,889 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:28:17,889 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:28:23,102 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:28:23,102 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:28:26,768 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:28:26,768 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:45,405 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:45,406 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:45,406 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:29:45,574 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:45,574 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:45,575 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:29:45,746 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:45,746 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:45,746 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:29:46,447 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:46,447 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:48,646 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745697, 'iat': 1740743897, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:48,646 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:51,205 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:29:51,205 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:29:51,205 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 29, 51, 205348, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 11, 59, 51, 205359, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:51,205 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:29:51,205 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDU3OTEsImlhdCI6MTc0MDc0Mzk5MSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.4jfGMSyQIFYKbeylEY14YlLN2drApsX15zKGr3eO4o8, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDg3OTEsImlhdCI6MTc0MDc0Mzk5MSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.rEH703CoKnNnBfa1QVnAEAICZgolsQhXznPJBiaQPow
+
+2025-02-28 17:29:51,209 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:51,209 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:29:51,209 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:29:51,919 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:29:51,919 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:30:35,099 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:30:35,099 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:30:41,355 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:30:41,355 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:30:41,847 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:30:41,847 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:33:40,957 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740745791, 'iat': 1740743991, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:33:40,957 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:33:42,952 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:33:42,952 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:33:42,952 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 33, 42, 952767, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 3, 42, 952776, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:33:42,952 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:33:42,953 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYwMjIsImlhdCI6MTc0MDc0NDIyMiwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.pE9l1UWHUuXyE6ztRIkA_6kdOeSBtUm-F_51GBz5t4A, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkwMjIsImlhdCI6MTc0MDc0NDIyMiwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.RnEoYQ2-eHrjmoevVqhgrLDTIvRT2bfOQ8h0BPU-FtU
+
+2025-02-28 17:33:42,958 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746022, 'iat': 1740744222, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:33:42,958 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:33:47,591 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:33:47,591 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:33:47,591 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 33, 47, 591804, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 3, 47, 591815, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:33:47,591 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:33:47,592 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYwMjcsImlhdCI6MTc0MDc0NDIyNywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.Fva7DZ0FT53b1uUX52iwcwt1uZMA1qSsqH3zeyW0P4w, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkwMjcsImlhdCI6MTc0MDc0NDIyNywidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.bz19M1Wws48GbQ_fmhY6KjM7Pvs-U_n59uIKpk1UtI4
+
+2025-02-28 17:33:47,601 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746027, 'iat': 1740744227, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:33:47,602 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:34:01,661 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:34:01,661 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:34:01,661 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 34, 1, 661465, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 4, 1, 661474, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:01,661 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:34:01,661 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYwNDEsImlhdCI6MTc0MDc0NDI0MSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.HyxJi-phtvdTPEewjW-_AWGXZ-cAPIIhm65JeX5Rj2A, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkwNDEsImlhdCI6MTc0MDc0NDI0MSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.67RWvR6sEM5Ic8z1EYlHh_0x_jUs2DD4rqXMygzfrps
+
+2025-02-28 17:34:01,666 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746041, 'iat': 1740744241, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:01,666 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:34:19,090 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username jaythakkar: <LoginVO 18>
+
+2025-02-28 17:34:19,090 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User jaythakkar validated successfully.
+
+2025-02-28 17:34:19,090 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 34, 19, 90844, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 4, 19, 90858, tzinfo=datetime.timezone.utc), 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:19,090 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:34:19,091 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: jaythakkar - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYwNTksImlhdCI6MTc0MDc0NDI1OSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.Xzh6MYVGhF1cXRw6EOEwxur45m1xsa_vlnru9aDyuNk, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkwNTksImlhdCI6MTc0MDc0NDI1OSwidXNlcl9pZCI6MTgsInVzZXJfZW1haWwiOiJqYXl0aGFra2FyIiwidXNlcl9yb2xlIjoiVVNFUiJ9.439WcprMd1vurrqMSzzhEn0CgAGjrRbRw714QYxiPTo
+
+2025-02-28 17:34:19,097 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746059, 'iat': 1740744259, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:19,098 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:34:19,098 - login_controller.py - FlaskMVCProject -  user_home_page - INFO - User accessing home page
+
+2025-02-28 17:34:20,607 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746059, 'iat': 1740744259, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:20,608 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:34:24,380 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746059, 'iat': 1740744259, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:24,380 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:34:26,825 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746059, 'iat': 1740744259, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:34:26,825 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:10,856 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746059, 'iat': 1740744259, 'user_id': 18, 'user_email': 'jaythakkar', 'user_role': 'USER'}
+
+2025-02-28 17:37:10,856 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:21,280 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-28 17:37:21,281 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-28 17:37:21,281 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 37, 21, 281076, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 7, 21, 281084, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:21,281 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:37:21,281 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyNDEsImlhdCI6MTc0MDc0NDQ0MSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.-PHWd0Xzdq7QOkGfcJqlBusgKMKmIq-bBPY-s9BilTM, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkyNDEsImlhdCI6MTc0MDc0NDQ0MSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.pG0-Mcxk38dVt7FhU2p_6Jpr2acIOuRukgqCgPjEpZs
+
+2025-02-28 17:37:21,285 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746241, 'iat': 1740744441, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:21,285 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:21,285 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyNDEsImlhdCI6MTc0MDc0NDQ0MSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.-PHWd0Xzdq7QOkGfcJqlBusgKMKmIq-bBPY-s9BilTM
+
+2025-02-28 17:37:24,046 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746241, 'iat': 1740744441, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:24,046 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:24,046 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-02-28 17:37:28,515 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746241, 'iat': 1740744441, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:28,515 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:33,662 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-28 17:37:33,662 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-28 17:37:33,662 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 37, 33, 662236, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 7, 33, 662245, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:33,662 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:37:33,662 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyNTMsImlhdCI6MTc0MDc0NDQ1MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.7CXvZ0nRPRemFZT5HGegrn6XPMUvxXoomk9kaVZEx0Y, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkyNTMsImlhdCI6MTc0MDc0NDQ1MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.8Go0Ur2WErMBGMpDVTNmA6TnYKLZ5DxEXBpvV9oFVMk
+
+2025-02-28 17:37:33,667 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:33,667 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:33,667 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyNTMsImlhdCI6MTc0MDc0NDQ1MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.7CXvZ0nRPRemFZT5HGegrn6XPMUvxXoomk9kaVZEx0Y
+
+2025-02-28 17:37:34,554 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:34,555 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:38,613 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:38,613 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:38,617 - subcategory_service.py - FlaskMVCProject -  view_subcategory_service - INFO - Retrieved subcategory list
+
+2025-02-28 17:37:38,617 - subcategory_controller.py - FlaskMVCProject -  view_sub_category - INFO - view sub category successfully [(<CategoryVO 4>, <SubcategoryVO 3>), (<CategoryVO 4>, <SubcategoryVO 4>), (<CategoryVO 7>, <SubcategoryVO 5>), (<CategoryVO 8>, <SubcategoryVO 2>)] 
+
+2025-02-28 17:37:40,820 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:40,820 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:40,826 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-02-28 17:37:58,179 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:58,179 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:37:58,179 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyNTMsImlhdCI6MTc0MDc0NDQ1MywidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.7CXvZ0nRPRemFZT5HGegrn6XPMUvxXoomk9kaVZEx0Y
+
+2025-02-28 17:37:59,610 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746253, 'iat': 1740744453, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:37:59,610 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:06,379 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-28 17:38:06,379 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-28 17:38:06,379 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 38, 6, 379280, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 8, 6, 379289, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:06,379 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:38:06,379 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyODYsImlhdCI6MTc0MDc0NDQ4NiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.eYgC-UmQkvOKscV9ZRum1Kzo3zRW9jG6b9If9PCunYE, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkyODYsImlhdCI6MTc0MDc0NDQ4NiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.qlclPjTFTQPAtQU6TTsOIWkoWe9XmApj-e9p0If3z38
+
+2025-02-28 17:38:06,384 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746286, 'iat': 1740744486, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:06,384 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:06,385 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYyODYsImlhdCI6MTc0MDc0NDQ4NiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.eYgC-UmQkvOKscV9ZRum1Kzo3zRW9jG6b9If9PCunYE
+
+2025-02-28 17:38:07,287 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746286, 'iat': 1740744486, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:07,287 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:22,926 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-02-28 17:38:22,926 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-02-28 17:38:22,926 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 2, 28, 12, 38, 22, 926926, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 2, 28, 12, 8, 22, 926936, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:22,926 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-02-28 17:38:22,927 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince - Access Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.5YBAvkXL2IzrlfiTG47sFtkI8SMDcQK8WH55-GEUcCg, Refresh Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDEzNDkzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.kVk2Hh6H9FwaA6Tv3DOgNtYJMzu_b2c6r1_ct4ryHxk
+
+2025-02-28 17:38:22,932 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:22,932 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:22,932 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.5YBAvkXL2IzrlfiTG47sFtkI8SMDcQK8WH55-GEUcCg
+
+2025-02-28 17:38:25,119 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:25,119 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:44,723 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:44,723 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:44,723 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.5YBAvkXL2IzrlfiTG47sFtkI8SMDcQK8WH55-GEUcCg
+
+2025-02-28 17:38:44,877 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:44,877 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:44,877 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.5YBAvkXL2IzrlfiTG47sFtkI8SMDcQK8WH55-GEUcCg
+
+2025-02-28 17:38:45,058 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:45,058 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:45,058 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA3NDYzMDIsImlhdCI6MTc0MDc0NDUwMiwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.5YBAvkXL2IzrlfiTG47sFtkI8SMDcQK8WH55-GEUcCg
+
+2025-02-28 17:38:46,090 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740746302, 'iat': 1740744502, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-02-28 17:38:46,090 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-02-28 17:38:46,097 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 29>] 
+
+2025-02-28 17:38:46,097 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 29>]
+
