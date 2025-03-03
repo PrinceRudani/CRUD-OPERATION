@@ -12,7 +12,7 @@ class HttpStatusCodeEnum(int, Enum):
     METHOD_NOT_ALLOWED = 405
     INTERNAL_SERVER_ERROR = 500
 
-class RespondMessageEnum(str, Enum):
+class ResponseMessageEnum(str, Enum):
     USER_REGISTERED = "User registered successfully"
     USER_IS_BLOCKED = "You are not authorized to access this resource"
     USER_NOT_FOUND = "User not found"

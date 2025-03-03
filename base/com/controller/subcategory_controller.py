@@ -11,6 +11,12 @@ from base.utils.my_logger import get_logger
 @app.route('/load_sub_category', methods=['GET', 'POST'])
 @LoginService.login_required(role="ADMIN")
 def load_sub_category():
+    """Load the form for adding a new subcategory.
+    
+    Returns:
+        rendered template: The add subcategory form template with category data
+        redirect: Redirects to home page on error
+    """
     try:
         category_dao = CategoryDAO()
         sub_category_vo = category_dao.view_category()
@@ -27,6 +33,16 @@ def load_sub_category():
 @app.route('/insert_sub_category', methods=['POST', 'GET'])
 @LoginService.login_required(role="ADMIN")
 def insert_sub_category():
+    """Insert a new subcategory.
+    
+    Takes form data for subcategory name, description and parent category ID.
+    Validates required fields and inserts new subcategory through service layer.
+    
+    Returns:
+        redirect: Redirects to view subcategories on success
+        rendered template: Returns to form with error message on validation failure
+        redirect: Redirects to load form on error
+    """
     try:
         subcategory_dto = SubcategoryDTO()
         subcategory_category_id = request.form.get('subCategoryCategoryId')
@@ -67,6 +83,11 @@ def insert_sub_category():
 @app.route('/view_sub_category', methods=['GET', 'POST'])
 @LoginService.login_required(role="ADMIN")
 def view_sub_category():
+    """View all subcategories.
+    
+    Returns:
+        rendered template: The view subcategories template with list of subcategories
+    """
     subcategory_service = SubcategoryService()
     sub_category_vo_lst = subcategory_service.view_subcategory_service()
     logger = get_logger()
@@ -79,6 +100,13 @@ def view_sub_category():
 @app.route('/delete_sub_category', methods=['POST'])
 @LoginService.login_required(role="ADMIN")
 def delete_sub_category():
+    """Delete a subcategory.
+    
+    Deletes subcategory with ID from form data.
+    
+    Returns:
+        redirect: Redirects back to view subcategories
+    """
     sub_category_id = request.form.get('sub_category_id')
     subcategory_service = SubcategoryService()
     subcategory_service.delete_subcategory_service(sub_category_id)
@@ -91,6 +119,15 @@ def delete_sub_category():
 @app.route('/edit_sub_category/<int:sub_category_id>', methods=['GET'])
 @LoginService.login_required(role="ADMIN")
 def edit_sub_category(sub_category_id):
+    """Load edit form for a subcategory.
+    
+    Args:
+        sub_category_id: ID of subcategory to edit
+        
+    Returns:
+        rendered template: The edit subcategory form with subcategory and category data
+        redirect: Redirects to view subcategories on error
+    """
     try:
         subcategory_service = SubcategoryService()
         sub_category, category_vo_lst = subcategory_service.edit_subcategory_service(
@@ -111,6 +148,19 @@ def edit_sub_category(sub_category_id):
 @app.route('/update_sub_category/<int:sub_category_id>', methods=['POST'])
 @LoginService.login_required(role="ADMIN")
 def update_sub_category(sub_category_id):
+    """Update a subcategory.
+    
+    Args:
+        sub_category_id: ID of subcategory to update
+        
+    Takes form data for updated subcategory details.
+    Validates required fields and updates subcategory through service layer.
+    
+    Returns:
+        redirect: Redirects to view subcategories on success
+        rendered template: Returns to form with error message on validation failure
+        redirect: Redirects back to edit form on error
+    """
     subcategory_category_id = request.form.get('subCategoryCategoryId')
     subcategory_dto = SubcategoryDTO()
     subcategory_dto.sub_category_name = (request.form.get

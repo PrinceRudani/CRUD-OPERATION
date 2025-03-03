@@ -6,12 +6,14 @@ from base.utils.time_stamp import get_current_timestamp
 class CategoryDAO:
     @staticmethod
     def insert_category(category_vo):
+        """Insert a new category into database."""
         db.session.add(category_vo)
         db.session.commit()
         return category_vo
 
     @staticmethod
     def view_category():
+        """Retrieve all non-deleted categories."""
         category_vo_lst = CategoryVO.query.filter(
             CategoryVO.is_delete == False).all()
         # print(category_vo_lst)
@@ -19,6 +21,7 @@ class CategoryDAO:
 
     @staticmethod
     def delete_category(category_id):
+        """Soft delete a category by setting is_delete flag."""
         category = db.session.query(CategoryVO).get(category_id)
         category.modify_at = get_current_timestamp()
         category.is_delete = True
@@ -26,6 +29,7 @@ class CategoryDAO:
 
     @staticmethod
     def edit_category(category_id):
+        """Retrieve a category by ID for editing."""
         return db.session.query(CategoryVO).filter_by(
             category_id=category_id).first()
 

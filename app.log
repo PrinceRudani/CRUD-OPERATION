@@ -8259,3 +8259,431 @@ WHERE category_table.is_delete = false]
 
 2025-03-03 10:02:49,646 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page with token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDA5NzgxNjksImlhdCI6MTc0MDk3NjM2OSwidXNlcl9pZCI6MjUsInVzZXJfZW1haWwiOiJwcmluY2UiLCJ1c2VyX3JvbGUiOiJBRE1JTiJ9.end5D2mTzzmGpQEfmaAcYrIEoOG7J_oRIUq1HgqilLk
 
+2025-03-03 12:08:09,030 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 12:08:09,031 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 12:08:09,031 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 7, 8, 9, 31312, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 6, 38, 9, 31327, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:08:09,031 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 12:08:09,032 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 12:08:09,042 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740985689, 'iat': 1740983889, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:08:09,043 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 12:08:09,043 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 12:08:12,002 - login_controller.py - FlaskMVCProject -  logout - INFO - User logged out successfully
+
+2025-03-03 12:08:26,723 - login_controller.py - FlaskMVCProject -  logout - INFO - User logged out successfully
+
+2025-03-03 12:09:48,948 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 12:09:48,949 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 12:09:48,949 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 7, 9, 48, 949330, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 6, 39, 48, 949363, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:09:48,949 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 12:09:48,950 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 12:09:48,960 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740985788, 'iat': 1740983988, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:09:48,961 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 12:09:48,961 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 12:09:51,633 - login_controller.py - FlaskMVCProject -  logout - INFO - User logged out successfully
+
+2025-03-03 12:51:54,150 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 12:51:54,150 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 12:51:54,150 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 7, 51, 54, 150738, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 7, 21, 54, 150756, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:51:54,150 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 12:51:54,151 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 12:51:54,160 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740988314, 'iat': 1740986514, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:51:54,160 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 12:51:54,160 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 12:51:57,083 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740988314, 'iat': 1740986514, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 12:51:57,084 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 12:51:57,099 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>] 
+
+2025-03-03 12:51:57,103 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>]
+
+2025-03-03 13:28:42,319 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:28:42,319 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 13:28:42,320 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 8, 28, 42, 319968, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 7, 58, 42, 319984, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:28:42,320 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 13:28:42,320 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 13:28:42,329 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:28:42,330 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:28:42,330 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:28:44,932 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:28:44,933 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:28:44,933 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:28:46,550 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:28:46,551 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:28:46,552 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:28:46,552 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:28:46,552 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: INTERNAL_SERVER_ERROR
+
+2025-03-03 13:29:22,279 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:29:22,279 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:29:22,280 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:29:22,280 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:29:22,280 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: INTERNAL_SERVER_ERROR
+
+2025-03-03 13:30:33,584 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:30:33,584 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:30:33,584 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:30:35,364 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:30:35,365 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:30:35,365 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:30:36,354 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:30:36,355 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:30:36,362 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>] 
+
+2025-03-03 13:30:36,362 - category_controller.py - FlaskMVCProject -  view_category - INFO - view category : [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>]
+
+2025-03-03 13:30:38,587 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:30:38,588 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:30:38,588 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:30:39,554 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:30:39,554 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:30:39,555 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:30:39,555 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:30:39,555 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: INTERNAL_SERVER_ERROR
+
+2025-03-03 13:35:15,495 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:15,495 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:15,496 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:35:15,981 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:15,982 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:15,982 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:35:16,779 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990522, 'iat': 1740988722, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:16,779 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:16,784 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:35:16,785 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:35:16,785 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: 'NoneType' object is not subscriptable
+
+2025-03-03 13:35:31,872 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:35:31,873 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 13:35:31,873 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 8, 35, 31, 873252, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 8, 5, 31, 873267, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:31,873 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 13:35:31,874 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 13:35:31,884 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990931, 'iat': 1740989131, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:31,885 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:31,885 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:35:35,003 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990931, 'iat': 1740989131, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:35,004 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:35,004 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:35:36,160 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990931, 'iat': 1740989131, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:36,160 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:36,161 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:35:36,161 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:35:36,161 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: 'NoneType' object is not subscriptable
+
+2025-03-03 13:35:46,544 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:35:46,545 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-03-03 13:35:46,545 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-03-03 13:35:54,530 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:35:54,530 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 13:35:54,530 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 8, 35, 54, 530848, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 8, 5, 54, 530865, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:54,530 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 13:35:54,531 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 13:35:54,542 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:54,542 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:54,542 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:35:57,183 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:57,183 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:57,184 - category_controller.py - FlaskMVCProject -  load_category - INFO - load category successfully
+
+2025-03-03 13:35:58,050 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:35:58,050 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:35:58,051 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}
+
+2025-03-03 13:35:58,051 - custome_service.py - FlaskMVCProject -  handle_exception - ERROR - Exception error message: Exception type: <class 'marshmallow.exceptions.ValidationError'>, Exception message: {'category_name': ['Field may not be null.'], 'category_description': ['Field may not be null.']}, Filename: /home/prince/sahana_projects/FlaskMVCProject/base/com/controller/category_controller.py, Function name: insert_category Line number: 38
+
+2025-03-03 13:35:58,051 - login_service.py - FlaskMVCProject -  decorator - ERROR - Error during access control: 'NoneType' object is not subscriptable
+
+2025-03-03 13:40:51,177 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:40:51,179 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:40:51,179 - category_controller.py - FlaskMVCProject -  load_category - INFO - Load category successfully
+
+2025-03-03 13:40:51,417 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:40:51,417 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:40:51,418 - category_controller.py - FlaskMVCProject -  load_category - INFO - Load category successfully
+
+2025-03-03 13:40:52,656 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740990954, 'iat': 1740989154, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:40:52,657 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:40:52,659 - category_controller.py - FlaskMVCProject -  insert_category - ERROR - Error inserting category: 400 Bad Request: Category name or description cannot be empty
+
+2025-03-03 13:54:45,561 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:54:45,561 - login_dao.py - FlaskMVCProject -  validate_login - WARNING - Invalid password for user: prince
+
+2025-03-03 13:54:45,561 - login_controller.py - FlaskMVCProject -  load_home_page - ERROR - Error: Invalid username or password.
+
+2025-03-03 13:54:51,581 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:54:51,581 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 13:54:51,582 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 8, 54, 51, 581953, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 8, 24, 51, 581972, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:54:51,582 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 13:54:51,583 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 13:54:51,595 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:54:51,595 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:54:51,595 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:54:54,408 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:54:54,408 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:54:54,408 - category_controller.py - FlaskMVCProject -  load_category - INFO - Load category successfully
+
+2025-03-03 13:54:58,372 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:54:58,373 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:54:58,396 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-03-03 13:54:58,396 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> prince, Description -> efbg
+
+2025-03-03 13:56:11,327 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:56:11,328 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:56:11,341 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-03-03 13:56:11,342 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> prince, Description -> efbg
+
+2025-03-03 13:59:03,308 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:03,308 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:03,328 - category_service.py - FlaskMVCProject -  add_category_service - INFO - Insert category successfully
+
+2025-03-03 13:59:03,328 - category_controller.py - FlaskMVCProject -  insert_category - INFO - Category inserted successfully: Name -> prince, Description -> efbg
+
+2025-03-03 13:59:03,336 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:03,336 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:03,343 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>, <CategoryVO 32>, <CategoryVO 33>] 
+
+2025-03-03 13:59:03,343 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>, <CategoryVO 32>, <CategoryVO 33>]
+
+2025-03-03 13:59:06,904 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:06,904 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:06,922 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 33
+
+2025-03-03 13:59:06,932 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:06,932 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:06,937 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>, <CategoryVO 32>] 
+
+2025-03-03 13:59:06,937 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>, <CategoryVO 32>]
+
+2025-03-03 13:59:09,322 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:09,322 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:09,336 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 32
+
+2025-03-03 13:59:09,348 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:09,348 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:09,352 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>] 
+
+2025-03-03 13:59:09,353 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>, <CategoryVO 31>]
+
+2025-03-03 13:59:11,053 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:11,053 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:11,063 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 31
+
+2025-03-03 13:59:11,071 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:11,071 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:11,074 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>] 
+
+2025-03-03 13:59:11,075 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>, <CategoryVO 28>]
+
+2025-03-03 13:59:12,487 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:12,488 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:12,497 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 28
+
+2025-03-03 13:59:12,505 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992091, 'iat': 1740990291, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:12,505 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:12,508 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>] 
+
+2025-03-03 13:59:12,508 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>]
+
+2025-03-03 13:59:33,228 - login_dao.py - FlaskMVCProject -  validate_login - INFO - Query Result for username prince: <LoginVO 25>
+
+2025-03-03 13:59:33,228 - login_dao.py - FlaskMVCProject -  validate_login - INFO - User prince validated successfully.
+
+2025-03-03 13:59:33,228 - login_service.py - FlaskMVCProject -  generate_token - DEBUG - Creating access token with payload: {'exp': datetime.datetime(2025, 3, 3, 8, 59, 33, 228817, tzinfo=datetime.timezone.utc), 'iat': datetime.datetime(2025, 3, 3, 8, 29, 33, 228836, tzinfo=datetime.timezone.utc), 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:33,228 - login_service.py - FlaskMVCProject -  generate_token - INFO - Access token payload created successfully
+
+2025-03-03 13:59:33,229 - login_controller.py - FlaskMVCProject -  load_home_page - INFO - Access & Refresh token created for user: prince
+
+2025-03-03 13:59:33,239 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:33,239 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:33,239 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:59:35,465 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:35,466 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:35,466 - category_controller.py - FlaskMVCProject -  load_category - INFO - Load category successfully
+
+2025-03-03 13:59:41,666 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:41,666 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:41,671 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>] 
+
+2025-03-03 13:59:41,671 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>, <CategoryVO 27>]
+
+2025-03-03 13:59:45,202 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:45,202 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:45,217 - category_service.py - FlaskMVCProject -  delete_category_service - INFO - delete category successfully : 27
+
+2025-03-03 13:59:45,229 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:45,229 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:45,232 - category_service.py - FlaskMVCProject -  view_category_service - INFO - view category successfully [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>] 
+
+2025-03-03 13:59:45,232 - category_controller.py - FlaskMVCProject -  view_category - INFO - View category: [<CategoryVO 2>, <CategoryVO 3>, <CategoryVO 4>, <CategoryVO 5>, <CategoryVO 6>, <CategoryVO 7>, <CategoryVO 8>]
+
+2025-03-03 13:59:47,414 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:47,415 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:47,415 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+
+2025-03-03 13:59:48,647 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:48,648 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:48,663 - product_controller.py - FlaskMVCProject -  view_products - INFO - view product successfully
+
+2025-03-03 13:59:49,988 - login_service.py - FlaskMVCProject -  decorator - DEBUG - Decoded access token data: {'exp': 1740992373, 'iat': 1740990573, 'user_id': 25, 'user_email': 'prince', 'user_role': 'ADMIN'}
+
+2025-03-03 13:59:49,988 - login_service.py - FlaskMVCProject -  decorator - INFO - Access token successfully validated
+
+2025-03-03 13:59:49,988 - login_controller.py - FlaskMVCProject -  admin_home_page - INFO - Admin accessing home page
+

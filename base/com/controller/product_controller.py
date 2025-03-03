@@ -18,6 +18,15 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg", "gif"}
 @app.route('/load_product')
 @LoginService.login_required(role="ADMIN")
 def load_product():
+    """
+    Load product creation form with category and subcategory data.
+    
+    Returns:
+        rendered template: Product creation form with category and subcategory dropdowns
+        
+    Raises:
+        Exception: If there is an error loading the data
+    """
     try:
         category_dao = CategoryDAO()
         category_vo_lst = category_dao.view_category()
@@ -32,9 +41,19 @@ def load_product():
         return render_template('product_templates/addProduct.html',
                                error_message="An unexpected error occurred.")
 
+
 @app.route('/ajax_load_subcategory')
 @LoginService.login_required(role="ADMIN")
 def ajax_load_subcategory():
+    """
+    AJAX endpoint to load subcategories for a given category ID.
+    
+    Returns:
+        JSON: List of subcategories for selected category
+        
+    Raises:
+        Exception: If there is an error loading subcategories
+    """
     try:
         product_category_id = request.args.get('product_category_id')
         product_service = ProductService()
@@ -47,9 +66,29 @@ def ajax_load_subcategory():
         logger.error(f"Error in ajax_load_subcategory: {str(e)}")
         return jsonify({"error": "An unexpected error occurred."}), 500
 
+
 @app.route("/insert_product", methods=["POST"])
 @LoginService.login_required(role="ADMIN")
 def insert_product():
+    """
+    Insert a new product with image upload.
+    
+    Expects form data with:
+        - product_category_id: Category ID
+        - product_sub_category_id: Subcategory ID
+        - productName: Name of product
+        - productDescription: Product description
+        - productPrice: Product price
+        - productQuantity: Product quantity
+        - productImage: Image file
+        
+    Returns:
+        redirect: Redirects to product listing on success
+        rendered template: Returns to form with error on failure
+        
+    Raises:
+        Exception: For validation or processing errors
+    """
     try:
         product_category_id = request.form.get("product_category_id")
         product_sub_category_id = request.form.get(
@@ -59,7 +98,6 @@ def insert_product():
         product_price = request.form.get("productPrice")
         product_quantity = request.form.get("productQuantity")
         product_image = request.files.get("productImage")
-
 
         if not product_image:
             return render_template(
@@ -101,12 +139,23 @@ def insert_product():
         return redirect("/view_product")
     except Exception as e:
         logger.error(f"Error in insert_product: {str(e)}")
-        print("Error occurred:", str(e))  # Debugging print statement
-        return render_template("product_templates/addProduct.html", error_message="An unexpected error occurred.")
+        print("Error occurred:", str(e))
+        return render_template("product_templates/addProduct.html",
+                               error_message="An unexpected error occurred.")
+
 
 @app.route('/view_product', methods=['GET', 'POST'])
 @LoginService.login_required(role="ADMIN")
 def view_products():
+    """
+    View list of all products.
+    
+    Returns:
+        rendered template: Product listing page
+        
+    Raises:
+        Exception: If there is an error retrieving products
+    """
     try:
         product_service = ProductService()
         product_vo_lst = product_service.view_product_service()
@@ -118,9 +167,22 @@ def view_products():
         return render_template("product_templates/viewProduct.html",
                                error_message="An unexpected error occurred.")
 
+
 @app.route('/delete_product', methods=['POST'])
 @LoginService.login_required(role="ADMIN")
 def delete_product():
+    """
+    Delete a product by ID.
+    
+    Expects:
+        product_id: ID of product to delete in form data
+        
+    Returns:
+        redirect: Redirects to product listing
+        
+    Raises:
+        Exception: If there is an error deleting the product
+    """
     try:
         product_id = request.form.get("product_id")
         product_service = ProductService()
@@ -132,9 +194,22 @@ def delete_product():
         return render_template("product_templates/viewProduct.html",
                                error_message="An unexpected error occurred.")
 
+
 @app.route('/edit_product/<int:product_id>', methods=['GET'])
 @LoginService.login_required(role="ADMIN")
 def edit_product(product_id):
+    """
+    Load product edit form with product, category and subcategory data.
+    
+    Args:
+        product_id: ID of product to edit
+        
+    Returns:
+        rendered template: Product edit form populated with data
+        
+    Raises:
+        Exception: If there is an error loading the data
+    """
     try:
         product_service = ProductService()
         product_vo_lst, category_vo_lst, sub_category_vo_lst = product_service.edit_product_service(
@@ -151,9 +226,33 @@ def edit_product(product_id):
         return render_template('product_templates/updateProduct.html',
                                error_message="An unexpected error occurred.")
 
+
 @app.route('/update_product/<int:product_id>', methods=['POST'])
 @LoginService.login_required(role="ADMIN")
 def update_product(product_id):
+    """
+    Update an existing product.
+    
+    Args:
+        product_id: ID of product to update
+        
+    Expects form data with:
+        - productCategoryId: Updated category ID
+        - productSubCategoryId: Updated subcategory ID  
+        - productName: Updated product name
+        - productDescription: Updated description
+        - productPrice: Updated price
+        - productQuantity: Updated quantity
+        - productImage: Optional new image file
+        
+    Returns:
+        redirect: Redirects to product listing on success
+        rendered template: Returns to form with error on failure
+        
+    Raises:
+        ValueError: For validation errors
+        Exception: For processing errors
+    """
     try:
         product_category_id = request.form.get("productCategoryId")
         product_sub_category_id = request.form.get(
@@ -204,4 +303,3 @@ def update_product(product_id):
         logger.error(f"Error in update_product: {str(e)}")
         return render_template("product_templates/addProduct.html",
                                error_message="An unexpected error occurred.")
-

@@ -6,8 +6,18 @@ logger = get_logger()
 
 
 class LoginDao:
+    """Data access object for login related database operations."""
+
     @staticmethod
     def insert_login(login_vo):
+        """Insert new login record into database.
+        
+        Args:
+            login_vo: LoginVO object containing login details
+            
+        Returns:
+            int: ID of inserted login record
+        """
         db.session.add(login_vo)
         db.session.commit()
         logger.info(f"Inserted login with ID: {login_vo.login_id}")
@@ -15,6 +25,15 @@ class LoginDao:
 
     @staticmethod
     def validate_login(username, password):
+        """Validate user login credentials.
+        
+        Args:
+            username: User's username
+            password: User's password
+            
+        Returns:
+            LoginVO: User object if credentials are valid, None otherwise
+        """
         user = LoginVO.query.filter_by(login_username=username).first()
         print("User found:", user)
         logger.info(f"Query Result for username {username}: {user}")
