@@ -5,46 +5,18 @@ from base.com.service.register_service import RegisterService
 from base.com.dto.register_dto import RegisterDTO
 from base.utils import my_logger
 from base import app
-
 logger = my_logger.get_logger()
 
 
 @app.route('/load_register', methods=['GET'])
-# @LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role="ADMIN")
 def load_register():
-    """
-    Handle GET request to load the registration page.
-    
-    Returns:
-        rendered registration page template
-    """
     return render_template('login_and_register/register.html')
 
 
 @app.route('/insert_register', methods=['POST'])
-# @LoginService.login_required(role="ADMIN")
+@LoginService.login_required(role="ADMIN")
 def register():
-    """
-    Handle POST request to process user registration.
-    
-    Gets registration form data from request, validates it using RegisterDTO,
-    and creates new user account via RegisterService.
-    
-    Form Parameters:
-        registerFirstname (str): User's first name
-        registerLastname (str): User's last name
-        registerGender (str): User's gender
-        registerEmail (str): User's email address
-        registerUsername (str): Desired username
-        registerPassword (str): Account password
-        
-    Returns:
-        On success: Rendered login page with success message
-        On error: Rendered registration page with error message
-        
-    Raises:
-        Exception: If validation fails or database operations fail
-    """
     try:
         register_firstname = request.form.get(
             'registerFirstname').strip() or None

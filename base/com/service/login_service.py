@@ -88,7 +88,7 @@ class LoginService:
 
         except Exception as ex:
             logger.error(f"Error refreshing token: {str(ex)}")
-            return redirect('/login?error=refresh_failed')
+            return redirect('/')
 
     @staticmethod
     def login_required(role):
@@ -98,7 +98,7 @@ class LoginService:
                 access_token = request.cookies.get(
                     static_variables.TOKEN_ACCESS_KEY)
                 if access_token is None:
-                    return redirect('/login?error=no_access_token')
+                    return redirect('/')
 
                 try:
                     data = jwt.decode(access_token,
@@ -115,7 +115,7 @@ class LoginService:
                     return fn(*args, **kwargs)
                 except Exception as ex:
                     logger.error(f"Error during access control: {str(ex)}")
-                    return redirect('/login?error=auth_failed')
+                    return redirect('/')
 
             return decorator
 

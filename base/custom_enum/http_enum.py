@@ -35,3 +35,4 @@ class ResponseMessageEnum(str, Enum):
     DUPLICATE_PDF = "PDF already exists"
     FILE_STATUS = "File process is currently in progress, so it can't be downloaded. Please try again later."
     FILE_RESTART_STATUS = "Restart is starting now."
+    INTERNAL_SERVER_ERROR = "Internal server error"

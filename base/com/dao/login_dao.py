@@ -38,8 +38,7 @@ class LoginDao:
         print("User found:", user)
         logger.info(f"Query Result for username {username}: {user}")
 
-        if user:
-            # hashed_password = hashlib.sha256(password.encode()).hexdigest()
+        if user and user.login_status == 0  :
             if user.login_password == password:
                 logger.info(f"User {username} validated successfully.")
                 print("User validated successfully.")
@@ -47,6 +46,9 @@ class LoginDao:
             else:
                 logger.warning(f"Invalid password for user: {username}")
         else:
-            logger.warning(f"User not found: {username}")
+            if not user:
+                logger.warning(f"User not found: {username}")
+            else:
+                logger.warning(f"User account is not active: {username}")
 
         return None

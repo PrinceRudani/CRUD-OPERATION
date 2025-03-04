@@ -176,7 +176,16 @@
 
 <header>
     <h1><span style="color: #FFFFFF">Welcome Admin !</span><span
-            style="color: #808080"> Manage things effortlessly</span></h1>
+            style="color: #808080"> !</span></h1>
+    {% if no_back %}
+        <script>
+            // Prevent going back to the login page after login
+            history.pushState(null, null, location.href);
+            window.onpopstate = function() {
+                history.go(1);
+            };
+        </script>
+    {% endif %}
     <p></p>
     <div class="nav-links">
         <a href="/load_register">

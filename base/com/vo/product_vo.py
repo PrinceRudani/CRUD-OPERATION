@@ -7,7 +7,8 @@ class ProductVO(db.Model):
                            primary_key=True)
     product_category_id = db.Column('product_category_id', db.Integer,
                                     db.ForeignKey(
-                                        'category_table.category_id'),
+                                        'category_table.category_id',
+                                        ondelete="CASCADE"),
                                     nullable=False)
     product_sub_category_id = db.Column('product_sub_category_id', db.Integer,
                                         db.ForeignKey(

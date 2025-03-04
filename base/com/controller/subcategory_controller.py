@@ -7,6 +7,9 @@ from base.com.service.login_service import LoginService
 from base.com.service.subcategory_service import SubcategoryService
 from base.utils.my_logger import get_logger
 
+ADD_SUBCATEGORY_TEMPLATE = 'subcategory_templates/addSubCategory.html'
+VIEW_SUBCATEGORY_PATH = '/view_sub_category'
+
 
 @app.route('/load_sub_category', methods=['GET', 'POST'])
 @LoginService.login_required(role="ADMIN")
@@ -22,7 +25,7 @@ def load_sub_category():
         sub_category_vo = category_dao.view_category()
         logger = get_logger()
         logger.info('load sub category successfully')
-        return render_template('subcategory_templates/addSubCategory.html',
+        return render_template(ADD_SUBCATEGORY_TEMPLATE,
                                sub_category_vo=sub_category_vo)
     except Exception as e:
         logger = get_logger()
@@ -51,15 +54,15 @@ def insert_sub_category():
             'subCategoryDescription')
         if not subcategory_category_id:
             return render_template(
-                'subcategory_templates/addSubCategory.html',
+                ADD_SUBCATEGORY_TEMPLATE,
                 error_message="Please select a category.")
         if not subcategory_dto.sub_category_name:
             return render_template(
-                'subcategory_templates/addSubCategory.html',
+                ADD_SUBCATEGORY_TEMPLATE,
                 error_message="Please enter a subcategory name.")
         if not subcategory_dto.sub_category_description:
             return render_template(
-                'subcategory_templates/addSubCategory.html',
+                ADD_SUBCATEGORY_TEMPLATE,
                 error_message="Please enter a subcategory description.")
 
         subcategory_dto_lst = subcategory_dto.validate()
@@ -72,7 +75,7 @@ def insert_sub_category():
             'sub category description -> {}'.format(subcategory_category_id,
                                                     subcategory_dto_lst.sub_category_name,
                                                     subcategory_dto_lst.sub_category_description))
-        return redirect('/view_sub_category')
+        return redirect(VIEW_SUBCATEGORY_PATH)
 
     except Exception as e:
         logger = get_logger()
@@ -80,7 +83,7 @@ def insert_sub_category():
         return redirect('/load_sub_category')
 
 
-@app.route('/view_sub_category', methods=['GET', 'POST'])
+@app.route(VIEW_SUBCATEGORY_PATH, methods=['GET', 'POST'])
 @LoginService.login_required(role="ADMIN")
 def view_sub_category():
     """View all subcategories.
@@ -113,7 +116,7 @@ def delete_sub_category():
     logger = get_logger()
     logger.info(
         'delete sub category successfully : {}'.format(sub_category_id))
-    return redirect('/view_sub_category')
+    return redirect(VIEW_SUBCATEGORY_PATH)
 
 
 @app.route('/edit_sub_category/<int:sub_category_id>', methods=['GET'])
@@ -142,7 +145,7 @@ def edit_sub_category(sub_category_id):
     except Exception as e:
         logger = get_logger()
         logger.error(f"Error in edit_sub_category: {str(e)}")
-        return redirect('/view_sub_category')
+        return redirect(VIEW_SUBCATEGORY_PATH)
 
 
 @app.route('/update_sub_category/<int:sub_category_id>', methods=['POST'])
@@ -169,15 +172,15 @@ def update_sub_category(sub_category_id):
                                                 ('subCategoryDescription'))
     if not subcategory_category_id:
         return render_template(
-            'subcategory_templates/addSubCategory.html',
+            ADD_SUBCATEGORY_TEMPLATE,
             error_message="Please select a category.")
     if not subcategory_dto.sub_category_name:
         return render_template(
-            'subcategory_templates/addSubCategory.html',
+            ADD_SUBCATEGORY_TEMPLATE,
             error_message="Please enter a subcategory name.")
     if not subcategory_dto.sub_category_description:
         return render_template(
-            'subcategory_templates/addSubCategory.html',
+            ADD_SUBCATEGORY_TEMPLATE,
             error_message="Please enter a subcategory description.")
     try:
         subcategory_dto_lst = subcategory_dto.validate()
@@ -189,7 +192,7 @@ def update_sub_category(sub_category_id):
         logger.info(
             'update sub category successfully : subcategory id -> {}'.format(
                 sub_category_id))
-        return redirect(f'/view_sub_category')
+        return redirect(VIEW_SUBCATEGORY_PATH)
     except Exception as e:
         logger = get_logger()
         logger.error(f"Error in update_sub_category: {str(e)}")
